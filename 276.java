@@ -1,3 +1,25 @@
+/*
+There is a fence with n posts. Each post can be painted with one of the k colors. 
+You have to paint all the posts such that no more than two adjacent fence posts have the same color.
+
+Given the two integers n and k, return the total number of ways you can paint the fence.
+
+Example 1:
+Input: n = 3, k = 2
+Output: 6
+Explanation: All the possibilities are shown.
+
+Example 2:
+Input: n = 1, k = 1
+Output: 1
+
+
+Constraints:
+1 <= n <= 50
+1 <= k <= 105
+The answer is guaranteed to be in the range [0, 231 - 1] for the given n and k.
+*/
+
 class Solution {
     public int numWays(int n, int k) {
         // if(n == 0 || k == 0 || (n > 2 && k == 1))

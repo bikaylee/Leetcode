@@ -4,5 +4,8 @@
 - [x] 821 Shortest Distance to a Character (Array) <br>
 - [x] 543 Diameter of Binary Tree (Tree) <br>
 - [x] 70  Climbing Stairs (Dynamic Programming) <br>
+
+
+## Medium
 - [x] 276 Paint Fence (Dynamic Programming) <br>
 - [x] 198 House Robber (Dynamic Programming) <br>
