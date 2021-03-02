@@ -42,6 +42,8 @@
 - [ ] 1342. Number of Steps to Reduce a Number to Zero (Bit Manipulation) <br>
 - [ ] 575. Distribute Candies (Hash Table) <br>
 - [ ] 1165. Single-Row Keyboard (String) <br>
+- [ ] 645. Set Mismatch (Hash Table, Math) <br>
+
 
 
 
