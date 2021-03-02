@@ -41,6 +41,8 @@
 - [ ] 13. Roman to Integer (String, Math) <br>
 - [ ] 1342. Number of Steps to Reduce a Number to Zero (Bit Manipulation) <br>
 - [ ] 575. Distribute Candies (Hash Table) <br>
+- [ ] 1165. Single-Row Keyboard (String) <br>
+
 
 
 
