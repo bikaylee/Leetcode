@@ -8,7 +8,7 @@
 - [ ] 21. Merge Two Sorted Lists <br>
 - [ ] 26. Remove Duplicates from Sorted Array <br>
 - [ ] 27. Remove Element <br>
-- [ ] 88. Merge Sorted Array <br>
+- [ ] 88. Merge Sorted Array (Array) <br>
 - [ ] 141. Linked List Cycle (Linked List) <br>
 - [ ] 160. Intersection of Two Linked Lists (Linked List) <br>
 - [ ] 203. Remove Linked List Elements <br>
