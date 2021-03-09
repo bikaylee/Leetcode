@@ -29,7 +29,7 @@
 - [ ] 977. Squares of Sorted Array <br>
 - [ ] 1051. Height Checker <br>
 - [ ] 1089. Duplicate Zeroes (Array) <br>
-- [ ] 1295. Find Numbers with Even Number of Digits <br>
+- [ ] 1295. Find Numbers with Even Number of Digits (Array) <br>
 - [ ] 1299. Replace Elements with Greatest Element on Right Side <br>
 - [ ] 1346. Check If N and its Double Exist (Array) <br>
 - [x] 821. Shortest Distance to a Character (Array) <br>
@@ -61,7 +61,7 @@
 - [ ] 209. Minimum Size Subarray Sum <br>
 - [ ] 328. Odd Even Linked List <br>
 - [ ] 424. Longest Repeating Character Replacement <br>
-- [ ] 430. Flatten a Multilevel Doubly Linked List <br>
+- [ ] 430. Flatten a Multilevel Doubly Linked List (Linked List, Stack, Recursion) <br>
 - [ ] 707. Design Linked List (Linked List) <br>
 - [ ] 1004. Max Consectutive Ones III <br>
 - [ ] 276. Paint Fence (Dynamic Programming) <br>
