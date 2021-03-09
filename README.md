@@ -27,7 +27,7 @@
 - [ ] 938. Range Sum of BST <br>
 - [ ] 941. Valid Mountain Array <br>
 - [ ] 977. Squares of Sorted Array <br>
-- [ ] 1051. Height Checker <br>
+- [ ] 1051. Height Checker (Array) <br>
 - [ ] 1089. Duplicate Zeroes (Array) <br>
 - [ ] 1295. Find Numbers with Even Number of Digits (Array) <br>
 - [ ] 1299. Replace Elements with Greatest Element on Right Side <br>
