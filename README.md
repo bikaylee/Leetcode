@@ -28,7 +28,7 @@
 - [ ] 941. Valid Mountain Array <br>
 - [ ] 977. Squares of Sorted Array <br>
 - [ ] 1051. Height Checker <br>
-- [ ] 1089. Duplicate Zeroes <br>
+- [ ] 1089. Duplicate Zeroes (Array) <br>
 - [ ] 1295. Find Numbers with Even Number of Digits <br>
 - [ ] 1299. Replace Elements with Greatest Element on Right Side <br>
 - [ ] 1346. Check If N and its Double Exist (Array) <br>
