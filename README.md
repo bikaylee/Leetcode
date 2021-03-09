@@ -55,7 +55,7 @@
 - [ ] 19. Remove Nth Node From End of List <br>
 - [ ] 61. Rotate List <br>
 - [ ] 138. Copy List with Random Pointer (Linked List) <br>
-- [ ] 142. Linked List Cycle II <br>
+- [ ] 142. Linked List Cycle II (Linked List)<br>
 - [ ] 144. Binary Tree Preorder Traversal (Tree) <br>
 - [ ] 148. Sort List <br>
 - [ ] 209. Minimum Size Subarray Sum <br>
