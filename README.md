@@ -5,7 +5,7 @@
 - [ ] 7. Reverse Integer <br>
 - [ ] 9. Palindrome Number <br>
 - [ ] 20. Valid Parenthesis <br>
-- [ ] 21. Merge Two Sorted Lists <br>
+- [ ] 21. Merge Two Sorted Lists (Linked List) <br>
 - [ ] 26. Remove Duplicates from Sorted Array <br>
 - [ ] 27. Remove Element <br>
 - [ ] 88. Merge Sorted Array (Array) <br>
