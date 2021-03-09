@@ -51,7 +51,7 @@
 
 
 ## Medium
-- [ ] 2. Add Two Numbers <br>
+- [ ] 2. Add Two Numbers (Linked List) <br>
 - [ ] 19. Remove Nth Node From End of List <br>
 - [ ] 61. Rotate List <br>
 - [ ] 138. Copy List with Random Pointer <br>
