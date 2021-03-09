@@ -21,7 +21,7 @@
 - [ ] 485. Max Consecutive Ones (Array) <br>
 - [ ] 543. Diameter of Binary Tree <br>
 - [ ] 717. 1-bit and 2-bit Characters (Array, Bit) <br>
-- [ ] 783. Minimum Distance Between BST Nodes <br>
+- [ ] 783. Minimum Distance Between BST Nodes (Tree, Recursion)<br>
 - [ ] 876. Middle of the Linked List (Linked List)<br>
 - [ ] 905. Sort Array By Parity <br>
 - [ ] 938. Range Sum of BST <br>
@@ -33,7 +33,7 @@
 - [ ] 1299. Replace Elements with Greatest Element on Right Side <br>
 - [ ] 1346. Check If N and its Double Exist (Array) <br>
 - [x] 821. Shortest Distance to a Character (Array) <br>
-- [x] 543. Diameter of Binary Tree (Tree) <br>
+- [x] 543. Diameter of Binary Tree (Tree, Recursion) <br>
 - [x] 70.  Climbing Stairs (Dynamic Programming) <br>
 - [ ] 929. Unique Email Addresses(String) <br>
 - [ ] 167. Two Sum II (Binary Search) <br>
