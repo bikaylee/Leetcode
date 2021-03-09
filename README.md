@@ -60,7 +60,7 @@
 - [ ] 148. Sort List <br>
 - [ ] 209. Minimum Size Subarray Sum <br>
 - [ ] 328. Odd Even Linked List <br>
-- [ ] 424. Longest Repeating Character Replacement <br>
+- [ ] 424. Longest Repeating Character Replacement (String, Sliding Window)<br>
 - [ ] 430. Flatten a Multilevel Doubly Linked List (Linked List, Stack, Recursion) <br>
 - [ ] 707. Design Linked List (Linked List) <br>
 - [ ] 1004. Max Consectutive Ones III <br>
