@@ -18,7 +18,7 @@
 - [ ] 344. Reverse String <br>
 - [ ] 414. Third Maximum Number <br>
 - [ ] 448. Find All Numbers Disappeared in an Array (Array) <br>
-- [ ] 485. Max Consecutive Ones <br>
+- [ ] 485. Max Consecutive Ones (Array) <br>
 - [ ] 543. Diameter of Binary Tree <br>
 - [ ] 717. 1-bit and 2-bit Characters (Array, Bit) <br>
 - [ ] 783. Minimum Distance Between BST Nodes <br>
