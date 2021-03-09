@@ -54,7 +54,7 @@
 - [ ] 2. Add Two Numbers (Linked List) <br>
 - [ ] 19. Remove Nth Node From End of List <br>
 - [ ] 61. Rotate List <br>
-- [ ] 138. Copy List with Random Pointer <br>
+- [ ] 138. Copy List with Random Pointer (Linked List) <br>
 - [ ] 142. Linked List Cycle II <br>
 - [ ] 144. Binary Tree Preorder Traversal (Tree) <br>
 - [ ] 148. Sort List <br>
