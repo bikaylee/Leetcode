@@ -10,7 +10,7 @@
 - [ ] 27. Remove Element <br>
 - [ ] 88. Merge Sorted Array <br>
 - [ ] 141. Linked List Cycle <br>
-- [ ] 160. Intersection of Two Linked Lists <br>
+- [ ] 160. Intersection of Two Linked Lists (Linked List) <br>
 - [ ] 203. Remove Linked List Elements <br>
 - [ ] 206. Reverse Linked List <br>
 - [ ] 234. Palindrome Linked List <br>
