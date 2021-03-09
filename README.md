@@ -58,7 +58,7 @@
 - [ ] 142. Linked List Cycle II (Linked List)<br>
 - [ ] 144. Binary Tree Preorder Traversal (Tree) <br>
 - [ ] 148. Sort List <br>
-- [ ] 209. Minimum Size Subarray Sum <br>
+- [ ] 209. Minimum Size Subarray Sum (Array) <br>
 - [ ] 328. Odd Even Linked List <br>
 - [ ] 424. Longest Repeating Character Replacement (String, Sliding Window)<br>
 - [ ] 430. Flatten a Multilevel Doubly Linked List (Linked List, Stack, Recursion) <br>
