@@ -31,7 +31,7 @@
 - [ ] 1089. Duplicate Zeroes <br>
 - [ ] 1295. Find Numbers with Even Number of Digits <br>
 - [ ] 1299. Replace Elements with Greatest Element on Right Side <br>
-- [ ] 1346. Check If N and its Double Exist <br>
+- [ ] 1346. Check If N and its Double Exist (Array) <br>
 - [x] 821. Shortest Distance to a Character (Array) <br>
 - [x] 543. Diameter of Binary Tree (Tree) <br>
 - [x] 70.  Climbing Stairs (Dynamic Programming) <br>
