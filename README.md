@@ -22,7 +22,7 @@
 - [ ] 543. Diameter of Binary Tree <br>
 - [ ] 717. 1-bit and 2-bit Characters (Array, Bit) <br>
 - [ ] 783. Minimum Distance Between BST Nodes <br>
-- [ ] 876. Middle of the Linked List <br>
+- [ ] 876. Middle of the Linked List (Linked List)<br>
 - [ ] 905. Sort Array By Parity <br>
 - [ ] 938. Range Sum of BST <br>
 - [ ] 941. Valid Mountain Array <br>
