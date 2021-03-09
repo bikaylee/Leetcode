@@ -14,7 +14,7 @@
 - [ ] 203. Remove Linked List Elements <br>
 - [ ] 206. Reverse Linked List <br>
 - [ ] 234. Palindrome Linked List <br>
-- [ ] 283. Move Zeroes <br>
+- [ ] 283. Move Zeroes (Array)<br>
 - [ ] 344. Reverse String <br>
 - [ ] 414. Third Maximum Number <br>
 - [ ] 448. Find All Numbers Disappeared in an Array (Array) <br>
