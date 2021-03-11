@@ -45,6 +45,7 @@
 - [ ] 645. Set Mismatch (Hash Table, Math) <br>
 - [ ] 268. Missing Number (Array, Math, Bit Manipulation) <br>
 - [ ] 160. Intersection of Two Linked Lists <br>
+- [ ] 1207. Unique Number of Occurrences (Hash Table) <br>
 
 
 
@@ -70,6 +71,6 @@
 - [ ] 240. Search a 2D Matrix II (Dynamic Programming) <br>
 - [ ] 1249. Minimum Remove to Make Valid Parentheses (String, Stack) <br>
 - [ ] 284. Peeking Iterator (Design) <br>
-
+- [ ] 12. Integer to Roman (Math String) <br>
 
 
