@@ -46,6 +46,7 @@
 - [ ] 268. Missing Number (Array, Math, Bit Manipulation) <br>
 - [ ] 160. Intersection of Two Linked Lists <br>
 - [ ] 1207. Unique Number of Occurrences (Hash Table) <br>
+- [ ] 1721. Swapping Nodes in a Linked List (Linked List) <br>
 
 
 
