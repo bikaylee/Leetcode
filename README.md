@@ -65,7 +65,7 @@
 - [ ] 328. Odd Even Linked List (Linked List) <br>
 - [ ] 424. Longest Repeating Character Replacement (String, Sliding Window)<br>
 - [ ] 430. Flatten a Multilevel Doubly Linked List (Linked List, Stack, Recursion) <br>
-- [ ] 707. Design Linked List (Linked List) <br>
+- [x] 707. Design Linked List (Linked List) <br>
 - [ ] 1004. Max Consectutive Ones III (Array, Sliding Window) <br>
 - [ ] 276. Paint Fence (Dynamic Programming) <br>
 - [x] 198. House Robber (Dynamic Programming) <br>
