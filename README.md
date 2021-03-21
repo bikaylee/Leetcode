@@ -48,6 +48,7 @@
 - [ ] 1207. Unique Number of Occurrences (Hash Table) <br>
 - [ ] 1721. Swapping Nodes in a Linked List (Linked List) <br>
 - [ ] 997. Find the Town Judge (Graph) <br>
+- [ ] 1474. Delete N Nodes After M Nodes of a Linked List (Linked List) <br>
 
 
 
