@@ -47,7 +47,7 @@
 - [ ] 160. Intersection of Two Linked Lists <br>
 - [ ] 1207. Unique Number of Occurrences (Hash Table) <br>
 - [ ] 1721. Swapping Nodes in a Linked List (Linked List) <br>
-
+- [ ] 997. Find the Town Judge (Graph) <br>
 
 
 
