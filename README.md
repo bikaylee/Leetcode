@@ -1,7 +1,7 @@
 # Leetcode-2021
 
 ## Easy 
-- [ ][ ] 1. Two Sum <br>
+- [ ] 1. Two Sum <br>
 - [ ] 7. Reverse Integer <br>
 - [ ] 9. Palindrome Number <br>
 - [ ] 13. Roman to Integer (String, Math) <br>
@@ -10,7 +10,7 @@
 - [ ] 21. Merge Two Sorted Lists (Linked List) <br>
 - [ ] 26. Remove Duplicates from Sorted Array <br>
 - [ ] 27. Remove Element <br>
-- [x] 70.  Climbing Stairs (Dynamic Programming) <br>
+- [x] 70. Climbing Stairs (Dynamic Programming) <br>
 - [ ] 88. Merge Sorted Array (Array) <br>
 - [ ] 141. Linked List Cycle (Linked List) <br>
 - [x] 160. Intersection of Two Linked Lists (Linked List) <br>
