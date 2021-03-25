@@ -56,8 +56,12 @@
 - [ ] 1342. Number of Steps to Reduce a Number to Zero (Bit Manipulation) <br>
 
 - [ ] 1474. Delete N Nodes After M Nodes of a Linked List (Linked List) <br>
+<<<<<<< HEAD
 - [ ] 1721. Swapping Nodes in a Linked List (Linked List) <br>
 
+=======
+- [ ] 1313. Decompress Run-Length Encoded List (Array) <br>
+>>>>>>> 8c00c3d (add 1313 - Array)
 
 
 
