@@ -41,7 +41,7 @@
 
 - [ ] 938. Range Sum of BST <br>
 - [ ] 941. Valid Mountain Array <br>
-- [ ] 977. Squares of Sorted Array <br>
+- [x] 977. Squares of Sorted Array <br>
 - [ ] 997. Find the Town Judge (Graph) <br>
 
 - [ ] 1051. Height Checker (Array) <br>
