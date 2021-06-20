@@ -15,6 +15,7 @@
 - [ ] 141. Linked List Cycle (Linked List)
 - [x] 160. Intersection of Two Linked Lists (Linked List)
 - [ ] 167. Two Sum II (Binary Search)
+- [ ] 169. Majority Element(Array)
 - [ ] 203. Remove Linked List Elements
 - [ ] 206. Reverse Linked List
 - [x] 234. Palindrome Linked List
