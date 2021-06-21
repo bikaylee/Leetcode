@@ -33,14 +33,25 @@ Only one valid answer exists.
 */
 
 class Solution {
+    // 06-21-2021
     public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int comp = target - nums[i];
+            if (map.containsKey(comp)) {
+                return new int[] { map.get(comp), i };
+            } else
+                map.put(nums[i], i);
+        }
+        return new int[] {};
+    }
+
+    public int[] twoSumOld(int[] nums, int target) {
         Map<Integer, Integer> table = new HashMap<>();
-        int [] res = new int[2];
-        for(int i = 0; i < nums.length; i++)
-        {
+        int[] res = new int[2];
+        for (int i = 0; i < nums.length; i++) {
             int difference = target - nums[i];
-            if(!table.isEmpty() && table.containsKey(difference))
-            {
+            if (!table.isEmpty() && table.containsKey(difference)) {
                 res[1] = i;
                 res[0] = table.get(difference);
                 return res;

@@ -2,7 +2,7 @@
 
 ## Easy
 
-- [ ] 1. Two Sum
+- [ ] 1. Two Sum (Array, Hash Table)
 - [ ] 7. Reverse Integer
 - [ ] 9. Palindrome Number
 - [ ] 13. Roman to Integer (String, Math)
@@ -12,6 +12,7 @@
 - [ ] 27. Remove Element
 - [x] 70. Climbing Stairs (Dynamic Programming)
 - [x] 88. Merge Sorted Array (Array)
+- [ ] 121. Best Time to Buy and Sell Stock (Array, DP)
 - [ ] 141. Linked List Cycle (Linked List)
 - [x] 160. Intersection of Two Linked Lists (Linked List)
 - [ ] 167. Two Sum II (Binary Search)
