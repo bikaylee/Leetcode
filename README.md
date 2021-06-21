@@ -25,8 +25,8 @@
 - ✅ ⬜   268. Missing Number                             (Array, Math, Bit Manipulation)
 - ✅ ⬜   278. First Bad Version                          (Binary Search)
 - ⬜ ✅   283. Move Zeroes                                (Array)
-- ⬜ ⬜   344. Reverse String                             (Two Pointer, String)
-- ⬜ ⬜   414. Third Maximum Number
+- ✅ ⬜   344. Reverse String                             (Two Pointer, String)
+- ✅ ⬜   414. Third Maximum Number                       (Array)
 - ⬜ ✅   448. Find All Numbers Disappeared in an Array   (Array)
 - ✅ ✅   485. Max Consecutive Ones                       (Array)
 - ✅ ✅   543. Diameter of Binary Tree                    (Tree, Recursion)
