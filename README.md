@@ -5,23 +5,23 @@
 
 ## Easy
 
-- ✅ ⬜   1. Two Sum                                      (Array, Hash Table)
-- ✅ ⬜   7. Reverse Integer                              (Math)
+- ✅ ✅   1. Two Sum                                      (Array, Hash Table)
+- ✅ ✅   7. Reverse Integer                              (Math)
 - ✅ ⬜   13. Roman to Integer                            (String, Math)
-- ✅ ⬜   20. Valid Parenthesis                           (String, Stack)
+- ✅ ✅   20. Valid Parenthesis                           (String, Stack)
 - ⬜ ✅   21. Merge Two Sorted Lists                      (Linked List)
-- ⬜ ⬜   26. Remove Duplicates from Sorted Array         (Array, Two Pointer)
-- ⬜ ⬜   27. Remove Element                              (Array, Two Pointer)
+- ⬜ ✅   26. Remove Duplicates from Sorted Array         (Array, Two Pointer)
+- ⬜ ✅   27. Remove Element                              (Array, Two Pointer)
 - ✅ ✅   70. Climbing Stairs                             (Dynamic Programming)
 - ✅ ✅   88. Merge Sorted Array                          (Array)
 - ⬜ ⬜   121. Best Time to Buy and Sell Stock            (Array, DP)
-- ⬜ ⬜   141. Linked List Cycle                          (Linked List)
+- ⬜ ✅   141. Linked List Cycle                          (Linked List)
 - ✅ ✅   160. Intersection of Two Linked Lists           (Linked List)
 - ✅ ⬜   167. Two Sum II                                 (Binary Search)
 - ✅ ⬜   169. Majority Element                           (Array)
-- ⬜ ⬜   203. Remove Linked List Elements
-- ⬜ ⬜   206. Reverse Linked List
-- ✅ ⬜   234. Palindrome Linked List                     (Linked List, Two Pointers)
+- ⬜ ✅   203. Remove Linked List Elements
+- ⬜ ✅   206. Reverse Linked List
+- ✅ ✅   234. Palindrome Linked List                     (Linked List, Two Pointers)
 - ✅ ⬜   268. Missing Number                             (Array, Math, Bit Manipulation)
 - ✅ ⬜   278. First Bad Version                          (Binary Search)
 - ⬜ ✅   283. Move Zeroes                                (Array)
