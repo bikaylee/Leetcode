@@ -38,7 +38,7 @@
 - ⬜ ✅   876. Middle of the Linked List                  (Linked List)
 - ⬜ ⬜   905. Sort Array By Parity
 - ✅ ⬜   929. Unique Email Addresses                     (String)
-- ⬜ ⬜   938. Range Sum of BST
+- ⬜ ✅   938. Range Sum of BST
 - ⬜ ⬜   941. Valid Mountain Array
 - ✅ ⬜   977. Squares of Sorted Array
 - ✅ ⬜   997. Find the Town Judge                        (Graph)
