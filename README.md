@@ -8,6 +8,7 @@
 - ✅ ✅   1. Two Sum                                      (Array, Hash Table)
 - ✅ ✅   7. Reverse Integer                              (Math)
 - ✅ ⬜   13. Roman to Integer                            (String, Math)
+- ✅ ⬜   14. Longest Common Prefix                       (String)
 - ✅ ✅   20. Valid Parenthesis                           (String, Stack)
 - ⬜ ✅   21. Merge Two Sorted Lists                      (Linked List)
 - ⬜ ✅   26. Remove Duplicates from Sorted Array         (Array, Two Pointer)
