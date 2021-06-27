@@ -29,6 +29,7 @@
 - ⬜ ✅   283. Move Zeroes                                (Array)
 - ✅ ⬜   344. Reverse String                             (Two Pointer, String)
 - ✅ ⬜   414. Third Maximum Number                       (Array)
+- ✅ ⬜   415. Add Strings                                (String, Math, Simulation)
 - ⬜ ✅   448. Find All Numbers Disappeared in an Array   (Array)
 - ✅ ✅   485. Max Consecutive Ones                       (Array)
 - ✅ ✅   543. Diameter of Binary Tree                    (Tree, Recursion)
@@ -42,6 +43,7 @@
 - ✅ ⬜   929. Unique Email Addresses                     (String)
 - ⬜ ✅   938. Range Sum of BST
 - ⬜ ⬜   941. Valid Mountain Array
+- ✅ ⬜   953. Verifying an Alien Dictionary              (String, Array, Hash Table)
 - ✅ ⬜   977. Squares of Sorted Array
 - ✅ ⬜   997. Find the Town Judge                        (Graph)
 - ⬜ ✅   1051. Height Checker                            (Array)
