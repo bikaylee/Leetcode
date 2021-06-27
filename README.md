@@ -13,6 +13,7 @@
 - ⬜ ✅   21. Merge Two Sorted Lists                      (Linked List)
 - ⬜ ✅   26. Remove Duplicates from Sorted Array         (Array, Two Pointer)
 - ⬜ ✅   27. Remove Element                              (Array, Two Pointer)
+- ✅ ⬜   58. Length of Last Word                         (String)
 - ✅ ✅   70. Climbing Stairs                             (Dynamic Programming)
 - ✅ ✅   88. Merge Sorted Array                          (Array)
 - ⬜ ⬜   121. Best Time to Buy and Sell Stock            (Array, DP)
