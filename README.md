@@ -16,6 +16,8 @@
 - ✅ ⬜   58. Length of Last Word                         (String)
 - ✅ ✅   70. Climbing Stairs                             (Dynamic Programming)
 - ✅ ✅   88. Merge Sorted Array                          (Array)
+- ✅ ⬜   94. Binary Tree Inorder Traversal               (Tree, DFS, Stack)
+- ✅ ⬜   100. Same Tree                                  (Tree)
 - ⬜ ⬜   121. Best Time to Buy and Sell Stock            (Array, DP)
 - ⬜ ✅   141. Linked List Cycle                          (Linked List)
 - ✅ ✅   160. Intersection of Two Linked Lists           (Linked List)
