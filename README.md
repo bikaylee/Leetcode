@@ -27,7 +27,8 @@
 | 94. Binary Tree Inorder Traversal              | 🟢   | Tree, DFS, Stack              | &check; |         |
 | 100. Same Tree                                 | 🟢   | Tree                          | &check; |         |
 | 121. Best Time to Buy and Sell Stock           | 🟢   | Array, Dynamic Programming    |         |         |
-| 138. Copy List with Random Pointer             | 🟠   | Linked List                   |         | &check; |
+| 133. Clone Graph                               | 🟠   | Linked List, HashTable, Graph | &check; |         |
+| 138. Copy List with Random Pointer             | 🟠   | Linked List, HashTable, Graph | &check; | &check; |
 | 141. Linked List Cycle                         | 🟢   | Linked List                   |         | &check; |
 | 142. Linked List Cycle II                      | 🟠   | Linked List                   |         | &check; |
 | 144. Binary Tree Preorder Traversal            | 🟠   | Tree                          |         | &check; |
