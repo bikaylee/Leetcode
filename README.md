@@ -35,7 +35,7 @@
 | 169. Majority                                  | 🟢   | Array                          | &check; |         |     |
 | 198. House Robber                              | 🟠   | Dynamic Programming            | &check; | &check; |     |
 | 198. House Robber                              | 🟠   | Dynamic Programming            | &check; | &check; |     |
-| 200. Number of Islands                         | 🟠   | Array, DFS, BFS, Matrix, Graph | &check; |         |     |
+| 200. Number of Islands                         | 🟠   | Array, DFS, BFS, Matrix, Graph | &check; |         | &check;     |
 | 203. Remove Linked List Elements               | 🟢   | Linked List, Recursion         | &check; | &check; |     |
 | 206. Reverse Linked List                       | 🟢   | Linked List, Recursion         | &check; | &check; |     |
 | 209. Minimum Size Subarray Sum                 | 🟠   | Array                          |         | &check; |     |
