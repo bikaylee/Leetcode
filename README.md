@@ -1,16 +1,17 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 52
+#### 🟢 Easy : 53
 
-#### 🟠 Medium : 25
+#### 🟠 Medium : 26
 
-#### 🔴 Hard : 0
+#### 🔴 Hard : 1
 
 | Problems                                       | Diff | Category                       | Java    | JS      | C++     |
 | ---------------------------------------------- | ---- | ------------------------------ | ------- | ------- | ------- |
 | 1. Two Sum                                     | 🟢   | Array, Hash Table              | &check; | &check; |         |
 | 2. Add Two Numbers                             | 🟠   | Linked List                    | &check; | &check; |         |
 | 7. Reverse Integer                             | 🟢   | Math                           | &check; | &check; |         |
+| 11. Container With Most Water                  | 🟠   | Two Pointers, Array, Greedy    | &check; |         |         |
 | 12. Integer to Roman                           | 🟠   | Math String                    | &check; |         |         |
 | 13. Roman to Integer                           | 🟢   | String                         | &check; |         |         |
 | 14. Longest Common Prefix                      | 🟢   | String, Math                   | &check; |         |         |
@@ -20,12 +21,14 @@
 | 24. Swap Nodes in Pairs                        | 🟠   | Linked List                    | &check; |         |         |
 | 26. Remove Duplicates from Sorted Array        | 🟢   | Array, Two Pointers            |         | &check; |         |
 | 27. Remove Element                             | 🟢   | Array, Two Pointers            |         | &check; |         |
+| 42. Trapping Rain Water                        | 🔴   | Two Pointers, Array, DP, Stack | &check; |         |         |
 | 58. Length of Last Word                        | 🟢   | String                         | &check; |         |         |
 | 70. Climbing Stairs                            | 🟢   | Dynamic Programming            | &check; | &check; |         |
 | 88. Merge Sorted Array                         | 🟢   | Array                          | &check; | &check; |         |
 | 94. Binary Tree Inorder Traversal              | 🟢   | Tree, DFS, Stack               | &check; |         |         |
 | 100. Same Tree                                 | 🟢   | Tree                           | &check; |         |         |
 | 121. Best Time to Buy and Sell Stock           | 🟢   | Array, Dynamic Programming     |         |         |         |
+| 125. Valid Palindrome                          | 🟠   | Two Pointers, String           | &check; |         |         |
 | 133. Clone Graph                               | 🟠   | Linked List, HashTable, Graph  | &check; |         |         |
 | 138. Copy List with Random Pointer             | 🟠   | Linked List, HashTable, Graph  | &check; | &check; |         |
 | 141. Linked List Cycle                         | 🟢   | Linked List                    |         | &check; |         |
