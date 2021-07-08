@@ -21,6 +21,7 @@
 | 24. Swap Nodes in Pairs                        | 🟠   | Linked List                    | &check; |         |         |
 | 26. Remove Duplicates from Sorted Array        | 🟢   | Array, Two Pointers            |         | &check; |         |
 | 27. Remove Element                             | 🟢   | Array, Two Pointers            |         | &check; |         |
+| 35. Search Insert Position                     | 🟢   | Array, Binary Search           | &check; |         |         |
 | 42. Trapping Rain Water                        | 🔴   | Two Pointers, Array, DP, Stack | &check; |         |         |
 | 58. Length of Last Word                        | 🟢   | String                         | &check; |         |         |
 | 70. Climbing Stairs                            | 🟢   | Dynamic Programming            | &check; | &check; |         |
