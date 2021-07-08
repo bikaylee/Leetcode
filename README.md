@@ -2,7 +2,7 @@
 
 #### 🟢 Easy : 53
 
-#### 🟠 Medium : 27
+#### 🟠 Medium : 28
 
 #### 🔴 Hard : 1
 
@@ -52,6 +52,7 @@
 | 284. Peeking Iterator                          | 🟠   | Design                         | &check; |         |         |
 | 328. Odd Even Linked List                      | 🟠   | Linked List                    |         | &check; |         |
 | 344. Reverse String                            | 🟢   | Two Pointers, String           | &check; |         |         |
+| 378. Kth Smallest Element in a Sorted Matrix   | 🟠   | Array, Heap, Sort, Matrix      | &check; |         |         |
 | 414. Third Maximum Number                      | 🟢   | Array                          | &check; |         |         |
 | 415. Add Strings                               | 🟢   | String, Math, Simulation       | &check; |         |         |
 | 424. Longest Repeating Character Replacement   | 🟠   | String, Sliding Window         |         | &check; |         |
