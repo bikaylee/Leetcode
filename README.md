@@ -2,7 +2,7 @@
 
 #### 🟢 Easy : 53
 
-#### 🟠 Medium : 26
+#### 🟠 Medium : 27
 
 #### 🔴 Hard : 1
 
@@ -85,6 +85,7 @@
 | 1313. Decompress Run-Length Encoded List       | 🟢   | Array                          |         | &check; |         |
 | 1342. No. of Steps to Reduce a No. to Zero     | 🟢   | Bit Manipulation               | &check; |         |         |
 | 1346. Check If N and its Double Exist          | 🟢   | Array                          |         | &check; |         |
+| 1338. Reduce Array Size to The Half            | 🟠   | Array, Hash, Sort, Heap        | &check; |         |         |
 | 1474. Delete N Nodes After M Nodes of LL       | 🟢   | Linked List                    | &check; |         |         |
 | 1710. Maximum Units on a Truck                 | 🟢   | Greedy, Sort                   | &check; |         |         |
 | 1721. Swapping Nodes in a Linked List          | 🟢   | Linked List                    | &check; |         |         |
