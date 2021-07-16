@@ -1,8 +1,8 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 53
+#### 🟢 Easy : 54
 
-#### 🟠 Medium : 29
+#### 🟠 Medium : 32
 
 #### 🔴 Hard : 1
 
@@ -47,6 +47,7 @@
 | 209. Minimum Size Subarray Sum                 | 🟠   | Array                          |         | &check; |         |
 | 234. Palindrome Linked List                    | 🟢   | Linked List, Two Pointers      | &check; | &check; |         |
 | 240. Search a 2D Matrix II                     | 🟠   | Dynamic Programming            | &check; |         |         |
+| 242. Valid Anagram                             | 🟢   | Hash, String, Sort             | &check; |         |         |
 | 268. Missing Number                            | 🟢   | Array, Math, Bit Manipulation  | &check; |         |         |
 | 276. Paint Fence                               | 🟠   | Dynamic Programming            | &check; |         |         |
 | 278. First Bad Version                         | 🟢   | Binary Search                  | &check; |         |         |
@@ -59,6 +60,7 @@
 | 415. Add Strings                               | 🟢   | String, Math, Simulation       | &check; |         |         |
 | 424. Longest Repeating Character Replacement   | 🟠   | String, Sliding Window         |         | &check; |         |
 | 430. Flatten a Multilevel Doubly Linked List   | 🟠   | Linked List, Stack, Recursion  |         | &check; |         |
+| 438. Find All Anagrams in a String             | 🟠   | Hash, String, Sliding Window   | &check; |         |         |
 | 445. Add Two Numbers II                        | 🟠   | Linked List                    | &check; |         |         |
 | 448. Find All Numbers Disappeared in an Array  | 🟢   | Array                          |         | &check; |         |
 | 485. Max Consecutive Ones                      | 🟢   | Array                          | &check; | &check; |         |
@@ -88,6 +90,7 @@
 | 1313. Decompress Run-Length Encoded List       | 🟢   | Array                          |         | &check; |         |
 | 1342. No. of Steps to Reduce a No. to Zero     | 🟢   | Bit Manipulation               | &check; |         |         |
 | 1346. Check If N and its Double Exist          | 🟢   | Array                          |         | &check; |         |
+| 1347. Minimum Steps to Make Two Str Anagram    | 🟠   | String, Hash                   | &check; |         |         |
 | 1338. Reduce Array Size to The Half            | 🟠   | Array, Hash, Sort, Heap        | &check; |         |         |
 | 1474. Delete N Nodes After M Nodes of LL       | 🟢   | Linked List                    | &check; |         |         |
 | 1710. Maximum Units on a Truck                 | 🟢   | Greedy, Sort                   | &check; |         |         |
