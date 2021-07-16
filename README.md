@@ -21,6 +21,7 @@
 | 24. Swap Nodes in Pairs                        | 🟠   | Linked List                    | &check; |         |         |
 | 26. Remove Duplicates from Sorted Array        | 🟢   | Array, Two Pointers            |         | &check; |         |
 | 27. Remove Element                             | 🟢   | Array, Two Pointers            |         | &check; |         |
+| 33. Search in Rotated Sorted Array             | 🟠   | Array,Binary Search            | &check; |         |         |
 | 34. Find 1st and Last Pos in Sorted Array      | 🟠   | Array,Binary Search            | &check; |         |         |
 | 35. Search Insert Position                     | 🟢   | Array, Binary Search           | &check; |         |         |
 | 42. Trapping Rain Water                        | 🔴   | Two Pointers, Array, DP, Stack | &check; |         |         |
