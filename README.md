@@ -2,7 +2,7 @@
 
 #### 🟢 Easy : 54
 
-#### 🟠 Medium : 32
+#### 🟠 Medium : 33
 
 #### 🔴 Hard : 1
 
@@ -71,11 +71,13 @@
 | 645. Set Mismatch                              | 🟢   | Hash Table, Math               | &check; |         |         |
 | 707. Design Linked List                        | 🟠   | Linked List                    | &check; | &check; |         |
 | 717. 1-bit and 2-bit Characters                | 🟢   | Array, Bit                     |         | &check; |         |
+| 735. Asteroid Collision                        | 🟠   | Array, Stack                   | &check; |         |         |
 | 783. Minimum Distance Between BST Nodes        | 🟢   | Tree, Recursion                |         | &check; |         |
 | 821. Shortest Distance to a Character          | 🟢   | Array                          | &check; | &check; |         |
 | 841. Keys and Rooms                            | 🟠   | DFS, Graph                     | &check; |         |         |
 | 856. Score of Parentheses                      | 🟠   | String, Stack                  | &check; |         |         |
 | 876. Middle of the Linked List                 | 🟢   | Linked List                    |         | &check; |         |
+| 908. Smallest Range I                          | 🟢   | Array, Math                    | &check; |         |         |
 | 929. Unique Email Addresses                    | 🟢   | String                         | &check; |         |         |
 | 938. Range Sum of BST                          | 🟢   | Tree, BFS, DFS                 |         | &check; |         |
 | 953. Verifying an Alien Dictionary             | 🟢   | String, Array, Hash Table      | &check; |         |         |
