@@ -1,6 +1,7 @@
-// 237. Delete Node in a Linked List
 
 /**
+ * 237. Delete Node in a Linked List
+ * 
  * Week 1: Linked List - Problem 1 Warm Up
  * 
  * Given node is the one to be deleted
