@@ -49,6 +49,7 @@
 | 209. Minimum Size Subarray Sum                 | 🟠   | Array                             |         | &check; |         |
 | 231. Power of Two                              | 🟢   | Math, Bit Manipulation, Recursion | &check; |         |         |
 | 234. Palindrome Linked List                    | 🟢   | Linked List, Two Pointers         | &check; | &check; |         |
+| 237. Delete Node in a Linked List              | 🟢   | Linked List                       | &check; |         |         |
 | 240. Search a 2D Matrix II                     | 🟠   | Dynamic Programming               | &check; |         |         |
 | 242. Valid Anagram                             | 🟢   | Hash, String, Sort                | &check; |         |         |
 | 268. Missing Number                            | 🟢   | Array, Math, Bit Manipulation     | &check; |         |         |
