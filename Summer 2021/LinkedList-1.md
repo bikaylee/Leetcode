@@ -2,7 +2,7 @@ July 22, 2021
 
 ## Week 1 - Warm Up - Linked List
 
-<br><br>
+<br>
 
 ### 237. Delete Node in a Linked List
 
@@ -16,22 +16,22 @@ Output: 4 -> 1 -> 9
 Time: O(n), n is the number of nodes from given til the end of the list <br>
 Space: O(1)
 
-- Iterate the remaining list and replace its value with the next and let the node before the original to point to null
+- Iterate the remaining list and replace its value with the next and let the node before the original tail node and have it points to null.
 
-```java
-    public void deleteNode(ListNode node) {
-        ListNode tail = node;
+  ```java
+      public void deleteNode(ListNode node) {
+          ListNode tail = node;
 
-        while(node.next != null) {
-            int nextVal = node.next.val;
-            node.val = nextVal;
-            tail = node;
-            node = node.next;
-        }
+          while(node.next != null) {
+              int nextVal = node.next.val;
+              node.val = nextVal;
+              tail = node;
+              node = node.next;
+          }
 
-        tail.next = null;
-    }
-```
+          tail.next = null;
+      }
+  ```
 
 #### Approach 2:
 
@@ -40,9 +40,9 @@ Space: O(1)
 
 - Since we don't have access to the head of the list, we can replace the current node value with the value of the next node and remove that node from the list.
 
-```java
-public void deleteNode(ListNode node) {
-    node.val = node.next.val;
-    node.next = node.next.next;
-}
-```
+  ```java
+      public void deleteNode(ListNode node) {
+          node.val = node.next.val;
+          node.next = node.next.next;
+      }
+  ```
