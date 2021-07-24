@@ -19,16 +19,16 @@ Output: 4 -> 1 -> 9
   // Time: O(n), n is the number of nodes from given til the end of the list
   // Space: O(1)
   public void deleteNode(ListNode node) {
-  ListNode tail = node;
+    ListNode tail = node;
 
-  while(node.next != null) {
-      int nextVal = node.next.val;
-      node.val = nextVal;
-      tail = node;
-      node = node.next;
-  }
+    while(node.next != null) {
+        int nextVal = node.next.val;
+        node.val = nextVal;
+        tail = node;
+        node = node.next;
+    }
 
-  tail.next = null;
+    tail.next = null;
   }
   ```
 
@@ -191,22 +191,22 @@ Output: 1 -> 3 -> 5 -> 2 -> 4
   // Time: O(n)
   // Space: O(1)
   public ListNode oddEvenList(ListNode head) {
-  if(head == null) return head;
+    if(head == null) return head;
 
-  ListNode oddPointer = head;
-  ListNode evenPointer = head.next;
+    ListNode oddPointer = head;
+    ListNode evenPointer = head.next;
 
-  ListNode even = head.next;
+    ListNode even = head.next;
 
-  while(evenPointer != null && evenPointer.next != null) {
-      oddPointer.next = evenPointer.next;
-      oddPointer = oddPointer.next;
-      evenPointer.next = oddPointer.next;
-      evenPointer = evenPointer.next;
-  }
+    while(evenPointer != null && evenPointer.next != null) {
+        oddPointer.next = evenPointer.next;
+        oddPointer = oddPointer.next;
+        evenPointer.next = oddPointer.next;
+        evenPointer = evenPointer.next;
+    }
 
-  oddPointer.next = even;
+    oddPointer.next = even;
 
-  return head;
+    return head;
   }
   ```
