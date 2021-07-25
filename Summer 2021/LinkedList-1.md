@@ -143,7 +143,7 @@ Given two **non-empty** linked lists representing two **non-negative** integers.
 Input: 2 -> 4 -> 3 (342), 5 -> 6 -> 4 (465) <br>
 Output: 7 -> 0 -> 8 (807)
 
-##### Approach: (Elementary Math)
+#### Approach: (Elementary Math)
 
 - Since the order is reversed, start from the single digit with a carry all the way to the rightmost node.
 
