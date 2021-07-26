@@ -17,7 +17,7 @@
 | 14. Longest Common Prefix                      | 🟢   | String, Math                      | &check; |         |         |
 | 17. Letter Combinations of a Phone Number      | 🟠   | String, HashTable, Backtrack      | &check; |         |         |
 | 20. Valid Parenthesis                          | 🟢   | String, Stack                     | &check; | &check; |         |
-| 21. Merge Two Sorted Lists                     | 🟢   | Linked List                       |         | &check; |         |
+| 21. Merge Two Sorted Lists                     | 🟢   | Linked List                       | &check; | &check; |         |
 | 24. Swap Nodes in Pairs                        | 🟠   | Linked List                       | &check; |         |         |
 | 26. Remove Duplicates from Sorted Array        | 🟢   | Array, Two Pointers               |         | &check; |         |
 | 27. Remove Element                             | 🟢   | Array, Two Pointers               |         | &check; |         |

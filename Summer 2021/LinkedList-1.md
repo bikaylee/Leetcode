@@ -2,13 +2,11 @@ July 22, 2021
 
 ## Week 1 - Warm Up - Linked List
 
-<br>
-
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
 Given that the node to be deleted is guaranteed not the **tail** node. Instead of given access to the head of the list, the node to be deleted is given directly.
 
-Input: 4 -> 5 -> 1 -> 9 <br>
+Input: 4 -> 5 -> 1 -> 9  
 Output: 4 -> 1 -> 9
 
 #### Approach 1:
@@ -45,11 +43,13 @@ Output: 4 -> 1 -> 9
   }
   ```
 
+---
+
 ### [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
 Given the **head** of a singly linked list, reverse the list, and return the reversed list.
 
-Input: 1 -> 2 -> 3 -> 4 <br>
+Input: 1 -> 2 -> 3 -> 4  
 Output: 4 -> 3 -> 2 -> 1
 
 #### Approach:
@@ -75,12 +75,14 @@ Output: 4 -> 3 -> 2 -> 1
   }
   ```
 
+---
+
 ### [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
-Input: head = \[3,2,0,-4], -4 points to 2 <br>
-Output: true <br>
+Input: head = \[3,2,0,-4], -4 points to 2  
+Output: true  
 Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
 
 #### Approach 1: (Hash Table)
@@ -136,11 +138,13 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
   }
   ```
 
+---
+
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
 Given two **non-empty** linked lists representing two **non-negative** integers. Digits are in **reversed order.** Do not contain any leading zero, except number 0 itself.
 
-Input: 2 -> 4 -> 3 (342), 5 -> 6 -> 4 (465) <br>
+Input: 2 -> 4 -> 3 (342), 5 -> 6 -> 4 (465)  
 Output: 7 -> 0 -> 8 (807)
 
 #### Approach: (Elementary Math)
@@ -176,11 +180,13 @@ Output: 7 -> 0 -> 8 (807)
   }
   ```
 
+---
+
 ### [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 
 First node is considered **odd** and second node is **even**.
 
-Input: 1 -> 2 -> 3 -> 4 -> 5 <br>
+Input: 1 -> 2 -> 3 -> 4 -> 5  
 Output: 1 -> 3 -> 5 -> 2 -> 4
 
 #### Approach:

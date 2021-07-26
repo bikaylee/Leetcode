@@ -4,28 +4,128 @@
 
 ### [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
-### [](https://leetcode.com/problems/rotate-list/)
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+
+Input: 1 -> 2 -> 3 -> 4  
+Output: 2 -> 1 -> 4 -> 3
+
+#### Approach:
+
+- Dealing with two nodes at a time, keep track of a first and second pointer and also a prev pointer to link every pairs  
+  <img src="LinkedList-2-24.jpeg" alt="approach 24" width="600" >
+
+```java
+// Time: O(n)
+// Space: O(1)
+public ListNode swapPairs(ListNode head) {
+    ListNode res = new ListNode(0); // for returning the new head
+    res.next = head;
+    ListNode prev = res;
+
+    while (head != null && head.next != null) {
+
+        ListNode first = head;
+        ListNode second = head.next;
+
+        prev.next = second;
+        first.next = second.next;
+        second.next = first;
+
+        prev = first;
+        head = first.next;
+    }
+    return res.next;
+}
+```
+
+### [61. Rotate List](https://leetcode.com/problems/rotate-list/)
+
+Given the head of a linked list, rotate the list to the right by **k** places.
+
+Input: 1 -> 2 -> 3 -> 4 -> 5, k = 2  
+Output: 4 -> 5 -> 1 -> 2 -> 3
+
+Input: 0 -> 1 -> 2, k = 4  
+Output: 2 -> 0 -> 1
+
+#### Approach:
+
+- Based on the examples, it's uncessary to perform actual rotations to the list which would result in **k\*n** iterations.
+- Thus, simply use n - number of nodes and k - number of iterations to calculate where to split the list and link two partitioned lists together.
+
+  - Intuition:
+
+  1. n == k or k%n == 0: no rotation needed, return original
+  2. n < k: n - (k%n)
+  3. n > k: n - k
+
+  These three cases can be combined as `n-(k%n)`, but keep the first case to avoid unncessary iterations of the list.
+
+  ```java
+  // Time: O(n), exact = O(n + (k%n))
+  // Space: O(1)
+  public ListNode rotateRight(ListNode head, int k) {
+      // If n <= 1, then NO Rotation needed
+      if(head == null || head.next == null) return head;
+
+      ListNode curr = head;
+      int n = 1;
+
+      // keep track of the tail node for later linking to the head
+      while (curr.next != null) {
+          n++;
+          curr = curr.next;
+      }
+
+      // If k%n == 0, then NO Rotation needed
+      if (k%n != 0) {
+          n -= k%n; // gives the location of partition
+
+          ListNode tail = curr;
+          curr = head;
+
+          // leaves one node before in order to do linking
+          while (n > 1) {
+              n--;
+              curr = curr.next;
+          }
+
+          tail.next = head; // links the tail and head, now it creates a cycle
+          head = curr.next; // mark the head of the new rotated list
+          curr.next = null; // now, break the cycle by assigning the new tail node to point at null
+      }
+      return head;
+  }
+  ```
 
 ### [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
-```java
-public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-    ListNode head = new ListNode();
-    ListNode curr = head;
+Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
 
-    while (l1 != null && l2 != null) {
-        if (l1.val < l2.val) {
-            curr.next = l1;
-            l1 = l1.next;
-        } else {
-            curr.next = l2;
-            l2 = l2.next;
-        }
-        curr = curr.next;
-    }
+#### Approach:
 
-    curr.next = l1 != null ? l1:l2;
+- Use a new head, iterate two list and compare two nodes at a time. Have the new head link to the smallest node. Lastly, when either one list gets to the tail, the assumption is made that the non-empty list is the final part of a merged list, so we can link the rest by having the current node's next pointer pointing to the head of the non-empty list.
 
-    return head.next;
-}
-```
+  ```java
+  // Time: O(n)
+  // Space: O(1)
+  public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+      ListNode head = new ListNode();
+      ListNode curr = head;
+
+      while (l1 != null && l2 != null) {
+          if (l1.val < l2.val) {
+              curr.next = l1;
+              l1 = l1.next;
+          } else {
+              curr.next = l2;
+              l2 = l2.next;
+          }
+          curr = curr.next;
+      }
+
+      curr.next = l1 != null ? l1:l2;
+
+      return head.next;
+  }
+  ```
