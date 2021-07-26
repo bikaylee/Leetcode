@@ -1,3 +1,5 @@
+July 26, 2021
+
 ## Week 2 - Linked List
 
 <br>
@@ -37,6 +39,8 @@ public ListNode swapPairs(ListNode head) {
     return res.next;
 }
 ```
+
+<br>
 
 ### [61. Rotate List](https://leetcode.com/problems/rotate-list/)
 
@@ -98,6 +102,8 @@ Output: 2 -> 0 -> 1
   }
   ```
 
+<br>
+
 ### [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
 Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
@@ -129,3 +135,5 @@ Merge two sorted linked lists and return it as a sorted list. The list should be
       return head.next;
   }
   ```
+
+<br>

@@ -2,6 +2,8 @@ July 22, 2021
 
 ## Week 1 - Warm Up - Linked List
 
+<br>
+
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
 Given that the node to be deleted is guaranteed not the **tail** node. Instead of given access to the head of the list, the node to be deleted is given directly.
@@ -43,7 +45,7 @@ Output: 4 -> 1 -> 9
   }
   ```
 
----
+<br>
 
 ### [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
@@ -75,7 +77,7 @@ Output: 4 -> 3 -> 2 -> 1
   }
   ```
 
----
+<br>
 
 ### [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
@@ -138,7 +140,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
   }
   ```
 
----
+<br>
 
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
@@ -180,7 +182,7 @@ Output: 7 -> 0 -> 8 (807)
   }
   ```
 
----
+<br>
 
 ### [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 
