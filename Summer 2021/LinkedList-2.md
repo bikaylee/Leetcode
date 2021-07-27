@@ -202,8 +202,6 @@ Given an array, rotate the array to the right by `k` steps, where `k` is non-neg
 Input: nums = [1,2,3,4,5,6,7], k = 3  
 Output: [5,6,7,1,2,3,4]
 
-<br>
-
 #### Approach 1: (Extra Memory)
 
 - Copy origin array to an extra array to memorize. Calculate the index of the rotated leftmost element and perform the parition by copying from the memorized array.
@@ -228,6 +226,7 @@ Output: [5,6,7,1,2,3,4]
       }
   ```
 
+<br>
 <br>
 
 ## Tuesday
