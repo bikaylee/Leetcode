@@ -1,6 +1,6 @@
 July 26, 2021
 
-## Week 2 - Linked List
+### Week 1 - Linked List
 
 <br>
 

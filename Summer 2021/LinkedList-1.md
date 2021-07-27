@@ -1,8 +1,10 @@
 July 22, 2021
 
-## Week 1 - Warm Up - Linked List
+### Week 0 - Warm Up - Linked List
 
 <br>
+
+## Friday
 
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
