@@ -148,7 +148,7 @@ Input: a1 -> a2 -> c1 -> c2 -> c3
  b1 -> b2 -> b3 -> c1 -> c2 -> c3  
 Output: c1, intersection happens after c1
 
-### Approach 1:
+#### Approach 1:
 
 - Use a hash table to store all nodes of one list and check each node of second list. If there is a intersection, it must already in the hash table.
 
@@ -175,7 +175,7 @@ Output: c1, intersection happens after c1
   }
   ```
 
-### Approach 2:
+#### Approach 2:
 
 1. same length lists, either has intersection node or not such that list has `x` nodes. Then, listA has to skip `m-x` nodes and listB has to skip `n-x` nodes. Thus, `m-x = n-x when m=n` and only `n iteration` needed.
 2. different length list, for two pointers to meet, more passes is needed when two same speed pointers meet.
