@@ -8,8 +8,8 @@ July 22, 2021
 
 Given that the node to be deleted is guaranteed not the **tail** node. Instead of given access to the head of the list, the node to be deleted is given directly.
 
-Input: 4 -> 5 -> 1 -> 9  
-Output: 4 -> 1 -> 9
+Input: `4 -> 5 -> 1 -> 9`  
+Output: `4 -> 1 -> 9`
 
 #### Approach 1:
 
@@ -51,8 +51,8 @@ Output: 4 -> 1 -> 9
 
 Given the **head** of a singly linked list, reverse the list, and return the reversed list.
 
-Input: 1 -> 2 -> 3 -> 4  
-Output: 4 -> 3 -> 2 -> 1
+Input: `1 -> 2 -> 3 -> 4`  
+Output: `4 -> 3 -> 2 -> 1`
 
 #### Approach:
 
@@ -83,7 +83,7 @@ Output: 4 -> 3 -> 2 -> 1
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
-Input: head = \[3,2,0,-4], -4 points to 2  
+Input: head = `[3,2,0,-4]`, -4 points to 2  
 Output: true  
 Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
 
@@ -120,7 +120,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
   // Time: O(n)
   //      1. O(n) = No cycle: the slow pointer will meet the fast pointer at end of the list
   //      2. O(N+K) which is O(n)= Has cycle: for the faster pointer to catch up with the slow pointer,
-  //          it requires extra **K** cyclic length to meetup.
+  //          it requires extra `K` cyclic length to meetup.
   // Space: O(1)
   public boolean hasCycle(ListNode head) {
       if (head == null) {
@@ -146,8 +146,8 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 
 Given two **non-empty** linked lists representing two **non-negative** integers. Digits are in **reversed order.** Do not contain any leading zero, except number 0 itself.
 
-Input: 2 -> 4 -> 3 (342), 5 -> 6 -> 4 (465)  
-Output: 7 -> 0 -> 8 (807)
+Input: `2 -> 4 -> 3` (342), `5 -> 6 -> 4` (465)  
+Output: `7 -> 0 -> 8` (807)
 
 #### Approach: (Elementary Math)
 
@@ -188,8 +188,8 @@ Output: 7 -> 0 -> 8 (807)
 
 First node is considered **odd** and second node is **even**.
 
-Input: 1 -> 2 -> 3 -> 4 -> 5  
-Output: 1 -> 3 -> 5 -> 2 -> 4
+Input: `1 -> 2 -> 3 -> 4 -> 5`  
+Output: `1 -> 3 -> 5 -> 2 -> 4`
 
 #### Approach:
 

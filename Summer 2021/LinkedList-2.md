@@ -46,7 +46,7 @@ public ListNode swapPairs(ListNode head) {
 
 ### [61. Rotate List](https://leetcode.com/problems/rotate-list/)
 
-Given the head of a linked list, rotate the list to the right by **k** places.
+Given the head of a linked list, rotate the list to the right by `k` places.
 
 Input: 1 -> 2 -> 3 -> 4 -> 5, k = 2  
 Output: 4 -> 5 -> 1 -> 2 -> 3
@@ -56,14 +56,14 @@ Output: 2 -> 0 -> 1
 
 #### Approach:
 
-- Based on the examples, it's uncessary to perform actual rotations to the list which would result in **k\*n** iterations.
+- Based on the examples, it's uncessary to perform actual rotations to the list which would result in `k*n` iterations.
 - Thus, simply use n - number of nodes and k - number of iterations to calculate where to split the list and link two partitioned lists together.
 
   - Intuition:
 
-  1. n == k or k%n == 0: no rotation needed, return original
-  2. n < k: n - (k%n)
-  3. n > k: n - k
+  1. `n == k` or `k%n == 0`: no rotation needed, return original
+  2. `n < k`: `n - (k%n)`
+  3. `n > k`: `n - k`
 
   These three cases can be combined as `n-(k%n)`, but keep the first case to avoid unncessary iterations of the list.
 
@@ -108,7 +108,7 @@ Output: 2 -> 0 -> 1
 
 ### [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
-Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
+Merge two sorted linked lists and return it as a `sorted list`. The list should be made by splicing together the nodes of the first two lists.
 
 #### Approach:
 
@@ -204,27 +204,54 @@ Output: [5,6,7,1,2,3,4]
 
 #### Approach 1: (Extra Memory)
 
-- Copy origin array to an extra array to memorize. Calculate the index of the rotated leftmost element and perform the parition by copying from the memorized array.
+- Copy original array to an extra array to memorize. Calculate the index of the rotated leftmost element and perform the parition by copying from the memorized array.
 
   ```java
   // Time: O(n) one pass iteration of overwriting the rotated array
   // Space: O(n) to store the original array
   public void rotate(int[] nums, int k) {
-          int n = nums.length;
-
-          if(k%n != 0)  {
-              int [] ans = nums.clone();
-              int x = n-(k%n) +1;
-
-              for (int i = 0, j = x-1; i < n; i++, j++) {
-                  if(j < n)
-                      nums[i] = ans[j];
-                  else
-                      nums[i] = ans[j-n];
-              }
-          }
-      }
+        int n = nums.length;
+        if(k%n != 0)  {
+            int [] ans = nums.clone();
+            for (int i = 0, j = n-(k%n); i < n; i++, j++)
+                nums[i] = ans[j < n ? j:j-n];
+        }
+    }
   ```
+
+#### Approach 2: (Reverse Array)
+
+- Reverse the whole array first, parition the reversed array by `k` and reversed each subarray.
+
+  ```java
+  // Time: O(n), one pass to reverse entire array and another pass to reverse two subarray
+  // Space: O(1), in place
+  public void rotate(int[] nums, int k) {
+      int n = nums.length;
+      k %= n;
+      if(k != 0)  {
+          reverse(nums, 0, n-1);
+          reverse(nums, 0, k-1);
+          reverse(nums, k, n-1);
+      }
+  }
+
+  public void reverse(int[] nums, int start, int end) {
+      while (start < end) {
+          int temp = nums[end];
+          nums[end] = nums[start];
+          nums[start] = temp;
+
+          start++;
+          end--;
+      }
+  }
+  ```
+
+#### Approach 3: Using Cyclic Replacements
+
+- Cyclic Replacements  
+  <img src="img/LinkedList-2-189.png" alt="approach 189" width="400" >
 
 <br>
 <br>
