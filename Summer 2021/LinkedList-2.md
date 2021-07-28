@@ -4,17 +4,17 @@ July 26, 2021
 
 | No. | Problems                                                                      | Diff | Day | Previous | Finished |
 | --- | ----------------------------------------------------------------------------- | ---- | --- | -------- | -------- |
-| 1   | [24. Swap Nodes in Pairs](24-Swap-Nodes-in-Pairs)                             | 🟠   | Mon | &check;  | &check;  |
-| 2   | [61. Rotate List](61-Rotate-List)                                             | 🟠   | Mon |          | &check;  |
-| 3   | [160. Intersection of Two Linked Lists](160-Intersection-of-Two-Linked-Lists) | 🟢   | Mon | &check;  | &check;  |
-| 4   | [2. Add Two Numbers](2-Add-Two-Numbers)                                       | 🟢   | Mon | &check;  | &check;  |
-| 5   | [189. Rotate Array](189-Rotate-Array)                                         | 🟠   | Mon |          | &check;  |
+| 1   | [24. Swap Nodes in Pairs](24-swap-nodes-in-pairs)                             | 🟠   | Mon | &check;  | &check;  |
+| 2   | [61. Rotate List](61-rotate-list)                                             | 🟠   | Mon |          | &check;  |
+| 3   | [21. Merge Two Sorted Lists](21-merge-two-sorted-lists)                       | 🟢   | Mon | &check;  | &check;  |
+| 4   | [160. Intersection of Two Linked Lists](160-intersection-of-two-linked-lists) | 🟢   | Mon | &check;  | &check;  |
+| 5   | [189. Rotate Array](189-rotate-array)                                         | 🟠   | Mon |          | &check;  |
 |     |                                                                               |      |     |          |          |
-| 1   | [445. Add Two Numbers II](445-Add-Two-Numbers-II)                             | 🟠   | Tue | &check;  | &check;  |
-| 2   | [138. Copy List with Random Pointer](138-Copy-List-with-Random-Pointer)       | 🟠   | Tue | &check;  | &check;  |
-| 3   | [15. 3Sum](15-3Sum)                                                           | 🟠   | Tue |          |          |
-| 4   | [287. Find Duplicate Number](287-Find-Duplicate-Number)                       | 🟠   | Tue |          |          |
-| 5   | [142. Linked List Cycle II](142-Linked-List-Cycle-II)                         | 🟠   | Tue |          |          |
+| 1   | [445. Add Two Numbers II](445-add-two-numbers-ii)                             | 🟠   | Tue | &check;  | &check;  |
+| 2   | [138. Copy List with Random Pointer](138-copy-list-with-random-pointer)       | 🟠   | Tue | &check;  | &check;  |
+| 3   | [15. 3Sum](15-3sum)                                                           | 🟠   | Tue |          |          |
+| 4   | [287. Find Duplicate Number](287-find-duplicate-number)                       | 🟠   | Tue |          |          |
+| 5   | [142. Linked List Cycle II](142-linked-list-cycle-ii)                         | 🟠   | Tue |          |          |
 
 <br>
 
