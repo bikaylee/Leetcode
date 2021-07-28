@@ -1,6 +1,6 @@
 // 328. Odd Even Linked List
 
-public class 328 {
+class 328 {
     /**
      * Separate into two list, one storing odds and another stores the evens. Keep an extra point to remember the head of the even list. 
      * Lastly, have the tail node of odd list to point to the head of even list.

@@ -7,6 +7,40 @@
  */
 
 class Solution {
+    public ListNode addTwoNumbersReversed(ListNode l1, ListNode l2) {
+        l1 = reverse(l1);
+        l2 = reverse(l2);
+
+        ListNode sum = null;
+        int carry = 0;
+
+        while (l1 != null || l2 != null) {
+            int n = 0, m = 0;
+            if (l1 != null) {
+                n = l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                m = l2.val;
+                l2 = l2.next;
+            }
+            sum = new ListNode((n + m + carry) % 10, sum);
+            carry = (n + m + carry) / 10;
+        }
+        return carry == 1 ? new ListNode(carry, sum) : sum;
+    }
+
+    private ListNode reverse(ListNode head) {
+        ListNode next = null;
+        while (head != null) {
+            ListNode prev = head.next;
+            head.next = next;
+            next = head;
+            head = prev;
+        }
+        return next;
+    }
+
     public ListNode addTwoNumbersNew(ListNode l1, ListNode l2) {
         Stack<Integer> s1 = new Stack();
         Stack<Integer> s2 = new Stack();

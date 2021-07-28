@@ -2,6 +2,20 @@ July 26, 2021
 
 ### Week 1 - Linked List
 
+| No. | Problems                                                                      | Diff | Day | Previous | Finished |
+| --- | ----------------------------------------------------------------------------- | ---- | --- | -------- | -------- |
+| 1   | [24. Swap Nodes in Pairs](24-Swap-Nodes-in-Pairs)                             | 🟠   | Mon | &check;  | &check;  |
+| 2   | [61. Rotate List](61-Rotate-List)                                             | 🟠   | Mon |          | &check;  |
+| 3   | [160. Intersection of Two Linked Lists](160-Intersection-of-Two-Linked-Lists) | 🟢   | Mon | &check;  | &check;  |
+| 4   | [2. Add Two Numbers](2-Add-Two-Numbers)                                       | 🟢   | Mon | &check;  | &check;  |
+| 5   | [189. Rotate Array](189-Rotate-Array)                                         | 🟠   | Mon |          | &check;  |
+|     |                                                                               |      |     |          |          |
+| 1   | [445. Add Two Numbers II](445-Add-Two-Numbers-II)                             | 🟠   | Tue | &check;  | &check;  |
+| 2   | [138. Copy List with Random Pointer](138-Copy-List-with-Random-Pointer)       | 🟠   | Tue | &check;  | &check;  |
+| 3   | [15. 3Sum](15-3Sum)                                                           | 🟠   | Tue |          |          |
+| 4   | [287. Find Duplicate Number](287-Find-Duplicate-Number)                       | 🟠   | Tue |          |          |
+| 5   | [142. Linked List Cycle II](142-Linked-List-Cycle-II)                         | 🟠   | Tue |          |          |
+
 <br>
 
 ## Monday
@@ -10,8 +24,8 @@ July 26, 2021
 
 Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
-Input: 1 -> 2 -> 3 -> 4  
-Output: 2 -> 1 -> 4 -> 3
+Input: `1 -> 2 -> 3 -> 4`  
+Output: `2 -> 1 -> 4 -> 3`
 
 #### Approach:
 
@@ -48,11 +62,11 @@ public ListNode swapPairs(ListNode head) {
 
 Given the head of a linked list, rotate the list to the right by `k` places.
 
-Input: 1 -> 2 -> 3 -> 4 -> 5, k = 2  
-Output: 4 -> 5 -> 1 -> 2 -> 3
+Input: `1 -> 2 -> 3 -> 4 -> 5`, `k = 2`  
+Output: `4 -> 5 -> 1 -> 2 -> 3`
 
-Input: 0 -> 1 -> 2, k = 4  
-Output: 2 -> 0 -> 1
+Input: `0 -> 1 -> 2`, `k = 4`  
+Output: `2 -> 0 -> 1`
 
 #### Approach:
 
@@ -144,8 +158,8 @@ Merge two sorted linked lists and return it as a `sorted list`. The list should 
 
 Given the heads of two singly linked-lists `headA` and `headB`, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return `null`.
 
-Input: a1 -> a2 -> c1 -> c2 -> c3  
- b1 -> b2 -> b3 -> c1 -> c2 -> c3  
+Input: `a1 -> a2 -> c1 -> c2 -> c3`  
+ `b1 -> b2 -> b3 -> c1 -> c2 -> c3`  
 Output: c1, intersection happens after c1
 
 #### Approach 1:
@@ -199,8 +213,8 @@ public ListNode getIntersectionNodeTwoPointer(ListNode headA, ListNode headB) {
 
 Given an array, rotate the array to the right by `k` steps, where `k` is non-negative.
 
-Input: nums = [1,2,3,4,5,6,7], k = 3  
-Output: [5,6,7,1,2,3,4]
+Input: `nums = [1,2,3,4,5,6,7]`, `k = 3`  
+Output: `[5,6,7,1,2,3,4]`
 
 #### Approach 1: (Extra Memory)
 
@@ -260,52 +274,111 @@ Output: [5,6,7,1,2,3,4]
 
 ### [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)
 
-```java
-public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    l1 = reverse(l1);
-    l2 = reverse(l2);
+Input: `7 -> 2 -> 4 -> 3` (7243)  
+ `5 -> 6 -> 4` (564)  
+Output: `4 -> 5 -> 1 -> 2 -> 3` (7807)
 
-    ListNode sum = new ListNode();
-    ListNode curr = sum;
-    int carry = 0;
+#### Approach: (Reverse List)
 
-    while (l1 != null || l2 != null) {
-        int n = 0, m = 0;
+- Similar to [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) and [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/).
+- Different than **Add Two Numbers**, the ordering is reversed with the largest digits in front. We can still treat the problem like `No.2` with list reversed.
 
-        if (l1 != null) {
-            n = l1.val;
-            l1 = l1.next;
+  ```java
+    // Time: O(n+m), one pass for each list, l1, l2 to reverse, and one pass of max(m,n) to to addition
+    // Space: O(1),
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        l1 = reverse(l1);
+        l2 = reverse(l2);
+
+        ListNode sum = null;
+        int carry = 0;
+
+        while (l1 != null || l2 != null) {
+            int n = 0, m = 0;
+
+            if (l1 != null) {
+                n = l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                m = l2.val;
+                l2 = l2.next;
+            }
+
+            sum = new ListNode((n+m+carry)%10, sum);
+            carry = (n+m+carry)/10;
         }
 
-        if (l2 != null) {
-            m = l2.val;
-            l2 = l2.next;
+        return carry == 1? new ListNode(carry, sum):sum;
+    }
+
+    private ListNode reverse(ListNode head) {
+        ListNode next = null;
+
+        while (head != null) {
+            ListNode prev = head.next;
+            head.next = next;
+            next = head;
+            head = prev;
         }
 
-        curr.next = new ListNode((n+m+carry)%10);
-        curr = curr.next;
-
-        carry = (n+m+carry)/10;
+        return next;
     }
+  ```
 
-    if (carry == 1)
-        curr.next = new ListNode(carry);
+<br>
 
-    return reverse(sum.next);
-}
+### [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 
-private ListNode reverse(ListNode head) {
+Construct a deep copy of the list.
 
-    ListNode curr = head;
-    ListNode next = null;
+<img src="img/LinkedList-2-138.png" alt="example 138" width="700" >
 
-    while (curr != null) {
-        ListNode prev = curr.next;
-        curr.next = next;
-        next = curr;
-        curr = prev;
-    }
+Input: head = `[[7,null],[13,0],[11,4],[10,2],[1,0]]`  
+Output: `[[7,null],[13,0],[11,4],[10,2],[1,0]]`
 
-    return next;
-}
-```
+#### Approach:
+
+- Copy the list in the respect to the next pointer of each node. Use hashmap to store corresponding node from the two lists for linking the random pointer. Iterate again to identify the random pointer node.
+
+  ```java
+  // Time: O(n)
+  // Space: O(n), use hashmap to store each node in the original list
+  public Node copyRandomList(Node head) {
+      HashMap<Node, Node> visited = new HashMap<>();
+
+      Node copied = new Node(-1);
+      Node p = copied, curr = head;
+
+      while (curr != null) {
+          p.next = new Node(curr.val);
+          p = p.next;
+          visited.put(curr, p);
+          curr = curr.next;
+      }
+
+      curr = head;
+      p = copied.next;
+      while (curr != null) {
+          p.random = visited.get(curr.random);
+          curr = curr.next;
+          p = p.next;
+      }
+
+      return copied.next;
+  }
+  ```
+
+<br>
+
+### [15. 3Sum](https://leetcode.com/problems/3sum/)
+
+<br>
+
+### [287. Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+
+<br>
+
+### [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+
+<br>

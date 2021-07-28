@@ -1,6 +1,6 @@
 // 61. Rotate List
 
-public class Solution {
+class Solution {
     /**
      * Based on the examples, it's uncessary to perform actual rotations to the list
      * which would result in `k*n` iterations. - Thus, simply use n - number of

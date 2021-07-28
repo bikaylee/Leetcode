@@ -1,6 +1,6 @@
 //160. Intersection of Two Linked Lists
 
-public class Solution {
+class Solution {
 
     public ListNode getIntersectionNodeTwoPointer(ListNode headA, ListNode headB) {
         ListNode a = headA, b = headB;

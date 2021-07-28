@@ -2,6 +2,14 @@ July 22, 2021
 
 ### Week 0 - Warm Up - Linked List
 
+| No. | Problems                          | Diff | Day | Previous | Finished |
+| --- | --------------------------------- | ---- | --- | -------- | -------- |
+| 1   | 237. Delete Node in a Linked List | 🟢   | Fri | &check;  | &check;  |
+| 2   | 206. Reverse Linked List          | 🟢   | Fri | &check;  | &check;  |
+| 3   | 141. Linked List Cycle            | 🟢   | Fri |          | &check;  |
+| 4   | 2. Add Two Numbers                | 🟠   | Fri | &check;  | &check;  |
+| 5   | **328. Odd Even Linked List**     | 🟠   | Fri |          | &check;  |
+
 <br>
 
 ## Friday
@@ -86,7 +94,7 @@ Output: `4 -> 3 -> 2 -> 1`
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
 Input: head = `[3,2,0,-4]`, -4 points to 2  
-Output: true  
+Output: `true`  
 Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
 
 #### Approach 1: (Hash Table)

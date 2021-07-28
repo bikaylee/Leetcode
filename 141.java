@@ -1,6 +1,6 @@
 // 141. Linked List Cycle
 
-public class 141 {
+class 141 {
     /**
      *  Use Hash Set to store visited nodes, if one's link points to a visited node, then there is a cycle.
      */
