@@ -1,8 +1,8 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 56
+#### 🟢 Easy : 58
 
-#### 🟠 Medium : 35
+#### 🟠 Medium : 38
 
 #### 🔴 Hard : 1
 
@@ -27,21 +27,22 @@
 | 42. Trapping Rain Water                        | 🔴   | Two Pointers, Array, DP, Stack    | &check; |         |         |
 | 49. Group Anagrams                             | 🟠   | Hash Table, String, Sort          | &check; |         |         |
 | 58. Length of Last Word                        | 🟢   | String                            | &check; |         |         |
+| 61. Rotate List                                | 🟠   | Linked List                       | &check; |         |         |
 | 70. Climbing Stairs                            | 🟢   | Dynamic Programming               | &check; | &check; |         |
 | 88. Merge Sorted Array                         | 🟢   | Array                             | &check; | &check; |         |
 | 94. Binary Tree Inorder Traversal              | 🟢   | Tree, DFS, Stack                  | &check; |         |         |
 | 100. Same Tree                                 | 🟢   | Tree                              | &check; |         |         |
-| 121. Best Time to Buy and Sell Stock           | 🟢   | Array, Dynamic Programming        |         |         |         |
+| 121. Best Time to Buy and Sell Stock           | 🟢   | Array, Dynamic Programming        | &check; |         |         |
 | 125. Valid Palindrome                          | 🟠   | Two Pointers, String              | &check; |         |         |
 | 133. Clone Graph                               | 🟠   | Linked List, HashTable, Graph     | &check; |         |         |
 | 138. Copy List with Random Pointer             | 🟠   | Linked List, HashTable, Graph     | &check; | &check; |         |
-| 141. Linked List Cycle                         | 🟢   | Linked List                       |         | &check; |         |
+| 141. Linked List Cycle                         | 🟢   | Linked List                       | &check; | &check; |         |
 | 142. Linked List Cycle II                      | 🟠   | Linked List                       |         | &check; |         |
 | 144. Binary Tree Preorder Traversal            | 🟠   | Tree                              |         | &check; |         |
 | 160. Intersection of Two Linked Lists          | 🟢   | Linked List                       | &check; | &check; |         |
 | 167. Two Sum II                                | 🟢   | Binary Search                     | &check; |         |         |
 | 169. Majority                                  | 🟢   | Array                             | &check; |         |         |
-| 198. House Robber                              | 🟠   | Dynamic Programming               | &check; | &check; |         |
+| 189. Rotate Array                              | 🟠   | Array, Two Pointers, Math         | &check; |         |         |
 | 198. House Robber                              | 🟠   | Dynamic Programming               | &check; | &check; |         |
 | 200. Number of Islands                         | 🟠   | Array, DFS, BFS, Matrix, Graph    | &check; |         | &check; |
 | 203. Remove Linked List Elements               | 🟢   | Linked List, Recursion            | &check; | &check; |         |
@@ -58,7 +59,7 @@
 | 283. Move Zeroes                               | 🟢   | Array                             |         | &check; |         |
 | 284. Peeking Iterator                          | 🟠   | Design                            | &check; |         |         |
 | 303. Range Sum Query - Immutable               | 🟢   | Array, Dynamic Programming        | &check; |         |         |
-| 328. Odd Even Linked List                      | 🟠   | Linked List                       |         | &check; |         |
+| 328. Odd Even Linked List                      | 🟠   | Linked List                       | &check; | &check; |         |
 | 344. Reverse String                            | 🟢   | Two Pointers, String              | &check; |         |         |
 | 378. Kth Smallest Element in a Sorted Matrix   | 🟠   | Array, Heap, Sort, Matrix         | &check; |         |         |
 | 414. Third Maximum Number                      | 🟢   | Array                             | &check; |         |         |
@@ -70,7 +71,7 @@
 | 448. Find All Numbers Disappeared in an Array  | 🟢   | Array                             |         | &check; |         |
 | 485. Max Consecutive Ones                      | 🟢   | Array                             | &check; | &check; |         |
 | 487. Max Consecutive Ones II                   | 🟠   | Two Pointers, Sliding Window      | &check; |         |         |
-| 543. Diameter of Binary Tree                   | 🟢   | Tree, Recursion                   | &check; | &check; |         |
+| 543. Diameter of Binary Tree                   | 🟢   | Tree, Recursion                   |         | &check; |         |
 | 575. Distribute Candies                        | 🟢   | Hash Table                        | &check; |         |         |
 | 622. Design Circular Queue                     | 🟠   | Array, Design, Queu               | &check; |         |         |
 | 645. Set Mismatch                              | 🟢   | Hash Table, Math                  | &check; |         |         |
@@ -97,10 +98,10 @@
 | 1249. Minimum Remove to Make Valid Parentheses | 🟠   | String, Stack                     | &check; |         |         |
 | 1295. Find Numbers with Even Number of Digits  | 🟢   | Array                             | &check; | &check; |         |
 | 1313. Decompress Run-Length Encoded List       | 🟢   | Array                             |         | &check; |         |
+| 1338. Reduce Array Size to The Half            | 🟠   | Array, Hash, Sort, Heap           | &check; |         |         |
 | 1342. No. of Steps to Reduce a No. to Zero     | 🟢   | Bit Manipulation                  | &check; |         |         |
 | 1346. Check If N and its Double Exist          | 🟢   | Array                             |         | &check; |         |
 | 1347. Minimum Steps to Make Two Str Anagram    | 🟠   | String, Hash                      | &check; |         |         |
-| 1338. Reduce Array Size to The Half            | 🟠   | Array, Hash, Sort, Heap           | &check; |         |         |
 | 1474. Delete N Nodes After M Nodes of LL       | 🟢   | Linked List                       | &check; |         |         |
 | 1710. Maximum Units on a Truck                 | 🟢   | Greedy, Sort                      | &check; |         |         |
 | 1721. Swapping Nodes in a Linked List          | 🟢   | Linked List                       | &check; |         |         |

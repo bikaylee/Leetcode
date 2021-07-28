@@ -257,3 +257,55 @@ Output: [5,6,7,1,2,3,4]
 <br>
 
 ## Tuesday
+
+### [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)
+
+```java
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    l1 = reverse(l1);
+    l2 = reverse(l2);
+
+    ListNode sum = new ListNode();
+    ListNode curr = sum;
+    int carry = 0;
+
+    while (l1 != null || l2 != null) {
+        int n = 0, m = 0;
+
+        if (l1 != null) {
+            n = l1.val;
+            l1 = l1.next;
+        }
+
+        if (l2 != null) {
+            m = l2.val;
+            l2 = l2.next;
+        }
+
+        curr.next = new ListNode((n+m+carry)%10);
+        curr = curr.next;
+
+        carry = (n+m+carry)/10;
+    }
+
+    if (carry == 1)
+        curr.next = new ListNode(carry);
+
+    return reverse(sum.next);
+}
+
+private ListNode reverse(ListNode head) {
+
+    ListNode curr = head;
+    ListNode next = null;
+
+    while (curr != null) {
+        ListNode prev = curr.next;
+        curr.next = next;
+        next = curr;
+        curr = prev;
+    }
+
+    return next;
+}
+```
