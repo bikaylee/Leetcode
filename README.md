@@ -1,10 +1,10 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 58
+#### 🟢 Easy : 59
 
-#### 🟠 Medium : 38
+#### 🟠 Medium : 39
 
-#### 🔴 Hard : 1
+#### 🔴 Hard : 2
 
 | Problems                                       | Diff | Category                          | Java    | JS      | C++     |
 | ---------------------------------------------- | ---- | --------------------------------- | ------- | ------- | ------- |
@@ -18,6 +18,7 @@
 | 17. Letter Combinations of a Phone Number      | 🟠   | String, HashTable, Backtrack      | &check; |         |         |
 | 20. Valid Parenthesis                          | 🟢   | String, Stack                     | &check; | &check; |         |
 | 21. Merge Two Sorted Lists                     | 🟢   | Linked List                       | &check; | &check; |         |
+| 23. Merge k Sorted Lists                       | 🔴   | Linked List, Priority Queue       | &check; |         |         |
 | 24. Swap Nodes in Pairs                        | 🟠   | Linked List                       | &check; |         |         |
 | 26. Remove Duplicates from Sorted Array        | 🟢   | Array, Two Pointers               |         | &check; |         |
 | 27. Remove Element                             | 🟢   | Array, Two Pointers               |         | &check; |         |
@@ -38,6 +39,7 @@
 | 138. Copy List with Random Pointer             | 🟠   | Linked List, HashTable, Graph     | &check; | &check; |         |
 | 141. Linked List Cycle                         | 🟢   | Linked List                       | &check; | &check; |         |
 | 142. Linked List Cycle II                      | 🟠   | Linked List                       |         | &check; |         |
+| 143. Reorder List                              | 🟠   | Linked List                       | &check; |         |         |
 | 144. Binary Tree Preorder Traversal            | 🟠   | Tree                              |         | &check; |         |
 | 160. Intersection of Two Linked Lists          | 🟢   | Linked List                       | &check; | &check; |         |
 | 167. Two Sum II                                | 🟢   | Binary Search                     | &check; |         |         |
@@ -75,7 +77,8 @@
 | 575. Distribute Candies                        | 🟢   | Hash Table                        | &check; |         |         |
 | 622. Design Circular Queue                     | 🟠   | Array, Design, Queu               | &check; |         |         |
 | 645. Set Mismatch                              | 🟢   | Hash Table, Math                  | &check; |         |         |
-| 707. Design Linked List                        | 🟠   | Linked List                       | &check; | &check; |         |
+| 706. Design HashMap                            | 🟢   | Hash Table, Design, Array         | &check; |         |         |
+| 707. Design Linked List                        | 🟠   | Linked List, Design               | &check; | &check; |         |
 | 717. 1-bit and 2-bit Characters                | 🟢   | Array, Bit                        |         | &check; |         |
 | 735. Asteroid Collision                        | 🟠   | Array, Stack                      | &check; |         |         |
 | 783. Minimum Distance Between BST Nodes        | 🟢   | Tree, Recursion                   |         | &check; |         |

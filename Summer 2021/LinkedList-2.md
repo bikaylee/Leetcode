@@ -20,7 +20,7 @@ July 26, 2021
 | 2   | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                   | 🔴   | Wed |          | &check;  |
 | 3   | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)       | 🟢   | Wed |          | &check;  |
 | 4   | [82. Remove Duplicates from Sorted List II](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          |          |
-| 5   | [706. Design HashMap](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  |          |
+| 5   | [706. Design HashMap](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  | &check;  |
 
 <br>
 
@@ -429,6 +429,8 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 - Use slow and faster point to locate the middle and reverse the second half of the list. Place each node from two list accordingly.
 
   ```java
+    // Time: O(n)
+    // Space: O(1)
   public void reorderList(ListNode head) {
       ListNode p2 = head, p1 = head;
 
