@@ -1,6 +1,6 @@
 July 22, 2021
 
-### Week 0 - Warm Up - Linked List
+### Week 1 - Warm Up - Linked List
 
 | No. | Problems                          | Diff | Day | Previous | Finished |
 | --- | --------------------------------- | ---- | --- | -------- | -------- |

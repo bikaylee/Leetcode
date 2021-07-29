@@ -1,20 +1,26 @@
 July 26, 2021
 
-### Week 1 - Linked List
+### Week 2 - Linked List
 
-| No. | Problems                                                                       | Diff | Day | Previous | Finished |
-| --- | ------------------------------------------------------------------------------ | ---- | --- | -------- | -------- |
-| 1   | [24. Swap Nodes in Pairs](#24-Swap-Nodes-In-Pairs)                             | 🟠   | Mon | &check;  | &check;  |
-| 2   | [61. Rotate List](#61-Rotate-List)                                             | 🟠   | Mon |          | &check;  |
-| 3   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                       | 🟢   | Mon | &check;  | &check;  |
-| 4   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists) | 🟢   | Mon | &check;  | &check;  |
-| 5   | [189. Rotate Array](#189-Rotate-Array)                                         | 🟠   | Mon |          | &check;  |
-|     |                                                                                |      |     |          |          |
-| 1   | [445. Add Two Numbers II](#445-Add-Two-Numbers-II)                             | 🟠   | Tue | &check;  | &check;  |
-| 2   | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)       | 🟠   | Tue | &check;  | &check;  |
-| 3   | [15. 3Sum](#15-3Sum)                                                           | 🟠   | Tue |          |          |
-| 4   | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                       | 🟠   | Tue |          |          |
-| 5   | [142. Linked List Cycle II](#142-Linked-List-Cycle-II)                         | 🟠   | Tue |          |          |
+| No. | Problems                                                                               | Diff | Day | Previous | Finished |
+| --- | -------------------------------------------------------------------------------------- | ---- | --- | -------- | -------- |
+| 1   | [24. Swap Nodes in Pairs](#24-Swap-Nodes-In-Pairs)                                     | 🟠   | Mon | &check;  | &check;  |
+| 2   | [61. Rotate List](#61-Rotate-List)                                                     | 🟠   | Mon |          | &check;  |
+| 3   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                               | 🟢   | Mon | &check;  | &check;  |
+| 4   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists)         | 🟢   | Mon | &check;  | &check;  |
+| 5   | [189. Rotate Array](#189-Rotate-Array)                                                 | 🟠   | Mon |          | &check;  |
+|     |                                                                                        |      |     |          |          |
+| 1   | [445. Add Two Numbers II](#445-Add-Two-Numbers-II)                                     | 🟠   | Tue | &check;  | &check;  |
+| 2   | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)               | 🟠   | Tue | &check;  | &check;  |
+| 3   | [15. 3Sum](#15-3Sum)                                                                   | 🟠   | Tue |          |          |
+| 4   | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                               | 🟠   | Tue |          |          |
+| 5   | [142. Linked List Cycle II](#142-Linked-List-Cycle-II)                                 | 🟠   | Tue |          |          |
+|     |                                                                                        |      |     |          |          |
+| 1   | [143. Reorder List](#143-Reorder-List)                                                 | 🟠   | Wed |          | &check;  |
+| 2   | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                   | 🔴   | Wed |          | &check;  |
+| 3   | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)       | 🟢   | Wed |          | &check;  |
+| 4   | [82. Remove Duplicates from Sorted List II](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          |          |
+| 5   | [706. Design HashMap](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  |          |
 
 <br>
 
@@ -382,3 +388,206 @@ Output: `[[7,null],[13,0],[11,4],[10,2],[1,0]]`
 ### [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
 
 <br>
+<br>
+
+## Wednesday
+
+### [143. Reorder List](https://leetcode.com/problems/reorder-list/)
+
+Input: `L0 → L1 → … → Ln - 1 → Ln`  
+Output: `L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …`  
+You may not modify the values in the list's nodes. Only nodes themselves may be changed.
+
+#### Approach 1: (Extra Memory)
+
+- Use an arraylist to store all nodes with one pass. Then, use two pointers to reorder the list from the arraylist. Lastly, the middle node will be reordered as the tail node, its next is null.
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public void reorderList(ListNode head) {
+      ArrayList<ListNode> list = new ArrayList<>();
+
+      ListNode curr = head;
+      while (curr != null) {
+          list.add(curr);
+          curr = curr.next;
+      }
+
+      int n = list.size();
+      for(int i = 0, j = n-1; i +1 < j; i++, j--) {
+          list.get(i).next = list.get(j);
+          list.get(j).next = list.get(i+1);
+      }
+
+      list.get(n/2).next = null;
+  }
+  ```
+
+#### Approach 2: (Reverse Second Half)
+
+- Use slow and faster point to locate the middle and reverse the second half of the list. Place each node from two list accordingly.
+
+  ```java
+  public void reorderList(ListNode head) {
+      ListNode p2 = head, p1 = head;
+
+      while (p1 != null && p1.next != null) {
+          p2 = p2.next; // slow pointer
+          p1 = p1.next.next; // fast pointer
+      }
+
+      p2 = reverse(p2); // reverse the second half
+      p1 = head;        // first half
+
+      while (p2.next != null) { // the middle node will be assign to second list's null pointer
+          ListNode next = p1.next;
+          p1.next = p2;
+          p1 = next;
+
+          next = p2.next;
+          p2.next = p1;
+          p2 = next;
+      }
+  }
+
+  private ListNode reverse(ListNode curr) {
+      ListNode next = null;
+      while (curr != null) {
+          ListNode prev = curr.next;
+          curr.next = next;
+          next = curr;
+          curr = prev;
+      }
+      return next;
+  }
+  ```
+
+<br>
+
+### [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+
+Input: lists = `[[1,4,5],[1,3,4],[2,6]]`  
+Output: [1,1,2,3,4,4,5,6]
+
+#### Approach: (Heap/Priority Queue)
+
+- Use a priority queue to store all nodes by its values, and use new head pointer to link all nodes in the priority queue.
+
+  ```java
+  // Time: O(n log k) where each node will be sorted with O(log k)
+  // Space: O(n)
+  public ListNode mergeKLists(ListNode[] lists) {
+      // if (lists.length == 0) return null;
+
+      PriorityQueue<ListNode> pq = new PriorityQueue<>((x, y) -> x.val - y.val);
+
+      for (ListNode list: lists) {
+          while (list != null) {
+              // System.out.println(list.val + " " + (list.next == null ? "null":list.next.val));
+              pq.add(list);
+              list = list.next;
+          }
+      }
+
+      ListNode sorted = new ListNode(0);
+      ListNode curr = sorted;
+      while(!pq.isEmpty()) {
+          curr.next = pq.poll();
+          curr = curr.next;
+      }
+
+      curr.next = null;
+      return sorted.next;
+  }
+  ```
+
+<br>
+
+### [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list `**sorted**` as well.
+
+Input: head = `1 -> 1 -> 2`  
+Output: `1 -> 2`
+
+#### Approach:
+
+- Iterate through and unlink the duplicated nodes from the list.
+  ```java
+  // Time: O(n)
+  // Space: O(1)
+  public ListNode deleteDuplicates(ListNode head) {
+      ListNode curr = head;
+      while (curr != null && curr.next != null) {
+          if (curr.val == curr.next.val)
+              curr.next = curr.next.next;
+          else
+              curr = curr.next;
+      }
+      return head;
+  }
+  ```
+
+### [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
+
+<br>
+
+### [706. Design HashMap](https://leetcode.com/problems/design-hashmap/)
+
+Design a HashMap without using any built-in hash table libraries.
+
+#### Approach:
+
+- Use two arraylists to store the key and values
+
+  ```java
+    // O(n) for put, get, and remove;
+  class MyHashMap {
+
+      private ArrayList<Integer> ind;
+      private ArrayList<Integer> val;
+
+      /** Initialize your data structure here. */
+      public MyHashMap() {
+          ind = new ArrayList<Integer>();
+          val = new ArrayList<Integer>();
+      }
+
+      /** value will always be non-negative. */
+      public void put(int key, int value) {
+          int i = ind.indexOf(key);
+          if (i >= 0) {
+              val.set(i, value);
+          }  else {
+              ind.add(key);
+              val.add(value);
+          }
+      }
+
+      /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
+      public int get(int key) {
+          int i = ind.indexOf(key);
+          if(i >= 0)
+              return val.get(i);
+          return -1;
+      }
+
+      /** Removes the mapping of the specified value key if this map contains a mapping for the key */
+      public void remove(int key) {
+          int i = ind.indexOf(key);
+          if (i >= 0) {
+              ind.remove(i);
+              val.remove(i);
+          }
+      }
+  }
+
+  /**
+   * Your MyHashMap object will be instantiated and called as such:
+   * MyHashMap obj = new MyHashMap();
+   * obj.put(key,value);
+   * int param_2 = obj.get(key);
+   * obj.remove(key);
+   */
+  ```
