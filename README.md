@@ -1,8 +1,8 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 59
+#### 🟢 Easy : 60
 
-#### 🟠 Medium : 39
+#### 🟠 Medium : 42
 
 #### 🔴 Hard : 2
 
@@ -30,6 +30,7 @@
 | 58. Length of Last Word                        | 🟢   | String                            | &check; |         |         |
 | 61. Rotate List                                | 🟠   | Linked List                       | &check; |         |         |
 | 70. Climbing Stairs                            | 🟢   | Dynamic Programming               | &check; | &check; |         |
+| 71. Simplify Path                              | 🟠   | Stack, String                     | &check; |         |         |
 | 88. Merge Sorted Array                         | 🟢   | Array                             | &check; | &check; |         |
 | 94. Binary Tree Inorder Traversal              | 🟢   | Tree, DFS, Stack                  | &check; |         |         |
 | 100. Same Tree                                 | 🟢   | Tree                              | &check; |         |         |
@@ -51,6 +52,7 @@
 | 206. Reverse Linked List                       | 🟢   | Linked List, Recursion            | &check; | &check; |         |
 | 209. Minimum Size Subarray Sum                 | 🟠   | Array                             |         | &check; |         |
 | 231. Power of Two                              | 🟢   | Math, Bit Manipulation, Recursion | &check; |         |         |
+| 232. Implement Queue using Stacks              | 🟢   | Design, Stack, Queue              | &check; |         |         |
 | 234. Palindrome Linked List                    | 🟢   | Linked List, Two Pointers         | &check; | &check; |         |
 | 237. Delete Node in a Linked List              | 🟢   | Linked List                       | &check; |         |         |
 | 240. Search a 2D Matrix II                     | 🟠   | Dynamic Programming               | &check; |         |         |
@@ -87,9 +89,11 @@
 | 841. Keys and Rooms                            | 🟠   | DFS, Graph                        | &check; |         |         |
 | 856. Score of Parentheses                      | 🟠   | String, Stack                     | &check; |         |         |
 | 876. Middle of the Linked List                 | 🟢   | Linked List                       |         | &check; |         |
+| 907. Sum of Subarray Minimums                  | 🟠   | Array, Stack, Monotonic Stack     | &check; |         |         |
 | 908. Smallest Range I                          | 🟢   | Array, Math                       | &check; |         |         |
 | 929. Unique Email Addresses                    | 🟢   | String                            | &check; |         |         |
 | 938. Range Sum of BST                          | 🟢   | Tree, BFS, DFS                    |         | &check; |         |
+| 946. Validate Stack Sequences                  | 🟠   | Array, Stack                      | &check; |         |         |
 | 953. Verifying an Alien Dictionary             | 🟢   | String, Array, Hash Table         | &check; |         |         |
 | 977. Squares of Sorted Array                   | 🟢   | Array, Two Pointers, Sorting      | &check; |         |         |
 | 997. Find the Town Judge                       | 🟢   | Graph                             | &check; |         |         |

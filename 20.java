@@ -31,27 +31,41 @@ Output: true
 */
 
 class Solution {
-    
-    public boolean isValid(String s) {
-        if(s.length()%2 != 0 || s == null)
+
+    public boolean isValidStack(String s) {
+        if (s.length() % 2 == 1)
             return false;
-        
-        Stack<Integer> stack = new Stack<>();
-        
-        String open = "({[";
-        String close = ")}]";
-        
-        for(char c: s.toCharArray())
-        {
-            if(open.indexOf(c) >= 0)
-                stack.add(open.indexOf(c));
-            else
-            {
-                if(stack.empty() || stack.pop() != close.indexOf(c))
+
+        Stack<Character> st = new Stack();
+        for (char c : s.toCharArray()) {
+            if (c == '[' || c == '(' || c == '{')
+                st.add(c);
+            else {
+                if (st.isEmpty() || Math.abs(c - st.pop()) > 2)
                     return false;
             }
         }
-        
+        return st.empty();
+    }
+
+    public boolean isValid(String s) {
+        if (s.length() % 2 != 0 || s == null)
+            return false;
+
+        Stack<Integer> stack = new Stack<>();
+
+        String open = "({[";
+        String close = ")}]";
+
+        for (char c : s.toCharArray()) {
+            if (open.indexOf(c) >= 0)
+                stack.add(open.indexOf(c));
+            else {
+                if (stack.empty() || stack.pop() != close.indexOf(c))
+                    return false;
+            }
+        }
+
         return stack.empty();
     }
 }
