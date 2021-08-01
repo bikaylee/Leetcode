@@ -2,13 +2,13 @@ July 22, 2021
 
 ### Week 1 - Warm Up - Linked List
 
-| No. | Problems                          | Diff | Day | Previous | Finished |
-| --- | --------------------------------- | ---- | --- | -------- | -------- |
-| 1   | 237. Delete Node in a Linked List | 🟢   | Fri | &check;  | &check;  |
-| 2   | 206. Reverse Linked List          | 🟢   | Fri | &check;  | &check;  |
-| 3   | 141. Linked List Cycle            | 🟢   | Fri |          | &check;  |
-| 4   | 2. Add Two Numbers                | 🟠   | Fri | &check;  | &check;  |
-| 5   | **328. Odd Even Linked List**     | 🟠   | Fri |          | &check;  |
+| No. | Problems                                                              | Diff | Day | Previous | Finished |
+| --- | --------------------------------------------------------------------- | ---- | --- | -------- | -------- |
+| 1   | [237. Delete Node in a Linked List](#237-Delet-Node-in-a-Linked-List) | 🟢   | Fri | &check;  | &check;  |
+| 2   | [206. Reverse Linked List](#206-Reverse-Linked-List)                  | 🟢   | Fri | &check;  | &check;  |
+| 3   | [141. Linked List Cycle](#141-Linked-List-Cycle)                      | 🟢   | Fri |          | &check;  |
+| 4   | [2. Add Two Numbers](#2-Add-Two-Numbers)                              | 🟠   | Fri | &check;  | &check;  |
+| 5   | [**328. Odd Even Linked List**](#328-Odd-Even-Linked-List)            | 🟠   | Fri |          | &check;  |
 
 <br>
 
@@ -119,7 +119,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
   }
   ```
 
-#### Approach 2: (Floyd's Cycle Finding Algorithm)
+#### Approach 2\*: (Floyd's Cycle Finding Algorithm)
 
 - Two pointers at different speed. Whether the track is straight or circular, two pointers will meet at some point.
 

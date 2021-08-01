@@ -5,10 +5,16 @@ July 29, 2021
 | No. | Problems                                                               | Diff | Day | Previous | Finished |
 | --- | ---------------------------------------------------------------------- | ---- | --- | -------- | -------- |
 | 1   | [946. Validate Stack Sequences](#946-Validate-Stack-Sequences)         | 🟠   | Thu |          | &check;  |
-| 2   | [907. Sum of Subarray Minimums](#907-Sum-of-Subarray-Minimums)         | 🟠   | Thu |          |          |
+| 2   | [**907. Sum of Subarray Minimums**](#907-Sum-of-Subarray-Minimums)     | 🟠   | Thu |          |          |
 | 3   | [20. Valid Parentheses](#20-Valid-Parentheses)                         | 🟢   | Thu | &check;  | &check;  |
 | 4   | [232. Implement Queue using Stacks](#232-Implement-Queue-using-Stacks) | 🟢   | Thu |          | &check;  |
 | 5   | [71. Simplify Path](#71-Simplify-Path)                                 | 🟠   | Thu |          | &check;  |
+|     |                                                                        |      |     |          |          |
+| 1   | [**456. 132 Pattern**](#456-132-Pattern)                               | 🟠   | Fri |          |          |
+| 2   | [**402. Remove K Digits**](#402-Remove-K-Digits)                       | 🟠   | Fri |          |          |
+| 3   | [**155. Min Stack**](#155-Min-Stack)                                   | 🟢   | Fri |          |          |
+| 4   | [**224. Basic Calculator**](#224-Basic-Calculator)                     | 🔴   | Fri |          | &check;  |
+| 5   | [7. Reverse Integer](#7-Reverse-Integer)                               | 🟢   | Fri | &check;  | &check;  |
 
 <br>
 
@@ -219,3 +225,158 @@ Output: `"/c"`
 <br>
 
 ## Friday
+
+### [456. 132 Pattern](https://leetcode.com/problems/132-pattern/)
+
+Question
+
+#### Approach
+
+- Explanation, ideas
+  ```java
+    // code
+  ```
+
+<br>
+
+### [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+
+Question
+
+#### Approach
+
+- Explanation, ideas
+  ```java
+    // code
+  ```
+
+<br>
+
+### [155. Min Stack](https://leetcode.com/problems/min-stack/)
+
+<br>
+
+### [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+
+Given a string `s` representing a valid expression, implement a basic calculator to evaluate it, and _return the result of the evaluation_.
+
+Constraints:
+
+- `1 <= s.length <= 3 \* 10^5`
+- `s` consists of digits, `'+', '-', '(', ')', and ' '`.
+- `s` represents a valid expression.
+- `'+'` is not used as a unary operation.
+- `'-'` could be used as a unary operation but it has to be followed by parentheses.
+- Every number and running calculation will fit in a signed 32-bit integer.
+
+#### Approach
+
+- Intuition: Using stack to store current sum and calculator the sub-problem sum in the parenthese
+
+  1. Stack holds integers and sign in front of the parenthese
+  2. Within the parenthese, same idea of keeping the sign before an integer
+     1. When reaches the opening paren `(`, push current sum and its sign before `(` to the stack. Because we are using current `sum` variable to solve current subproblems.
+     2. When reaches the end of the parenthese `)`, then solve the current problem by popping off the most current sum off the stack along with its addition or subtraction. Lastly, update the `sum` variable until seeing the next parenthese.
+  3. Since an integer might not be a single digit integer, find all of its values by using `operand = 10 * operand + (int) (ch - '0')` where `operand` will be initially zero.
+  4. Finally, the result will be `sum + (sign * operand)`.
+
+  ```java
+    public int calculate(String s) {
+        Stack<Integer> stack = new Stack();
+        int ans = 0;
+        int sign = 1;
+        int operand = 0;
+
+        for (char c: s.toCharArray()) {
+            if (c == '(') {
+                stack.push(ans);
+                stack.push(sign);
+                ans = 0;
+                sign = 1;
+            } else if (c == ')') {
+                ans += sign * operand;
+                ans *= stack.pop();
+                ans += stack.pop();
+                operand = 0;
+            } else if (c == '+') {
+                ans += sign * operand;
+                sign = 1;
+                operand = 0;
+            } else if (c == '-') {
+                ans += sign * operand;
+                sign = -1;
+                operand = 0;
+            } else if (Character.isDigit(c)) {
+                operand = 10 * operand + (c - '0');
+            }
+        }
+
+        return ans + (sign * operand);
+    }
+  ```
+
+<br>
+
+### [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+
+Given a signed 32-bit integer `x`, return `x` with its digits reversed. If reversing `x` causes the value to go outside the signed 32-bit integer range `[-2^31, 2^31 - 1]`, then return 0.
+
+**Take care of integer overflow problem, a number might be overflow if it's reversed.**  
+Integer Bound: `[-2147483647, 2147483648]`  
+Example: `1534236469` -> `9646324351`
+
+#### Approach 1: (Using Actual Stack)
+
+- Using stack to push and pop and it will output the reversed version of integer.
+
+  ```java
+  // Time: O(log_10(x)), number of digits
+  // Space: O(log_10(x)), use stack to store all digits
+  public int reverse(int x) {
+
+      boolean negative = x < 0;
+      Stack<Integer> st = new Stack();
+      x = Math.abs(x);
+
+      while (x > 0) {
+          int digit = x % 10;
+          x /= 10;
+          st.add(digit);
+      }
+
+      int ans = 0;
+      for(int i = 0; !st.isEmpty(); i++) {
+          ans += st.pop() * Math.pow(10, i);
+      }
+
+      if(ans >= Integer.MAX_VALUE-1)
+        return 0;
+
+      return negative ? -ans: ans;
+  }
+  ```
+
+#### Approach 2:
+
+- Same logic applied, but watch out for integer overflow.
+
+```java
+// Time: O(log_10(x)), number of digits
+// Space: O(1)
+public int reverse(int x) {
+    int ans = 0;
+    int d = 0;
+    while (x != 0) {
+        int digit = x % 10;
+        x /= 10;
+        if (ans > Integer.MAX_VALUE/10 || (ans == Integer.MAX_VALUE/10 && digit > 7))
+            return 0;
+        if (ans < Integer.MIN_VALUE/10 || (ans == Integer.MIN_VALUE/10 && digit < -8))
+            return 0;
+        ans = ans * 10 + digit;
+    }
+    return ans;
+}
+```
+
+<br>

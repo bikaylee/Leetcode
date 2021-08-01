@@ -2,25 +2,25 @@ July 26, 2021
 
 ### Week 2 - Linked List
 
-| No. | Problems                                                                               | Diff | Day | Previous | Finished |
-| --- | -------------------------------------------------------------------------------------- | ---- | --- | -------- | -------- |
-| 1   | [24. Swap Nodes in Pairs](#24-Swap-Nodes-In-Pairs)                                     | 🟠   | Mon | &check;  | &check;  |
-| 2   | [61. Rotate List](#61-Rotate-List)                                                     | 🟠   | Mon |          | &check;  |
-| 3   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                               | 🟢   | Mon | &check;  | &check;  |
-| 4   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists)         | 🟢   | Mon | &check;  | &check;  |
-| 5   | [189. Rotate Array](#189-Rotate-Array)                                                 | 🟠   | Mon |          | &check;  |
-|     |                                                                                        |      |     |          |          |
-| 1   | [445. Add Two Numbers II](#445-Add-Two-Numbers-II)                                     | 🟠   | Tue | &check;  | &check;  |
-| 2   | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)               | 🟠   | Tue | &check;  | &check;  |
-| 3   | [15. 3Sum](#15-3Sum)                                                                   | 🟠   | Tue |          |          |
-| 4   | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                               | 🟠   | Tue |          |          |
-| 5   | [142. Linked List Cycle II](#142-Linked-List-Cycle-II)                                 | 🟠   | Tue |          |          |
-|     |                                                                                        |      |     |          |          |
-| 1   | [143. Reorder List](#143-Reorder-List)                                                 | 🟠   | Wed |          | &check;  |
-| 2   | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                   | 🔴   | Wed |          | &check;  |
-| 3   | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)       | 🟢   | Wed |          | &check;  |
-| 4   | [82. Remove Duplicates from Sorted List II](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          |          |
-| 5   | [706. Design HashMap](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  | &check;  |
+| No. | Problems                                                                                   | Diff | Day | Previous | Finished |
+| --- | ------------------------------------------------------------------------------------------ | ---- | --- | -------- | -------- |
+| 1   | [24. Swap Nodes in Pairs](#24-Swap-Nodes-In-Pairs)                                         | 🟠   | Mon | &check;  | &check;  |
+| 2   | [61. Rotate List](#61-Rotate-List)                                                         | 🟠   | Mon |          | &check;  |
+| 3   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                                   | 🟢   | Mon | &check;  | &check;  |
+| 4   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists)             | 🟢   | Mon | &check;  | &check;  |
+| 5   | [189. Rotate Array](#189-Rotate-Array)                                                     | 🟠   | Mon |          | &check;  |
+|     |                                                                                            |      |     |          |          |
+| 1   | [445. Add Two Numbers II](#445-Add-Two-Numbers-II)                                         | 🟠   | Tue | &check;  | &check;  |
+| 2   | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)                   | 🟠   | Tue | &check;  | &check;  |
+| 3   | [15. 3Sum](#15-3Sum)                                                                       | 🟠   | Tue |          |          |
+| 4   | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                                   | 🟠   | Tue |          | &check;  |
+| 5   | [142. Linked List Cycle II](#142-Linked-List-Cycle-II)                                     | 🟠   | Tue |          | &check;  |
+|     |                                                                                            |      |     |          |          |
+| 1   | [143. Reorder List](#143-Reorder-List)                                                     | 🟠   | Wed |          | &check;  |
+| 2   | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                       | 🔴   | Wed |          | &check;  |
+| 3   | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)           | 🟢   | Wed |          | &check;  |
+| 4   | [**82. Remove Duplicates from Sorted List II**](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          | &check;  |
+| 5   | [**706. Design HashMap**](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  | &check;  |
 
 <br>
 
@@ -33,7 +33,7 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 Input: `1 -> 2 -> 3 -> 4`  
 Output: `2 -> 1 -> 4 -> 3`
 
-#### Approach:
+#### Approach\*:
 
 - Dealing with two nodes at a time, keep track of a first and second pointer and also a prev pointer to link every pairs  
   <img src="img/LinkedList-2-24.jpeg" alt="approach 24" width="600" >
@@ -195,7 +195,7 @@ Output: c1, intersection happens after c1
   }
   ```
 
-#### Approach 2:
+#### Approach 2\*:
 
 1. same length lists, either has intersection node or not such that list has `x` nodes. Then, listA has to skip `m-x` nodes and listB has to skip `n-x` nodes. Thus, `m-x = n-x when m=n` and only `n iteration` needed.
 2. different length list, for two pointers to meet, more passes is needed when two same speed pointers meet.
@@ -239,7 +239,7 @@ Output: `[5,6,7,1,2,3,4]`
     }
   ```
 
-#### Approach 2: (Reverse Array)
+#### Approach 2\*: (Reverse Array)
 
 - Reverse the whole array first, parition the reversed array by `k` and reversed each subarray.
 
@@ -383,9 +383,126 @@ Output: `[[7,null],[13,0],[11,4],[10,2],[1,0]]`
 
 ### [287. Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 
+Input: nums = [1,3,4,2,2]
+Output: 2
+
+- There is only one repeated number in nums, return this repeated number.
+- You must solve the problem without modifying the array nums and uses only constant extra space.
+
+#### Approach 1: (Use sort or hashtable)
+
+- Both cases don't meet the requirements
+
+  ```java
+  // Time: O(n log n), sorting
+  // Space: O(logn) or O(n) depends on the sorting algorithm
+  public int findDuplicate(int[] nums) {
+      Arrays.sort(nums);
+
+      for (int i = 1; i < nums.length; i++) {
+          if (nums[i] == nums[i-1])
+              return nums[i];
+      }
+      return -1;
+  }
+
+  // Time: O(n)
+  // Space: O(n)
+  public int findDuplicate(int[] nums) {
+      Set<Integer> seen = new HashSet<Integer>();
+      for (int num : nums) {
+          if (seen.contains(num))
+              return num;
+          seen.add(num);
+      }
+      return -1;
+  }
+  ```
+
 <br>
 
 ### [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+
+Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+
+Input: head = `[3,2,0,-4]`, pos = 1  
+Output: tail connects to node index 1
+
+#### Approach 1: (Hash Table)
+
+- Use hashtable to store all visited nodes, if hashtable contains a node, then it's the first node of the cycle
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public ListNode detectCycle(ListNode head) {
+      Set<ListNode> visited = new HashSet<>();
+      while (head != null) {
+          if (visited.contains(head))
+              return head;
+          visited.add(head);
+          head = head.next;
+      }
+      return null;
+  }
+  ```
+
+#### Approach 2\*: (Floyd's Tortoise and Hare)
+
+- Use tortoise (slow) and hare (fast), if there is a cycle, two pointers will eventually meet within the cycle. Then, based on the fact that the linked list has a cycle. Set up the intersection pointer and the head pointer at the same speed until both meets, which means that it happens to be the visited node like in the hashtable.
+- Check mathematical proof: [Solution Article](https://leetcode.com/problems/linked-list-cycle-ii/solution/)
+
+  ```java
+  /**
+   * Time: O(n)
+   * For cyclic lists, hare and tortoise will point to the same node after F+C-hF+C−h iterations, as demonstrated in the proof of correctness. F+C-h \leq F+C = nF+C−h≤F+C=n, so phase 1 runs in O(n)O(n) time. Phase 2 runs for F < nF<n iterations, so it also runs in O(n) time.
+   * For acyclic lists, hare will reach the end of the list in roughly \dfrac{n}{2} iterations, causing the function to return before phase 2. Therefore, regardless of which category of list the
+   * algorithm receives, it runs in time linearly proportional to the number of nodes.
+   *
+   * Space: O(1)
+   * Floyd's Tortoise and Hare algorithm allocates only pointers, so it runs with constant overall memory usage.
+   */
+  private ListNode getIntersect(ListNode head) {
+      ListNode tortoise = head;
+      ListNode hare = head;
+
+      // A fast pointer will either loop around a cycle and meet the slow
+      // pointer or reach the `null` at the end of a non-cyclic list.
+      while (hare != null && hare.next != null) {
+          tortoise = tortoise.next;
+          hare = hare.next.next;
+          if (tortoise == hare) {
+              return tortoise;
+          }
+      }
+
+      return null;
+  }
+  public ListNode detectCycle(ListNode head) {
+  if (head == null) {
+  return null;
+  }
+
+      // If there is a cycle, the fast/slow pointers will intersect at some
+      // node. Otherwise, there is no cycle, so we cannot find an entrance to
+      // a cycle.
+      ListNode intersect = getIntersect(head);
+      if (intersect == null) {
+          return null;
+      }
+
+      // To find the entrance to the cycle, we have two pointers traverse at
+      // the same speed -- one from the front of the list, and the other from
+      // the point of intersection.
+      ListNode ptr1 = head;
+      ListNode ptr2 = intersect;
+      while (ptr1 != ptr2) {
+          ptr1 = ptr1.next;
+          ptr2 = ptr2.next;
+      }
+
+      return ptr1;
+  }
+  ```
 
 <br>
 <br>
@@ -394,8 +511,8 @@ Output: `[[7,null],[13,0],[11,4],[10,2],[1,0]]`
 
 ### [143. Reorder List](https://leetcode.com/problems/reorder-list/)
 
-Input: `L0 → L1 → … → Ln - 1 → Ln`  
-Output: `L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …`  
+Input: `L0 → L1 → … → Ln - 1 → Ln`
+Output: `L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …`
 You may not modify the values in the list's nodes. Only nodes themselves may be changed.
 
 #### Approach 1: (Extra Memory)
@@ -469,7 +586,7 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 
 ### [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 
-Input: lists = `[[1,4,5],[1,3,4],[2,6]]`  
+Input: lists = `[[1,4,5],[1,3,4],[2,6]]`
 Output: [1,1,2,3,4,4,5,6]
 
 #### Approach: (Heap/Priority Queue)
@@ -510,7 +627,7 @@ Output: [1,1,2,3,4,4,5,6]
 
 Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list `**sorted**` as well.
 
-Input: head = `1 -> 1 -> 2`  
+Input: head = `1 -> 1 -> 2`
 Output: `1 -> 2`
 
 #### Approach:
@@ -533,13 +650,85 @@ Output: `1 -> 2`
 
 ### [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
 
+Input: head = `1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5]`  
+Output: `1 -> 2 -> 5`
+
+#### Approach 1: (Hash Table)
+
+- Use hashtable to mark the count of each node value and iterate the list again to skip the duplicates nodes.
+
+```java
+// Time: O(n)
+// Space: O(n)
+public ListNode deleteDuplicates(ListNode head) {
+    ListNode dummy = new ListNode(0);
+    ListNode curr = head;
+
+    HashMap<Integer, Integer> count = new HashMap();
+    while (curr != null) {
+        count.put(curr.val, count.getOrDefault(curr.val, 0) +1);
+        curr = curr.next;
+    }
+
+    ListNode prev = dummy;
+    curr = head;
+    while (curr != null) {
+        if (count.get(curr.val) == 1) {
+            prev.next = curr;
+            prev = prev.next;
+        }
+        curr = curr.next;
+    }
+
+    if (prev.next != null) prev.next = null;
+
+    return dummy.next;
+}
+```
+
+#### Approach 2: (Sentinel Head + Predecessor)
+
+- Use sentinel head and predecessor to skip all duplicates
+
+```java
+// Time: O(n)
+// Space: O(1)
+public ListNode deleteDuplicates(ListNode head) {
+    // sentinel
+    ListNode sentinel = new ListNode(0, head);
+
+    // predecessor = the last node
+    // before the sublist of duplicates
+    ListNode pred = sentinel;
+
+    while (head != null) {
+        // if it's a beginning of duplicates sublist skip all duplicates
+        if (head.next != null && head.val == head.next.val) {
+            // move till the end of duplicates sublist
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
+            }
+            // skip all duplicates
+            pred.next = head.next;
+        // otherwise, move predecessor
+        } else {
+            pred = pred.next;
+        }
+        // move forward
+        head = head.next;
+    }
+
+    return sentinel.next;
+}
+```
+
 <br>
 
 ### [706. Design HashMap](https://leetcode.com/problems/design-hashmap/)
 
 Design a HashMap without using any built-in hash table libraries.
 
-#### Approach:
+#### Approach\*:
 
 - Use two arraylists to store the key and values
 
@@ -593,3 +782,7 @@ Design a HashMap without using any built-in hash table libraries.
    * obj.remove(key);
    */
   ```
+
+```
+
+```
