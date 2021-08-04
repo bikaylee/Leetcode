@@ -10,11 +10,19 @@ July 29, 2021
 | 4   | [232. Implement Queue using Stacks](#232-Implement-Queue-using-Stacks) | 🟢   | Thu |          | &check;  |
 | 5   | [71. Simplify Path](#71-Simplify-Path)                                 | 🟠   | Thu |          | &check;  |
 |     |                                                                        |      |     |          |          |
-| 1   | [**456. 132 Pattern**](#456-132-Pattern)                               | 🟠   | Fri |          |          |
-| 2   | [**402. Remove K Digits**](#402-Remove-K-Digits)                       | 🟠   | Fri |          |          |
+| 1   | [**456. 132 Pattern**](#456-132-Pattern)                               | 🟠   | Fri |          | &check;  |
+| 2   | [**402. Remove K Digits**](#402-Remove-K-Digits)                       | 🟠   | Fri |          | &check;  |
 | 3   | [**155. Min Stack**](#155-Min-Stack)                                   | 🟢   | Fri |          |          |
 | 4   | [**224. Basic Calculator**](#224-Basic-Calculator)                     | 🔴   | Fri |          | &check;  |
 | 5   | [7. Reverse Integer](#7-Reverse-Integer)                               | 🟢   | Fri | &check;  | &check;  |
+
+**TODO:**
+
+- **907. Sum of Subarray Minimums**
+- **456. 132 Pattern**
+- **402. Remove K Digits**
+- **224. Basic Calculator**
+- Did not add Friday problems to main list
 
 <br>
 
@@ -63,7 +71,7 @@ Explanation:
 Subarrays are `[3], [1], [2], [4], [3,1], [1,2], [2,4], [3,1,2], [1,2,4], [3,1,2,4].`  
 Minimums are `3, 1, 2, 4, 1, 1, 2, 1, 1, 1.`
 
-#### Approach
+#### Approach 1: (Left-Right Expansion)
 
 - Look over videos for explanation
 - In every subset of integer, expand to left and right until no more elements are greater than itself or reaches the boudary. Then, every subset's minimum should be the product of including itself to the left and the right will output the current sum of this subset and every subsets within the current subset.
@@ -88,6 +96,58 @@ Minimums are `3, 1, 2, 4, 1, 1, 2, 1, 1, 1.`
       }
 
       return ans;
+  }
+  ```
+
+#### Approach 2: (Monotonic Stack)
+
+Input: `[2, 9, 7, 8, 3]`
+
+- `2`: 2 can be expanded to the end of the array, then 2 x 5 subarrays = 10
+- `9`: 9 can only be itself, max to left & right, then 9 x 1 subarray = 9
+- `7`: 7 can be the min of 9 and 8 and itself, then 7 x 4 subarrays = 28
+- `8`: 8 can only be itself, max to left & right, then 8 x 1 subarray = 8
+- `3`: 3 can be expanded to the left before 2, then 3 x 4 subarrays = 12
+- `Total` : 10 + 9 + 28 + 8 + 12 = `67`
+
+By applying monotonic stack, it must be an increasing stack from bottom to top.
+
+- Everything left in the stack will be its expansion to the right, e.g., 2 will always remain in the stack since it's the smallest number in the array so it will expand to the end of the array.
+- The equation = previous element's right expansion (calculated) + the expansion to the left (where itself can be the min in the subarrays)
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public int sumSubarrayMins(int[] arr) {
+      Stack<Pair<Integer,Integer>> subSum = new Stack<>(); // (index, sum)
+
+      long ans = 0;
+      for (int i = 0; i < arr.length; i++) {
+          while (!subSum.isEmpty() && arr[subSum.peek().getKey()] > arr[i])
+              subSum.pop();
+
+          int sum = subSum.isEmpty() ?
+              arr[i] * (i+1) : subSum.peek().getValue() + (i-subSum.peek().getKey()) * arr[i];
+          subSum.push(new Pair(i, sum));
+          ans += sum;
+      }
+
+      return (int) (ans % (long) (1e9 + 7));
+  }
+
+  public int sumSubarrayMins(int[] A) {
+    Stack<Integer> s = new Stack<>();
+    int n = A.length, j, k;
+    long res = 0, mod = (long)1e9 + 7;
+    for (int i = 0; i <= n; i++) {
+        while (!s.isEmpty() && A[s.peek()] > (i == n ? 0 : A[i])) {
+            j = s.pop();
+            k = s.isEmpty() ? -1 : s.peek();
+            res = (res + (long)A[j] * (i - j) * (j - k)) % mod;
+        }
+        s.push(i);
+    }
+    return (int)res;
   }
   ```
 
@@ -228,27 +288,112 @@ Output: `"/c"`
 
 ### [456. 132 Pattern](https://leetcode.com/problems/132-pattern/)
 
-Question
+Given an array of n integers nums, a 132 pattern is a subsequence of three integers `nums[i], nums[j] and nums[k]` such that `i < j < k` and `nums[i] < nums[k] < nums[j]`.
 
 #### Approach
 
-- Explanation, ideas
+- Array of `min` to store the current minimum so far until meets a new minimum and set the rest of the array with the new min
+- Use a stack to find the `nums[k]` and `nums[j]` and start with the end of the input array
+
+  - Since the `min` array stores `nums[i]`
+  - Every element that pushes to the stack will be less than the `min` and elements that less than or equal to `min` will be popped
+  - If the current element is greater than the top of the stack, then **132 pattern** is found where `min[i](1) < stack.top(2) < nums[i](3)`
+
   ```java
-    // code
+  // Time: O(n)
+  // Space: O(n)
+  public boolean find132pattern(int[] nums) {
+      if (nums.length < 3)
+          return false;
+      Stack < Integer > stack = new Stack < > ();
+      int[] min = new int[nums.length];
+      min[0] = nums[0];
+      for (int i = 1; i < nums.length; i++)
+          min[i] = Math.min(min[i - 1], nums[i]);
+      for (int i = nums.length - 1; i >= 0; i--) {
+          if (nums[i] > min[i]) {
+              while (!stack.isEmpty() && stack.peek() <= min[i])
+                  stack.pop();
+              if (!stack.isEmpty() && stack.peek() < nums[i])
+                  return true;
+              stack.push(nums[i]);
+          }
+      }
+      return false;
+  }
+
+  public boolean find132pattern(int[] nums) {
+    int n = nums.length;
+    Deque<Integer> d = new ArrayDeque<>();
+    int k = Integer.MIN_VALUE;
+    for (int i = n - 1; i >= 0; i--) {
+        if (nums[i] < k) return true;
+        while (!d.isEmpty() && d.peekLast() < nums[i]) {
+            k = Math.max(k, d.pollLast());
+        }
+        d.addLast(nums[i]);
+    }
+    return false;
+  }
   ```
 
 <br>
 
 ### [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
 
-Question
+Input: `num = "1432219"`, `k = 3`  
+Output: `"1219"`
 
-#### Approach
+Input: `num = "10200"`, `k = 1`  
+Output: `"200"`
 
-- Explanation, ideas
-  ```java
-    // code
-  ```
+#### Approach: (Greedy with Stack)
+
+- Iterating the sequence of digits from left to right, the main loop can be broken down as follows:
+
+  1.  for each digit, if the digit is less than the top of the stack, i.e. the left neighbor of the digit, then we pop the stack, i.e. removing the left neighbor. At the end, we push the digit to the stack.
+  2.  we repeat the above step (1) until any of the conditions does not hold any more, e.g. the stack is empty (no more digits left). or in another case, we have already removed k digits, therefore mission accomplished.
+
+By the code below:
+
+1. Remove all left elements that are greater than the right element until `k` is 0 or reaches the end of the string
+2. If there's any `k` left, remove the `k items` from the stack since the stack should be increasing from bottom to top
+3. Now, all `k` has been removed, the last step is to remove any leading zeros
+
+   ```java
+   // Time: O(n)
+   // Space: O(n)
+   public String removeKdigits(String num, int k) {
+       Stack<Character> stack = new Stack<Character>();
+
+       for (char c: num.toCharArray()) {
+           // only pop the ones that are larger than the next
+           if(!stack.isEmpty() && k > 0 && stack.peek() > c) {
+               stack.pop();
+               k--;
+           }
+           stack.push(c);
+       }
+
+       /* remove the remaining digits from the tail. */
+       for(int i=0; i<k; ++i) {
+           stack.pop();
+       }
+
+       /// build the final string, while removing the leading zeros.
+       StringBuilder ret = new StringBuilder();
+       boolean leadingZero = true;
+       for(char digit: stack) {
+           if(leadingZero && digit == '0') continue;
+           leadingZero = false;
+           ret.append(digit);
+       }
+
+       /* return the final string  */
+       if (ret.length() == 0) return "0";
+       return ret.toString();
+   }
+   ```
 
 <br>
 

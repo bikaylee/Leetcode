@@ -31,6 +31,7 @@
 | 61. Rotate List                                | 🟠   | Linked List                       | &check; |         |         |
 | 70. Climbing Stairs                            | 🟢   | Dynamic Programming               | &check; | &check; |         |
 | 71. Simplify Path                              | 🟠   | Stack, String                     | &check; |         |         |
+| 82. Remove Duplicates from Sorted List II      | 🟠   | Linked List, Two Pointers         | &check; |         |         |
 | 88. Merge Sorted Array                         | 🟢   | Array                             | &check; | &check; |         |
 | 94. Binary Tree Inorder Traversal              | 🟢   | Tree, DFS, Stack                  | &check; |         |         |
 | 100. Same Tree                                 | 🟢   | Tree                              | &check; |         |         |
@@ -39,7 +40,7 @@
 | 133. Clone Graph                               | 🟠   | Linked List, HashTable, Graph     | &check; |         |         |
 | 138. Copy List with Random Pointer             | 🟠   | Linked List, HashTable, Graph     | &check; | &check; |         |
 | 141. Linked List Cycle                         | 🟢   | Linked List                       | &check; | &check; |         |
-| 142. Linked List Cycle II                      | 🟠   | Linked List                       |         | &check; |         |
+| 142. Linked List Cycle II                      | 🟠   | Linked List                       | &check; | &check; |         |
 | 143. Reorder List                              | 🟠   | Linked List                       | &check; |         |         |
 | 144. Binary Tree Preorder Traversal            | 🟠   | Tree                              |         | &check; |         |
 | 160. Intersection of Two Linked Lists          | 🟢   | Linked List                       | &check; | &check; |         |
@@ -62,6 +63,7 @@
 | 278. First Bad Version                         | 🟢   | Binary Search                     | &check; |         |         |
 | 283. Move Zeroes                               | 🟢   | Array                             |         | &check; |         |
 | 284. Peeking Iterator                          | 🟠   | Design                            | &check; |         |         |
+| 287. Find Duplicate Number                     | 🟠   | Array, Two Pointers               | &check; |         |         |
 | 303. Range Sum Query - Immutable               | 🟢   | Array, Dynamic Programming        | &check; |         |         |
 | 328. Odd Even Linked List                      | 🟠   | Linked List                       | &check; | &check; |         |
 | 344. Reverse String                            | 🟢   | Two Pointers, String              | &check; |         |         |
