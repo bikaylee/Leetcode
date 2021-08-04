@@ -2,6 +2,8 @@ Date
 
 ### Week (number) - Topic
 
+<img src="" alt="example 138" width="100" >
+
 🟢 | 🟠 | 🔴 | &check;
 
 | No. | Problems | Diff | Day | Previous | Finished |
