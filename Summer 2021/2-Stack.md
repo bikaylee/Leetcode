@@ -110,6 +110,8 @@ Input: `[2, 9, 7, 8, 3]`
 - `3`: 3 can be expanded to the left before 2, then 3 x 4 subarrays = 12
 - `Total` : 10 + 9 + 28 + 8 + 12 = `67`
 
+<img src="img/2-Stack-907.png" alt="stack907" width="700" >
+
 By applying monotonic stack, it must be an increasing stack from bottom to top.
 
 - Everything left in the stack will be its expansion to the right, e.g., 2 will always remain in the stack since it's the smallest number in the array so it will expand to the end of the array.

@@ -36,7 +36,7 @@ Output: `2 -> 1 -> 4 -> 3`
 #### Approach\*:
 
 - Dealing with two nodes at a time, keep track of a first and second pointer and also a prev pointer to link every pairs  
-  <img src="img/LinkedList-2-24.jpeg" alt="approach 24" width="600" >
+  <img src="img/2-LinkedList-24.png" alt="approach 24" width="600" >
 
 ```java
 // Time: O(n)
@@ -271,7 +271,7 @@ Output: `[5,6,7,1,2,3,4]`
 #### Approach 3: Using Cyclic Replacements
 
 - Cyclic Replacements  
-  <img src="img/LinkedList-2-189.png" alt="approach 189" width="400" >
+  <img src="img/2-LinkedList-189.png" alt="approach 189" width="400" >
 
 <br>
 <br>
@@ -338,7 +338,7 @@ Output: `4 -> 5 -> 1 -> 2 -> 3` (7807)
 
 Construct a deep copy of the list.
 
-<img src="img/LinkedList-2-138.png" alt="example 138" width="700" >
+<img src="img/2-LinkedList-138.png" alt="example 138" width="700" >
 
 Input: head = `[[7,null],[13,0],[11,4],[10,2],[1,0]]`  
 Output: `[[7,null],[13,0],[11,4],[10,2],[1,0]]`

@@ -70,7 +70,7 @@ public String removeKdigits(String num, int k) {
 
 ### [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)
 
-<img src="img/Stack-2-907.png" alt="stack907" width="700" >
+<img src="img/2-Stack-907.png" alt="stack907" width="700" >
 
 ```java
 public int sumSubarrayMin0s(int[] arr) {
