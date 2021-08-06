@@ -5,16 +5,17 @@ August 2, 2021
 | No. | Problems                                                                         | Diff | Day | Previous | Finished |
 | --- | -------------------------------------------------------------------------------- | ---- | --- | -------- | -------- |
 | 1   | [**373. Find K Pairs with Smallest Sums**](#373-Find-K-Pairs-with-Smallest-Sums) | 🟠   | Mon |          | &check;  |
-| 2   | [**973. K Closest Points to Origin**](#973-K-Closest-Points-to-Origin)           | 🟠   | Mon |          | &check;  |
-| 3   | [347. Top K Frequent Elements](#347-Top-K-Frequent-Elements)                     | 🟠   | Mon |          |          |
-| 4   | [703. Kth Largest Element in a Stream](#703-Kth-Largest-Element-in-a-Stream)     | 🟢   | Mon |          |          |
-| 5   | [1046. Last Stone Weight](#1046-Last-Stone-Weight)                               | 🟢   | Mon |          |          |
+| 2   | [**973. K Closest Points to Origin**](#973-K-Closest-Points-to-Origin)           | 🟠   | Mon | &check;  | &check;  |
+| 3   | [347. Top K Frequent Elements](#347-Top-K-Frequent-Elements)                     | 🟠   | Mon |          | &check;  |
+| 4   | [703. Kth Largest Element in a Stream](#703-Kth-Largest-Element-in-a-Stream)     | 🟢   | Mon |          | &check;  |
+| 5   | [1046. Last Stone Weight](#1046-Last-Stone-Weight)                               | 🟢   | Mon |          | &check;  |
 
 **TODO:**
 
 - **373. Find K Pairs with Smallest Sums**
 - **973. K Closest Points to Origin**
-- **347. Top K Frequent Elements** Similar to 973. K Closet Points to Originss
+- **347. Top K Frequent Elements** Similar to 973. K Closet Points to Origin
+- 703. Kth Largest Element in a Stream
 - Haven't add all problems to main list
 
 <br>
@@ -130,12 +131,122 @@ We only want the closest k = 1 points from the origin, so the answer is just `[[
 
 ### [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+Input: nums = `[1,1,1,2,2,3]`, `k = 2`  
+Output: `[1,2]`
+
+#### Approach
+
+- Same idea as [**973. K Closest Points to Origin**](#973-K-Closest-Points-to-Origin)
+
+  ```java
+  // Time: O(n log k)
+  // Space: O(n)
+  public int[] topKFrequent(int[] nums, int k) {
+    HashMap<Integer, Integer> freq = new HashMap<>();
+    for (int n : nums)
+      freq.put(n, freq.getOrDefault(n, 0)+1);
+
+    PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> freq.get(a) - freq.get(b));
+    for (int n : freq.keySet()) {
+        pq.add(n);
+        if (pq.size() > k) {
+          pq.poll();
+        }
+    }
+    int [] elements = new int[k];
+    while (k > 0) {
+      elements[--k] = pq.poll();
+    }
+    return elements;
+  }
+  ```
+
 <br>
 
 ### [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
 
+Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+**Only keep k elements in the stream**
+
+#### Approach
+
+- Maintain a min heap so that its first element is the kth largest
+- Deque the smallest element when queue size is greater than or equal to k, then add the new element to always maintain k elements in queue
+
+  ```java
+  class KthLargest {
+    // k = 3
+    // Input:   4, 5, 8, 2
+    // Sorted:  2 4 5 8
+    // add(3):  2 3 4 5 8           -> 4
+    // add(5):  2 3 4 5 5 8         -> 5
+    // add(10): 2 3 4 5 5 8 10      -> 5
+    // add(9):  2 3 4 5 5 8 9 10    -> 8
+    // add(4):  2 3 4 4 5 5 8 9 10  -> 8
+
+    private final int k;
+    private PriorityQueue<Integer> pq;
+
+    public KthLargest(int k, int[] nums) {
+        this.pq = new PriorityQueue<>(k);
+        this.k = k;
+        for (int num: nums) {
+            this.add(num);
+        }
+    }
+
+    // Time: O(k log k)
+    // Space: O(k)
+    public int add(int n) {
+        // System.out.println(q.toString());
+        if (this.pq.size() < this.k) {
+            this.pq.add(val);
+        } else if (this.pq.peek() < val) {
+            this.pq.poll();
+            this.pq.add(val);
+        }
+        return this.pq.peek();
+    }
+  }
+  ```
+
 <br>
 
 ### [1046. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)
+
+Each turn, we choose the two heaviest stones and smash them together. Suppose the stones have weights x and y with `x <= y`. The result of this smash is:
+
+- If `x == y`, both stones are totally destroyed;
+- If `x != y`, the stone of weight x is totally destroyed, and the stone of weight `y` has new weight `y-x`.
+
+Input: `[2,7,4,1,8,1]`  
+Output: `1`
+
+**Bucket Sort** can be applied
+
+#### Approach
+
+- Put all elements into a max heap and deque the first two elements in the max heap to do the comparison
+
+  ```java
+  // Time: O(n log n)
+  // Space: O(n)
+  public int lastStoneWeight(int[] stones) {
+      PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> b-a);
+      for (int stone: stones)
+          pq.add(stone);
+
+      while (pq.size() >= 2) {
+          int y = pq.poll(), x = pq.poll();
+          if (x != y)
+              pq.add(y-x);
+      }
+
+      return pq.isEmpty() ? 0:pq.poll();
+  }
+  ```
 
 <br>
