@@ -2,19 +2,19 @@ August 3, 2021
 
 ### Week 3 - Hash Table
 
-| No. | Problems                                                                                               | Diff | Day | Previous | Finished |
-| --- | ------------------------------------------------------------------------------------------------------ | ---- | --- | -------- | -------- |
-| 1   | [692. Top K Frequent Words](#692-Top-K-Frequent-Words)                                                 | 🟠   | Tue | &check;  | &check;  |
-| 2   | [**554. Brick Wall**](#554-Brick-Wall)                                                                 | 🟠   | Tue |          | &check;  |
-| 3   | [**205. Isomorphic Strings**](#205-Isomorphic-Strings)                                                 | 🟢   | Tue | &check;  | &check;  |
-| 4   | [**560. Subarray Sum Equals K**](#560-Subarray-Sum-Equals-K)                                           | 🟠   | Tue |          |          |
-| 5   | [1396. Design Underground System](#1396-Design-Underground-System)                                     | 🟠   | Tue | &check;  |          |
-|     |                                                                                                        |      |     |          |          |
-| 1   | [**202. Happy Number**](#202-Happy-Number)                                                             | 🟢   | Wed | &check;  | &check;  |
-| 2   | [**264. Ugly Number II**](#264-Ugly-Number-II)                                                         | 🟠   | Wed |          | &check;  |
-| 3   | [771. Jewels and Stones](#771-Jewels-and-Stones)                                                       | 🟢   | Wed | &check;  |          |
-| 4   | [3. Longest Substring Without Repeating Characters](#3-Longest-Substring-Without-Repeating-Characters) | 🟠   | Wed |          |          |
-| 5   | [380. Insert Delete GetRandom O(1)](<#380-Insert-Delete-GetRandom-O(1)>)                               | 🟠   | Wed |          |          |
+| No. | Problems                                                                                                   | Diff | Day | Previous | Finished |
+| --- | ---------------------------------------------------------------------------------------------------------- | ---- | --- | -------- | -------- |
+| 1   | [692. Top K Frequent Words](#692-Top-K-Frequent-Words)                                                     | 🟠   | Tue | &check;  | &check;  |
+| 2   | [**554. Brick Wall**](#554-Brick-Wall)                                                                     | 🟠   | Tue |          | &check;  |
+| 3   | [**205. Isomorphic Strings**](#205-Isomorphic-Strings)                                                     | 🟢   | Tue | &check;  | &check;  |
+| 4   | [**560. Subarray Sum Equals K**](#560-Subarray-Sum-Equals-K)                                               | 🟠   | Tue |          | &check;  |
+| 5   | [1396. Design Underground System](#1396-Design-Underground-System)                                         | 🟠   | Tue | &check;  | &check;  |
+|     |                                                                                                            |      |     |          |          |
+| 1   | [**202. Happy Number**](#202-Happy-Number)                                                                 | 🟢   | Wed | &check;  | &check;  |
+| 2   | [**264. Ugly Number II**](#264-Ugly-Number-II)                                                             | 🟠   | Wed |          | &check;  |
+| 3   | [771. Jewels and Stones](#771-Jewels-and-Stones)                                                           | 🟢   | Wed | &check;  | &check;  |
+| 4   | [**3. Longest Substring Without Repeating Characters**](#3-Longest-Substring-Without-Repeating-Characters) | 🟠   | Wed |          | &check;  |
+| 5   | [380. Insert Delete GetRandom O(1)](<#380-Insert-Delete-GetRandom-O(1)>)                                   | 🟠   | Wed |          |          |
 
 **TODO:**
 
@@ -22,7 +22,8 @@ August 3, 2021
 - **205. Isomorphic Strings**
 - **560. Subarray Sum Equals K**
 - **202. Happy Number**
-- **264. Ugly Number II**
+- **264. Ugly Number II** (add approach)
+- **3. Longest Substring Without Repeating Characters** (add approach)
 
 <br>
 
@@ -135,9 +136,86 @@ Output: `true`
 
 ### [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
+Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
+
+#### Approach
+
+- Keep a cummulative sum and store it in the hashmap where key is sum and value is the frequency of encountering this sum
+- For example, k = `7` and arr = `[3,4,7,2,-3,1,4,2]`
+  - First, put `(sum = 0, freq = 1)` at the beginning, since first occurrence of `sum = 0` is outside of the iteration
+  - Add every element from input array to `sum`, then whenever `sum-k` is found in the hashmap, then we know that there is a continuous subarray at `sum = k`
+    - If `sum = 7`, `k = 7` -> `map.get(0) = 1`, then `ans++`
+    - If `sum = 14`, `k = 7`, and `map.get(7) = 2`, then `ans+= 2`
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public int subarraySum(int[] nums, int k) {
+      int ans = 0, sum = 0;
+      HashMap<Integer, Integer> map = new HashMap<>();
+      map.put(sum, 1);
+      for (int num: nums) {
+          sum += num;
+          ans += map.containsKey(sum-k) ? map.get(sum-k):0;
+          map.put(sum, map.getOrDefault(sum, 0)+1);
+      }
+      return ans;
+  }
+  ```
+
 <br>
 
 ### [1396. Design Underground System](https://leetcode.com/problems/design-underground-system/)
+
+An underground railway system is keeping track of customer travel times between different stations. They are using this data to calculate the average time it takes to travel from one station to another.
+
+#### Approach
+
+- Use one hashmap to record all checkin customer. Once a customer checked out, use another hashmap to store all station-to-station time where the value is a pair(time sum, the number of records).
+
+  ```java
+  class UndergroundSystem {
+
+      private HashMap<Pair<String, String>, Pair<Integer, Integer>> record;
+      private HashMap<Integer, Pair<String, Integer>> in;
+
+      public UndergroundSystem() {
+          this.record = new HashMap<>();
+          this.in = new HashMap<>();
+      }
+
+      public void checkIn(int id, String stationName, int t) {
+          this.in.put(id, new Pair(stationName, t));
+      }
+
+      public void checkOut(int id, String stationName, int t) {
+          Pair<String, Integer> customer = this.in.get(id);
+          Pair<String, String> stations = new Pair(customer.getKey(), stationName);
+
+          int diff = t-customer.getValue();
+
+          Pair<Integer, Integer> time = new Pair(diff, 1);
+          if (this.record.containsKey(stations)){
+              time = this.record.get(stations);
+              int count = time.getValue();
+              int sum = time.getKey();
+              time = new Pair(sum+diff, count+1);
+          }
+
+          this.record.put(stations, time);
+      }
+
+      public double getAverageTime(String startStation, String endStation) {
+          double sum = 0.0;
+          Pair<String, String> stations = new Pair(startStation, endStation);
+
+          if (this.record.containsKey(stations)) {
+              Pair<Integer, Integer> time = this.record.get(stations);
+              sum = (double) time.getKey() / time.getValue();
+          }
+          return sum;
+      }
+  }
+  ```
 
 <br>
 <br>
@@ -219,13 +297,56 @@ Given an integer n, return the nth ugly number.
 
 ### [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
 
+Input: jewels = `"aA"`, stones = `"aAAbbbb"`  
+Output: 3
+
 #### Approach
+
+- Use hash set to store all jewels
+
+  ```java
+  // Time: O(J.length+S.length)
+  // Space: O(J.length)
+  public int numJewelsInStones(String jewels, String stones) {
+      HashSet<Character> jewel = new HashSet<>();
+
+      for (char c: jewels.toCharArray())
+          jewel.add(c);
+
+      int count = 0;
+      for (char c: stones.toCharArray())
+          count += jewel.contains(c) ? 1:0;
+
+      return count;
+  }
+  ```
 
 <br>
 
 ### [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
+Input: s = `"abcabcbb"`  
+Output: 3
+
 #### Approach
+
+- TO BE added
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public int lengthOfLongestSubstring(String s) {
+      HashMap<Character, Integer> map = new HashMap<>();
+      int longest = 0;
+      for (int i = 0, start = 0; i < s.length(); i++) {
+          char c = s.charAt(i);
+          if (map.containsKey(c))
+              start = Math.max(map.get(c), start);
+          longest = Math.max(longest, i - start+1);
+          map.put(c, i+1);
+      }
+      return longest;
+  }
+  ```
 
 <br>
 
