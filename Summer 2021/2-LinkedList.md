@@ -4,7 +4,7 @@ July 26, 2021
 
 | No. | Problems                                                                                   | Diff | Day | Previous | Finished |
 | --- | ------------------------------------------------------------------------------------------ | ---- | --- | -------- | -------- |
-| 1   | [24. Swap Nodes in Pairs](#24-Swap-Nodes-In-Pairs)                                         | 🟠   | Mon | &check;  | &check;  |
+| 1   | [**24. Swap Nodes in Pairs**](#24-Swap-Nodes-In-Pairs)                                     | 🟠   | Mon | &check;  | &check;  |
 | 2   | [61. Rotate List](#61-Rotate-List)                                                         | 🟠   | Mon |          | &check;  |
 | 3   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                                   | 🟢   | Mon | &check;  | &check;  |
 | 4   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists)             | 🟢   | Mon | &check;  | &check;  |
@@ -14,13 +14,20 @@ July 26, 2021
 | 2   | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)                   | 🟠   | Tue | &check;  | &check;  |
 | 3   | [15. 3Sum](#15-3Sum)                                                                       | 🟠   | Tue |          |          |
 | 4   | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                                   | 🟠   | Tue |          | &check;  |
-| 5   | [142. Linked List Cycle II](#142-Linked-List-Cycle-II)                                     | 🟠   | Tue |          | &check;  |
+| 5   | [**142. Linked List Cycle II**](#142-Linked-List-Cycle-II)                                 | 🟠   | Tue |          | &check;  |
 |     |                                                                                            |      |     |          |          |
 | 1   | [143. Reorder List](#143-Reorder-List)                                                     | 🟠   | Wed |          | &check;  |
 | 2   | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                       | 🔴   | Wed |          | &check;  |
 | 3   | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)           | 🟢   | Wed |          | &check;  |
 | 4   | [**82. Remove Duplicates from Sorted List II**](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          | &check;  |
 | 5   | [**706. Design HashMap**](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  | &check;  |
+
+**TODO:**
+
+- **24. Swap Nodes in Pairs**
+- **142. Linked List Cycle II** (Floyd)
+- **82. Remove Duplicates from Sorted List II**
+- **706. Design HashMap**
 
 <br>
 
