@@ -28,18 +28,16 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 9      | 21. Merge Two Sorted Lists                            | 🟢   | &check;  |
 | 10     | 160. Intersection of Two Linked Lists                 | 🟢   | &check;  |
 | 11     | 189. Rotate Array                                     | 🟠   | &check;  |
-|        |                                                       |      |          |
-| 11     | 445. Add Two Numbers II                               | 🟠   | &check;  |
-| 12     | 138. Copy List with Random Pointer                    | 🟠   | &check;  |
-| 13     | 15. 3Sum                                              | 🟠   |          |
-| 14     | 287. Find Duplicate Number                            | 🟠   | &check;  |
-| 15     | **142. Linked List Cycle II**                         | 🟠   | &check;  |
-|        |                                                       |      |          |
-| 16     | 143. Reorder List                                     | 🟠   | &check;  |
-| 17     | 23. Merge k Sorted Lists                              | 🔴   | &check;  |
+| 12     | 445. Add Two Numbers II                               | 🟠   | &check;  |
+| 13     | 138. Copy List with Random Pointer                    | 🟠   | &check;  |
+| 14     | 15. 3Sum                                              | 🟠   |          |
+| 15     | 287. Find Duplicate Number                            | 🟠   | &check;  |
+| 16     | **142. Linked List Cycle II**                         | 🟠   | &check;  |
+| 17     | 143. Reorder List                                     | 🟠   | &check;  |
+| 18     | 23. Merge k Sorted Lists                              | 🔴   | &check;  |
 | 18     | 83. Remove Duplicates from Sorted List                | 🟢   | &check;  |
-| 19     | **82. Remove Duplicates from Sorted List II**         | 🟠   | &check;  |
-| 20     | **706. Design HashMap**                               | 🟢   | &check;  |
+| 20     | **82. Remove Duplicates from Sorted List II**         | 🟠   | &check;  |
+| 21     | **706. Design HashMap**                               | 🟢   | &check;  |
 |        |                                                       |      |          |
 | Week 2 | **Stack**                                             |      |          |
 |        |                                                       |      |          |
@@ -48,7 +46,6 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 3      | 20. Valid Parentheses                                 | 🟢   | &check;  |
 | 4      | 232. Implement Queue using Stacks                     | 🟢   | &check;  |
 | 5      | 71. Simplify Path                                     | 🟠   | &check;  |
-|        |                                                       |      |          |
 | 6      | **456. 132 Pattern**                                  | 🟠   | &check;  |
 | 7      | **402. Remove K Digits**                              | 🟠   | &check;  |
 | 8      | **155. Min Stack**                                    | 🟢   |          |
@@ -70,7 +67,6 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 3      | **205. Isomorphic Strings**                           | 🟢   | &check;  |
 | 4      | **560. Subarray Sum Equals K**                        | 🟠   | &check;  |
 | 5      | 1396. Design Underground System                       | 🟠   | &check;  |
-|        |                                                       |      |          |
 | 6      | **202. Happy Number**                                 | 🟢   | &check;  |
 | 7      | **264. Ugly Number II**                               | 🟠   | &check;  |
 | 8      | 771. Jewels and Stones                                | 🟢   | &check;  |
@@ -83,7 +79,6 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 2      | 739. Daily Temperatures                               | 🟠   | &check;  |
 | 3      | 907. Sum of Subarray Minimums                         | 🟠   |          |
 | 4      | 456. 132 Pattern                                      | 🟠   |          |
-|        |                                                       |      |          |
 | 6      | 735. Asteroid Collision                               | 🟠   | &check;  |
 | 7      | 147. Insertion Sort List                              | 🟠   | &check;  |
 | 8      | 135. Candy                                            | 🔴   |          |
@@ -101,19 +96,16 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 8      | 111. Minimum Depth of Binary Tree                     | 🟢   |          |
 | 9      | 226. Invert Binary Tree                               | 🟢   |          |
 | 10     | 199. Binary Tree Right Side View                      | 🟠   |          |
-|        |                                                       |      |          |
 | 11     | 652. Find Duplicate Subtrees                          | 🟠   |          |
 | 12     | 508. Most Frequent Subtree Sum                        | 🟠   |          |
 | 13     | 112. Path Sum                                         | 🟢   |          |
 | 14     | 113. Path Sum II                                      | 🟠   |          |
 | 15     | 1448. Count Good Nodes in Binary Tree                 | 🟠   |          |
-|        |                                                       |      |          |
 | 16     | 114. Flatten Binary Tree to Linked List               | 🟠   |          |
 | 17     | 173. Binary Search Tree Iterator                      | 🟠   |          |
 | 18     | 515. Find Largest Value in Each Tree Row              | 🟠   |          |
 | 19     | 108. Convert Sorted Array to Binary Search Tree       | 🟢   |          |
 | 20     | 938. Range Sum of BST                                 | 🟢   |          |
-|        |                                                       |      |          |
 | 21     | 449. Serialize and Deserialize BST                    | 🟠   |          |
 | 22     | 297. Serialize and Deserialize Binary Tree            | 🔴   |          |
 | 23     | 617. Merge Two Binary Trees                           | 🟢   |          |
@@ -122,15 +114,11 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 |        |                                                       |      |          |
 | Week 5 | **Graph**                                             |      |          |
 |        |                                                       |      |          |
-|        |                                                       |      |          |
 | Week 6 | **String, Array**                                     |      |          |
-|        |                                                       |      |          |
 |        |                                                       |      |          |
 | Week 7 | **Greedy**                                            |      |          |
 |        |                                                       |      |          |
-|        |                                                       |      |          |
 | Week 8 | **Dynamic Programming**                               |      |          |
-|        |                                                       |      |          |
 |        |                                                       |      |          |
 | Week 9 | **Backtracking, Advanced**                            |      |          |
 |        |                                                       |      |          |
