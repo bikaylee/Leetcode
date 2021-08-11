@@ -6,6 +6,8 @@
 
 #### 🔴 Hard : 2
 
+| 373. Find K Pairs with Smallest Sums| 🟠 | Array, Heap |&check; | | |
+
 | Problems                                       | Diff | Category                          | Java    | JS      | C++     |
 | ---------------------------------------------- | ---- | --------------------------------- | ------- | ------- | ------- |
 | 1. Two Sum                                     | 🟢   | Array, Hash Table                 | &check; | &check; |         |
@@ -52,6 +54,7 @@
 | 203. Remove Linked List Elements               | 🟢   | Linked List, Recursion            | &check; | &check; |         |
 | 206. Reverse Linked List                       | 🟢   | Linked List, Recursion            | &check; | &check; |         |
 | 209. Minimum Size Subarray Sum                 | 🟠   | Array                             |         | &check; |         |
+| 224. Basic Calculator                          | 🔴   | String, Stack                     | &check; |         |         |
 | 231. Power of Two                              | 🟢   | Math, Bit Manipulation, Recursion | &check; |         |         |
 | 232. Implement Queue using Stacks              | 🟢   | Design, Stack, Queue              | &check; |         |         |
 | 234. Palindrome Linked List                    | 🟢   | Linked List, Two Pointers         | &check; | &check; |         |
@@ -68,6 +71,7 @@
 | 328. Odd Even Linked List                      | 🟠   | Linked List                       | &check; | &check; |         |
 | 344. Reverse String                            | 🟢   | Two Pointers, String              | &check; |         |         |
 | 378. Kth Smallest Element in a Sorted Matrix   | 🟠   | Array, Heap, Sort, Matrix         | &check; |         |         |
+| 402. Remove K Digits                           | 🟠   | String, Monotonic Stack, Greedy   | &check; |         |         |
 | 414. Third Maximum Number                      | 🟢   | Array                             | &check; |         |         |
 | 415. Add Strings                               | 🟢   | String, Math, Simulation          | &check; |         |         |
 | 424. Longest Repeating Character Replacement   | 🟠   | String, Sliding Window            |         | &check; |         |
@@ -75,6 +79,7 @@
 | 438. Find All Anagrams in a String             | 🟠   | Hash, String, Sliding Window      | &check; |         |         |
 | 445. Add Two Numbers II                        | 🟠   | Linked List                       | &check; |         |         |
 | 448. Find All Numbers Disappeared in an Array  | 🟢   | Array                             |         | &check; |         |
+| 456. 132 Pattern                               | 🟠   | Array, Monotonic Stack            | &check; |         |         |
 | 485. Max Consecutive Ones                      | 🟢   | Array                             | &check; | &check; |         |
 | 487. Max Consecutive Ones II                   | 🟠   | Two Pointers, Sliding Window      | &check; |         |         |
 | 543. Diameter of Binary Tree                   | 🟢   | Tree, Recursion                   |         | &check; |         |
