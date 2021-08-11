@@ -261,33 +261,12 @@ Output: `[1,2,3,4]`
 
 ### [135. Candy](https://leetcode.com/problems/candy/)
 
-#### Approach
-
-- Explanation, ideas
-  ```java
-    // code
-  ```
-
 <br>
 
 ### [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
 
-#### Approach
-
-- Explanation, ideas
-  ```java
-    // code
-  ```
-
 <br>
 
 ### [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
-
-#### Approach
-
-- Explanation, ideas
-  ```java
-    // code
-  ```
 
 <br>
