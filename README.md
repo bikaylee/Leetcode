@@ -1,12 +1,10 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 60
+#### 🟢 Easy : 62
 
-#### 🟠 Medium : 42
+#### 🟠 Medium : 49
 
-#### 🔴 Hard : 2
-
-| 373. Find K Pairs with Smallest Sums| 🟠 | Array, Heap |&check; | | |
+#### 🔴 Hard : 3
 
 | Problems                                       | Diff | Category                          | Java    | JS      | C++     |
 | ---------------------------------------------- | ---- | --------------------------------- | ------- | ------- | ------- |
@@ -70,6 +68,8 @@
 | 303. Range Sum Query - Immutable               | 🟢   | Array, Dynamic Programming        | &check; |         |         |
 | 328. Odd Even Linked List                      | 🟠   | Linked List                       | &check; | &check; |         |
 | 344. Reverse String                            | 🟢   | Two Pointers, String              | &check; |         |         |
+| 347. Top K Frequent Elements                   | 🟠   | Array, Heap, Hash Table           | &check; |         |         |
+| 373. Find K Pairs with Smallest Sums           | 🟠   | Array, Heap                       | &check; |         |         |
 | 378. Kth Smallest Element in a Sorted Matrix   | 🟠   | Array, Heap, Sort, Matrix         | &check; |         |         |
 | 402. Remove K Digits                           | 🟠   | String, Monotonic Stack, Greedy   | &check; |         |         |
 | 414. Third Maximum Number                      | 🟢   | Array                             | &check; |         |         |
@@ -86,6 +86,7 @@
 | 575. Distribute Candies                        | 🟢   | Hash Table                        | &check; |         |         |
 | 622. Design Circular Queue                     | 🟠   | Array, Design, Queu               | &check; |         |         |
 | 645. Set Mismatch                              | 🟢   | Hash Table, Math                  | &check; |         |         |
+| 703. Kth Largest Element in a Stream           | 🟢   | BST, Heap                         | &check; |         |         |
 | 706. Design HashMap                            | 🟢   | Hash Table, Design, Array         | &check; |         |         |
 | 707. Design Linked List                        | 🟠   | Linked List, Design               | &check; | &check; |         |
 | 717. 1-bit and 2-bit Characters                | 🟢   | Array, Bit                        |         | &check; |         |
@@ -102,9 +103,11 @@
 | 938. Range Sum of BST                          | 🟢   | Tree, BFS, DFS                    |         | &check; |         |
 | 946. Validate Stack Sequences                  | 🟠   | Array, Stack                      | &check; |         |         |
 | 953. Verifying an Alien Dictionary             | 🟢   | String, Array, Hash Table         | &check; |         |         |
+| 973. K Closest Points to Origin                | 🟠   | Array, Heap, Quick Select         | &check; |         |         |
 | 977. Squares of Sorted Array                   | 🟢   | Array, Two Pointers, Sorting      | &check; |         |         |
 | 997. Find the Town Judge                       | 🟢   | Graph                             | &check; |         |         |
 | 1004. Max Consectutive Ones III                | 🟠   | Array, Sliding Window             | &check; | &check; |         |
+| 1046. Last Stone Weight                        | 🟢   | Array, Heap                       | &check; |         |         |
 | 1051. Height Checker                           | 🟢   | Array                             |         | &check; |         |
 | 1089. Duplicate Zeroes                         | 🟢   | Array                             | &check; | &check; |         |
 | 1165. Single-Row Keyboard                      | 🟢   | String                            | &check; |         |         |
