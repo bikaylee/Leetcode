@@ -12,6 +12,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 
 | No.    | Problems                                              | Diff | Finished |
 | ------ | ----------------------------------------------------- | ---- | -------- |
+|        |                                                       |      |          |
 | Week 1 | **Linked List**                                       |      |          |
 | 1      | 237. Delete Node in a Linked List                     | 🟢   | &check;  |
 | 2      | 206. Reverse Linked List                              | 🟢   | &check;  |
@@ -21,6 +22,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 6      | 234. Palindrome Linked List                           | 🟠   | &check;  |
 |        |                                                       |      |          |
 | Week 2 | **Linked List**                                       |      |          |
+|        |                                                       |      |          |
 | 7      | **24. Swap Nodes in Pairs**                           | 🟠   | &check;  |
 | 8      | 61. Rotate List                                       | 🟠   | &check;  |
 | 9      | 21. Merge Two Sorted Lists                            | 🟢   | &check;  |
@@ -40,6 +42,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 20     | **706. Design HashMap**                               | 🟢   | &check;  |
 |        |                                                       |      |          |
 | Week 2 | **Stack**                                             |      |          |
+|        |                                                       |      |          |
 | 1      | 946. Validate Stack Sequences                         | 🟠   | &check;  |
 | 2      | **907. Sum of Subarray Minimums**                     | 🟠   | &check;  |
 | 3      | 20. Valid Parentheses                                 | 🟢   | &check;  |
@@ -53,6 +56,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 10     | 7. Reverse Integer                                    | 🟢   | &check;  |
 |        |                                                       |      |          |
 | Week 3 | **Heap**                                              |      |          |
+|        |                                                       |      |          |
 | 1      | **373. Find K Pairs with Smallest Sums**              | 🟠   | &check;  |
 | 2      | **973. K Closest Points to Origin**                   | 🟠   | &check;  |
 | 3      | 347. Top K Frequent Elements                          | 🟠   | &check;  |
@@ -60,6 +64,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 5      | 1046. Last Stone Weight                               | 🟢   | &check;  |
 |        |                                                       |      |          |
 | Week 3 | **Hash Table**                                        |      |          |
+|        |                                                       |      |          |
 | 1      | 692. Top K Frequent Words                             | 🟠   | &check;  |
 | 2      | **554. Brick Wall**                                   | 🟠   | &check;  |
 | 3      | **205. Isomorphic Strings**                           | 🟢   | &check;  |
@@ -73,6 +78,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 10     | 380. Insert Delete GetRandom O(1)                     | 🟠   |          |
 |        |                                                       |      |          |
 | Week 3 | **Review**                                            |      |          |
+|        |                                                       |      |          |
 | 1      | 451. Sort Characters By Frequency                     | 🟠   | &check;  |
 | 2      | 739. Daily Temperatures                               | 🟠   | &check;  |
 | 3      | 907. Sum of Subarray Minimums                         | 🟠   |          |
@@ -85,6 +91,7 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 | 10     | 560. Subarray Sum Equals K                            | 🟠   |          |
 |        |                                                       |      |          |
 | Week 4 | **Binary Tree**                                       |      |          |
+|        |                                                       |      |          |
 | 1      | 230. Kth Smallest Element in a BST                    | 🟠   |          |
 | 2      | 98. Validate Binary Search Tree                       | 🟠   |          |
 | 3      | 110. Balanced Binary Tree                             | 🟢   |          |
@@ -115,10 +122,15 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 |        |                                                       |      |          |
 | Week 5 | **Graph**                                             |      |          |
 |        |                                                       |      |          |
+|        |                                                       |      |          |
 | Week 6 | **String, Array**                                     |      |          |
+|        |                                                       |      |          |
 |        |                                                       |      |          |
 | Week 7 | **Greedy**                                            |      |          |
 |        |                                                       |      |          |
+|        |                                                       |      |          |
 | Week 8 | **Dynamic Programming**                               |      |          |
 |        |                                                       |      |          |
+|        |                                                       |      |          |
 | Week 9 | **Backtracking, Advanced**                            |      |          |
+|        |                                                       |      |          |
