@@ -5,7 +5,7 @@ July 29, 2021
 | No. | Problems                                                               | Diff | Day | Previous | Finished |
 | --- | ---------------------------------------------------------------------- | ---- | --- | -------- | -------- |
 | 1   | [946. Validate Stack Sequences](#946-Validate-Stack-Sequences)         | 🟠   | Thu |          | &check;  |
-| 2   | [**907. Sum of Subarray Minimums**](#907-Sum-of-Subarray-Minimums)     | 🟠   | Thu |          |          |
+| 2   | [**907. Sum of Subarray Minimums**](#907-Sum-of-Subarray-Minimums)     | 🟠   | Thu |          | &check;  |
 | 3   | [20. Valid Parentheses](#20-Valid-Parentheses)                         | 🟢   | Thu | &check;  | &check;  |
 | 4   | [232. Implement Queue using Stacks](#232-Implement-Queue-using-Stacks) | 🟢   | Thu |          | &check;  |
 | 5   | [71. Simplify Path](#71-Simplify-Path)                                 | 🟠   | Thu |          | &check;  |

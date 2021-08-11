@@ -9,11 +9,11 @@ August 5, 2021
 | 3   | [907. Sum of Subarray Minimums](#907-Sum-of-Subarray-Minimums)         | 🟠   | Thu | &check;  |          |
 | 4   | [456. 132 Pattern](#456-132-Pattern)                                   | 🟠   | Thu | &check;  |          |
 |     |                                                                        |      |     |          |          |
-| 1   | [735. Asteroid Collision](#735-Asteroid-Collision)                     | 🟠   | Fri | &check;  |          |
-| 2   | [147. Insertion Sort List](#147-Insertion-Sort-List)                   | 🟠   | Fri |          |          |
+| 1   | [735. Asteroid Collision](#735-Asteroid-Collision)                     | 🟠   | Fri | &check;  | &check;  |
+| 2   | [147. Insertion Sort List](#147-Insertion-Sort-List)                   | 🟠   | Fri |          | &check;  |
 | 3   | [135. Candy](#135-Candy)                                               | 🔴   | Fri |          |          |
-| 4   | [402. Remove K Digits](#402-Remove-K-Digits)                           | 🟠   | Fri |          |          |
-| 5   | [560. Subarray Sum Equals K](#560-Subarray-Sum-Equals-K)               | 🟠   | Fri |          |          |
+| 4   | [402. Remove K Digits](#402-Remove-K-Digits)                           | 🟠   | Fri | &check;  |          |
+| 5   | [560. Subarray Sum Equals K](#560-Subarray-Sum-Equals-K)               | 🟠   | Fri | &check;  |          |
 
 **TODO:**
 
