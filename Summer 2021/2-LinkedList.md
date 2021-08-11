@@ -4,23 +4,23 @@ July 26, 2021
 
 | No. | Problems                                                                                   | Diff | Day | Previous | Finished |
 | --- | ------------------------------------------------------------------------------------------ | ---- | --- | -------- | -------- |
-| 1   | [**24. Swap Nodes in Pairs**](#24-Swap-Nodes-In-Pairs)                                     | 🟠   | Mon | &check;  | &check;  |
-| 2   | [61. Rotate List](#61-Rotate-List)                                                         | 🟠   | Mon |          | &check;  |
-| 3   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                                   | 🟢   | Mon | &check;  | &check;  |
-| 4   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists)             | 🟢   | Mon | &check;  | &check;  |
-| 5   | [189. Rotate Array](#189-Rotate-Array)                                                     | 🟠   | Mon |          | &check;  |
+| 6   | [**24. Swap Nodes in Pairs**](#24-Swap-Nodes-In-Pairs)                                     | 🟠   | Mon | &check;  | &check;  |
+| 7   | [61. Rotate List](#61-Rotate-List)                                                         | 🟠   | Mon |          | &check;  |
+| 8   | [21. Merge Two Sorted Lists](#21-Merge-Two-Sorted-Lists)                                   | 🟢   | Mon | &check;  | &check;  |
+| 9   | [160. Intersection of Two Linked Lists](#160-Intersection-Of-Two-Linked-Lists)             | 🟢   | Mon | &check;  | &check;  |
+| 10  | [189. Rotate Array](#189-Rotate-Array)                                                     | 🟠   | Mon |          | &check;  |
 |     |                                                                                            |      |     |          |          |
-| 1   | [445. Add Two Numbers II](#445-Add-Two-Numbers-II)                                         | 🟠   | Tue | &check;  | &check;  |
-| 2   | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)                   | 🟠   | Tue | &check;  | &check;  |
-| 3   | [15. 3Sum](#15-3Sum)                                                                       | 🟠   | Tue |          |          |
-| 4   | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                                   | 🟠   | Tue |          | &check;  |
-| 5   | [**142. Linked List Cycle II**](#142-Linked-List-Cycle-II)                                 | 🟠   | Tue |          | &check;  |
+| 11  | [445. Add Two Numbers II](#445-Add-Two-Numbers-II)                                         | 🟠   | Tue | &check;  | &check;  |
+| 12  | [138. Copy List with Random Pointer](#138-Copy-List-with-Random-Pointer)                   | 🟠   | Tue | &check;  | &check;  |
+| 13  | [15. 3Sum](#15-3Sum)                                                                       | 🟠   | Tue |          |          |
+| 14  | [287. Find Duplicate Number](#287-Find-Duplicate-Number)                                   | 🟠   | Tue |          | &check;  |
+| 15  | [**142. Linked List Cycle II**](#142-Linked-List-Cycle-II)                                 | 🟠   | Tue |          | &check;  |
 |     |                                                                                            |      |     |          |          |
-| 1   | [143. Reorder List](#143-Reorder-List)                                                     | 🟠   | Wed |          | &check;  |
-| 2   | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                       | 🔴   | Wed |          | &check;  |
-| 3   | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)           | 🟢   | Wed |          | &check;  |
-| 4   | [**82. Remove Duplicates from Sorted List II**](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          | &check;  |
-| 5   | [**706. Design HashMap**](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  | &check;  |
+| 16  | [143. Reorder List](#143-Reorder-List)                                                     | 🟠   | Wed |          | &check;  |
+| 17  | [23. Merge k Sorted Lists](#23-Merge-k-Sorted-Lists)                                       | 🔴   | Wed |          | &check;  |
+| 18  | [83. Remove Duplicates from Sorted List](#83-Remove-Duplicates-from-Sorted-List)           | 🟢   | Wed |          | &check;  |
+| 19  | [**82. Remove Duplicates from Sorted List II**](#82-Remove-Duplicates-from-Sorted-List-II) | 🟠   | Wed |          | &check;  |
+| 20  | [**706. Design HashMap**](#706-Design-HashMap)                                             | 🟢   | Wed | &check;  | &check;  |
 
 **TODO:**
 

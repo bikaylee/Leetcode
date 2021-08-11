@@ -10,11 +10,11 @@ August 3, 2021
 | 4   | [**560. Subarray Sum Equals K**](#560-Subarray-Sum-Equals-K)                                               | 🟠   | Tue |          | &check;  |
 | 5   | [1396. Design Underground System](#1396-Design-Underground-System)                                         | 🟠   | Tue | &check;  | &check;  |
 |     |                                                                                                            |      |     |          |          |
-| 1   | [**202. Happy Number**](#202-Happy-Number)                                                                 | 🟢   | Wed | &check;  | &check;  |
-| 2   | [**264. Ugly Number II**](#264-Ugly-Number-II)                                                             | 🟠   | Wed |          | &check;  |
-| 3   | [771. Jewels and Stones](#771-Jewels-and-Stones)                                                           | 🟢   | Wed | &check;  | &check;  |
-| 4   | [**3. Longest Substring Without Repeating Characters**](#3-Longest-Substring-Without-Repeating-Characters) | 🟠   | Wed |          | &check;  |
-| 5   | [380. Insert Delete GetRandom O(1)](<#380-Insert-Delete-GetRandom-O(1)>)                                   | 🟠   | Wed |          |          |
+| 6   | [**202. Happy Number**](#202-Happy-Number)                                                                 | 🟢   | Wed | &check;  | &check;  |
+| 7   | [**264. Ugly Number II**](#264-Ugly-Number-II)                                                             | 🟠   | Wed |          | &check;  |
+| 8   | [771. Jewels and Stones](#771-Jewels-and-Stones)                                                           | 🟢   | Wed | &check;  | &check;  |
+| 9   | [**3. Longest Substring Without Repeating Characters**](#3-Longest-Substring-Without-Repeating-Characters) | 🟠   | Wed |          | &check;  |
+| 10  | [380. Insert Delete GetRandom O(1)](<#380-Insert-Delete-GetRandom-O(1)>)                                   | 🟠   | Wed |          |          |
 
 **TODO:**
 

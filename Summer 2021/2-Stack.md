@@ -10,11 +10,11 @@ July 29, 2021
 | 4   | [232. Implement Queue using Stacks](#232-Implement-Queue-using-Stacks) | 🟢   | Thu |          | &check;  |
 | 5   | [71. Simplify Path](#71-Simplify-Path)                                 | 🟠   | Thu |          | &check;  |
 |     |                                                                        |      |     |          |          |
-| 1   | [**456. 132 Pattern**](#456-132-Pattern)                               | 🟠   | Fri |          | &check;  |
-| 2   | [**402. Remove K Digits**](#402-Remove-K-Digits)                       | 🟠   | Fri |          | &check;  |
-| 3   | [**155. Min Stack**](#155-Min-Stack)                                   | 🟢   | Fri |          |          |
-| 4   | [**224. Basic Calculator**](#224-Basic-Calculator)                     | 🔴   | Fri |          | &check;  |
-| 5   | [7. Reverse Integer](#7-Reverse-Integer)                               | 🟢   | Fri | &check;  | &check;  |
+| 6   | [**456. 132 Pattern**](#456-132-Pattern)                               | 🟠   | Fri |          | &check;  |
+| 7   | [**402. Remove K Digits**](#402-Remove-K-Digits)                       | 🟠   | Fri |          | &check;  |
+| 8   | [**155. Min Stack**](#155-Min-Stack)                                   | 🟢   | Fri |          |          |
+| 9   | [**224. Basic Calculator**](#224-Basic-Calculator)                     | 🔴   | Fri |          | &check;  |
+| 10  | [7. Reverse Integer](#7-Reverse-Integer)                               | 🟢   | Fri | &check;  | &check;  |
 
 **TODO:**
 
