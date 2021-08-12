@@ -107,7 +107,7 @@
 | 821. Shortest Distance to a Character             | 🟢   | Array                              | &check; | &check; |         |
 | 841. Keys and Rooms                               | 🟠   | DFS, Graph                         | &check; |         |         |
 | 856. Score of Parentheses                         | 🟠   | String, Stack                      | &check; |         |         |
-| 876. Middle of the Linked List                    | 🟢   | Linked List                        |         | &check; |         |
+| 876. Middle of the Linked List                    | 🟢   | Linked List                        | &check; | &check; |         |
 | 907. Sum of Subarray Minimums                     | 🟠   | Array, Stack, Monotonic Stack      | &check; |         |         |
 | 908. Smallest Range I                             | 🟢   | Array, Math                        | &check; |         |         |
 | 929. Unique Email Addresses                       | 🟢   | String                             | &check; |         |         |
@@ -119,7 +119,7 @@
 | 997. Find the Town Judge                          | 🟢   | Graph                              | &check; |         |         |
 | 1004. Max Consectutive Ones III                   | 🟠   | Array, Sliding Window              | &check; | &check; |         |
 | 1046. Last Stone Weight                           | 🟢   | Array, Heap                        | &check; |         |         |
-| 1051. Height Checker                              | 🟢   | Array                              |         | &check; |         |
+| 1051. Height Checker                              | 🟢   | Array, Sort, Counting Sort         | &check; | &check; |         |
 | 1089. Duplicate Zeroes                            | 🟢   | Array                              | &check; | &check; |         |
 | 1165. Single-Row Keyboard                         | 🟢   | String                             | &check; |         |         |
 | 1207. Unique Number of Occurrences                | 🟢   | Hash Table                         | &check; |         |         |
@@ -128,7 +128,7 @@
 | 1313. Decompress Run-Length Encoded List          | 🟢   | Array                              |         | &check; |         |
 | 1338. Reduce Array Size to The Half               | 🟠   | Array, Hash, Sort, Heap            | &check; |         |         |
 | 1342. No. of Steps to Reduce a No. to Zero        | 🟢   | Bit Manipulation                   | &check; |         |         |
-| 1346. Check If N and its Double Exist             | 🟢   | Array                              |         | &check; |         |
+| 1346. Check If N and its Double Exist             | 🟢   | Array                              | &check; | &check; |         |
 | 1347. Minimum Steps to Make Two Str Anagram       | 🟠   | String, Hash                       | &check; |         |         |
 | 1396. Design Underground System                   | 🟠   | String, Hash Table, Design         | &check; |         |         |
 | 1474. Delete N Nodes After M Nodes of LL          | 🟢   | Linked List                        | &check; |         |         |
