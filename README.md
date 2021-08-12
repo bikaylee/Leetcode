@@ -2,13 +2,9 @@
 
 #### 🟢 Easy : 65
 
-#### 🟠 Medium : 55
+#### 🟠 Medium : 58
 
 #### 🔴 Hard : 3
-
-| 451. Sort Characters By Frequency | 🟠 | String, Hash Table, Heap | &check; | | |
-| 739. Daily Temperatures | 🟠 | Array, Monotonic Stack, DP | &check; | | |
-| 147. Insertion Sort List | 🟠 | Linked List, Sort | &check; | | |
 
 | Problems                                          | Diff | Category                           | Java    | JS      | C++     |
 | ------------------------------------------------- | ---- | ---------------------------------- | ------- | ------- | ------- |
@@ -48,6 +44,7 @@
 | 142. Linked List Cycle II                         | 🟠   | Linked List                        | &check; | &check; |         |
 | 143. Reorder List                                 | 🟠   | Linked List                        | &check; |         |         |
 | 144. Binary Tree Preorder Traversal               | 🟠   | Tree                               |         | &check; |         |
+| 147. Insertion Sort List                          | 🟠   | Linked List, Sort                  | &check; |         |         |
 | 160. Intersection of Two Linked Lists             | 🟢   | Linked List                        | &check; | &check; |         |
 | 167. Two Sum II                                   | 🟢   | Binary Search                      | &check; |         |         |
 | 169. Majority                                     | 🟢   | Array                              | &check; |         |         |
@@ -87,6 +84,7 @@
 | 438. Find All Anagrams in a String                | 🟠   | Hash, String, Sliding Window       | &check; |         |         |
 | 445. Add Two Numbers II                           | 🟠   | Linked List                        | &check; |         |         |
 | 448. Find All Numbers Disappeared in an Array     | 🟢   | Array                              |         | &check; |         |
+| 451. Sort Characters By Frequency                 | 🟠   | String, Hash Table, Heap           | &check; |         |         |
 | 456. 132 Pattern                                  | 🟠   | Array, Monotonic Stack             | &check; |         |         |
 | 485. Max Consecutive Ones                         | 🟢   | Array                              | &check; | &check; |         |
 | 487. Max Consecutive Ones II                      | 🟠   | Two Pointers, Sliding Window       | &check; |         |         |
@@ -102,6 +100,7 @@
 | 707. Design Linked List                           | 🟠   | Linked List, Design                | &check; | &check; |         |
 | 717. 1-bit and 2-bit Characters                   | 🟢   | Array, Bit                         |         | &check; |         |
 | 735. Asteroid Collision                           | 🟠   | Array, Stack                       | &check; |         |         |
+| 739. Daily Temperatures                           | 🟠   | Array, Monotonic Stack, DP         | &check; |         |         |
 | 771. Jewels and Stones                            | 🟢   | String, Hash Table                 | &check; |         |         |
 | 783. Minimum Distance Between BST Nodes           | 🟢   | Tree, Recursion                    |         | &check; |         |
 | 785. Is Graph Bipartite?                          | 🟠   | Graph, DFS                         | &check; |         |         |

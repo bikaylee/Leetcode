@@ -10,8 +10,8 @@ August 9, 2021
 | 4   | [**101. Symmetric Tree**](#101-Symmetric-Tree)                                                     | 🟢   | Mon |          | &check;  |
 | 5   | [102. Binary Tree Level Order Traversal](#102-Binary-Tree-Level-Order-Traversal)                   | 🟠   | Mon |          | &check;  |
 |     |                                                                                                    |      |     |          |          |
-| 6   | [107. Binary Tree Level Order Traversal II](#107-Binary-Tree-Level-Order-Traversal-II)             | 🟠   | Tue |          |          |
-| 7   | [814. Binary Tree Pruning](#814-Binary-Tree-Pruning)                                               | 🟠   | Tue |          |          |
+| 6   | [107. Binary Tree Level Order Traversal II](#107-Binary-Tree-Level-Order-Traversal-II)             | 🟠   | Tue |          | &check;  |
+| 7   | [**814. Binary Tree Pruning**](#814-Binary-Tree-Pruning)                                           | 🟠   | Tue |          | &check;  |
 | 8   | [111. Minimum Depth of Binary Tree](#111-Minimum-Depth-of-Binary-Tree)                             | 🟢   | Tue |          |          |
 | 9   | [226. Invert Binary Tree](#226-Invert-Binary-Tree)                                                 | 🟢   | Tue | &check;  |          |
 | 10  | [199. Binary Tree Right Side View](#199-Binary-Tree-Right-Side-View)                               | 🟠   | Tue | &check;  |          |
@@ -39,6 +39,7 @@ August 9, 2021
 - **98. Validate Binary Search Tree**
 - **110. Balanced Binary Tree**
 - **101. Symmetric Tree**
+- 107. Binary Tree Level Order Traversal II (Recursion)
 
 <br>
 
@@ -119,6 +120,8 @@ Given the `root` of a binary search tree, and an integer k, return the `kth (1-i
 
 Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
 
+<img src="img/4-Tree-199.png" alt="tree 199" width="300" >
+
 Input: root = `[3,9,20,null,null,15,7]`  
 Output: `[[3],[9,20],[15,7]]`
 
@@ -198,21 +201,52 @@ Output: `[[3],[9,20],[15,7]]`
 
 <br>
 
-### [814. Binary Tree Pruning()
+### [814. Binary Tree Pruning]()
 
 <br>
 
-### [111. Minimum Depth of Binary Tree()
+### [111. Minimum Depth of Binary Tree]()
 
 <br>
 
-### [226. Invert Binary Tree()
+### [226. Invert Binary Tree]()
 
 <br>
 
-### [199. Binary Tree Right Side View()
+### [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
 
-<br>
+Input: root = `[1,2,3,null,5,null,4]`  
+Output: `[1,3,4]`
+
+#### Approach
+
+- Same idea for level order traversal problem, use BFS to traverse the tree. The node on the level's rightmost is node to be added to return list.
+
+  ```java
+  // Time: O(n)
+  // Space
+  public List<Integer> rightSideView(TreeNode root) {
+      List<Integer> right = new ArrayList<>();
+      if (root == null) return right;
+
+      Queue<TreeNode> queue = new LinkedList<>();
+      queue.add(root);
+
+      while (!queue.isEmpty()) {
+          int n = queue.size();
+          while (n-- > 0) {
+              root = queue.poll();
+              if (root.left != null) queue.add(root.left);
+              if (root.right!= null) queue.add(root.right);
+          }
+          right.add(root.val);
+      }
+
+      return right;
+  }
+  ```
+
+  <br>
 
 <br>
 
@@ -222,19 +256,19 @@ Output: `[[3],[9,20],[15,7]]`
 
 <br>
 
-### [508. Most Frequent Subtree Sum()
+### [508. Most Frequent Subtree Sum]()
 
 <br>
 
-### [112. Path Sum()
+### [112. Path Sum]()
 
 <br>
 
-### [113. Path Sum II()
+### [113. Path Sum II]()
 
 <br>
 
-### [1448. Count Good Nodes in Binary Tree()
+### [1448. Count Good Nodes in Binary Tree]()
 
 <br>
 <br>

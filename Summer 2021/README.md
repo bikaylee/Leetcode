@@ -87,15 +87,16 @@ Week 9 - Backtracking, Advanced : September 13, 2021
 |        |                                                       |      |          |
 | Week 4 | **Binary Tree**                                       |      |          |
 |        |                                                       |      |          |
-| 1      | 230. Kth Smallest Element in a BST                    | 🟠   |          |
-| 2      | 98. Validate Binary Search Tree                       | 🟠   |          |
-| 3      | 110. Balanced Binary Tree                             | 🟢   |          |
-| 4      | 101. Symmetric Tree                                   | 🟢   |          |
-| 5      | 102. Binary Tree Level Order Traversal                | 🟠   |          |
-| 7      | 814. Binary Tree Pruning                              | 🟠   |          |
+| 1      | 230. Kth Smallest Element in a BST                    | 🟠   | &check;  |
+| 2      | 98. Validate Binary Search Tree                       | 🟠   | &check;  |
+| 3      | 110. Balanced Binary Tree                             | 🟢   | &check;  |
+| 4      | 101. Symmetric Tree                                   | 🟢   | &check;  |
+| 5      | 102. Binary Tree Level Order Traversal                | 🟠   | &check;  |
+| 6      | 107. Binary Tree Level Order Traversal II             | 🟠   | &check;  |
+| 7      | 814. Binary Tree Pruning                              | 🟠   | &check;  |
 | 8      | 111. Minimum Depth of Binary Tree                     | 🟢   |          |
-| 9      | 226. Invert Binary Tree                               | 🟢   |          |
-| 10     | 199. Binary Tree Right Side View                      | 🟠   |          |
+| 9      | 226. Invert Binary Tree                               | 🟢   | &check;  |
+| 10     | 199. Binary Tree Right Side View                      | 🟠   | &check;  |
 | 11     | 652. Find Duplicate Subtrees                          | 🟠   |          |
 | 12     | 508. Most Frequent Subtree Sum                        | 🟠   |          |
 | 13     | 112. Path Sum                                         | 🟢   |          |
