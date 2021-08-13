@@ -12,17 +12,17 @@ August 9, 2021
 |     |                                                                                                    |      |     |          |          |
 | 6   | [107. Binary Tree Level Order Traversal II](#107-Binary-Tree-Level-Order-Traversal-II)             | 🟠   | Tue |          | &check;  |
 | 7   | [**814. Binary Tree Pruning**](#814-Binary-Tree-Pruning)                                           | 🟠   | Tue |          | &check;  |
-| 8   | [111. Minimum Depth of Binary Tree](#111-Minimum-Depth-of-Binary-Tree)                             | 🟢   | Tue |          |          |
-| 9   | [226. Invert Binary Tree](#226-Invert-Binary-Tree)                                                 | 🟢   | Tue | &check;  |          |
-| 10  | [199. Binary Tree Right Side View](#199-Binary-Tree-Right-Side-View)                               | 🟠   | Tue | &check;  |          |
+| 8   | [111. Minimum Depth of Binary Tree](#111-Minimum-Depth-of-Binary-Tree)                             | 🟢   | Tue |          | &check;  |
+| 9   | [226. Invert Binary Tree](#226-Invert-Binary-Tree)                                                 | 🟢   | Tue | &check;  | &check;  |
+| 10  | [199. Binary Tree Right Side View](#199-Binary-Tree-Right-Side-View)                               | 🟠   | Tue | &check;  | &check;  |
 |     |                                                                                                    |      |     |          |          |
-| 11  | [652. Find Duplicate Subtrees](#652-Find-Duplicate-Subtrees)                                       | 🟠   | Wed |          |          |
-| 12  | [508. Most Frequent Subtree Sum](#508-Most-Frequent-Subtree-Sum)                                   | 🟠   | Wed |          |          |
-| 13  | [112. Path Sum](#112-Path-Sum)                                                                     | 🟢   | Wed |          |          |
-| 14  | [113. Path Sum II](#113-Path-Sum-II)                                                               | 🟠   | Wed | &check;  |          |
+| 11  | [652. Find Duplicate Subtrees](#652-Find-Duplicate-Subtrees)                                       | 🟠   | Wed |          | &check;  |
+| 12  | [**508. Most Frequent Subtree Sum**](#508-Most-Frequent-Subtree-Sum)                               | 🟠   | Wed |          | &check;  |
+| 13  | [112. Path Sum](#112-Path-Sum)                                                                     | 🟢   | Wed |          | &check;  |
+| 14  | [**113. Path Sum II**](#113-Path-Sum-II)                                                           | 🟠   | Wed | &check;  |          |
 | 15  | [1448. Count Good Nodes in Binary Tree](#1448-Count-Good-Nodes-in-Binary-Tree)                     | 🟠   | Wed |          |          |
 |     |                                                                                                    |      |     |          |          |
-| 16  | [114. Flatten Binary Tree to Linked List](#114-Flatten-Binary-Tree-to-Linked-List)                 | 🟠   | Thu |          |          |
+| 16  | [114. Flatten Binary Tree to Linked List](#114-Flatten-Binary-Tree-to-Linked-List)                 | 🟠   | Thu |          | &check;  |
 | 17  | [173. Binary Search Tree Iterator](#173-Binary-Search-Tree-Iterator)                               | 🟠   | Thu |          |          |
 | 18  | [515. Find Largest Value in Each Tree Row](#515-Find-Largest-Value-in-Each-Tree-Row)               | 🟠   | Thu | &check;  |          |
 | 19  | [108. Convert Sorted Array to Binary Search Tree](#108-Convert-Sorted-Array-to-Binary-Search-Tree) | 🟢   | Thu |          |          |
@@ -37,9 +37,13 @@ August 9, 2021
 **TODO:**
 
 - **98. Validate Binary Search Tree**
-- **110. Balanced Binary Tree**
+- **110. Balanced Binary Tree** (TO BE ADDED)
 - **101. Symmetric Tree**
 - 107. Binary Tree Level Order Traversal II (Recursion)
+- **814. Binary Tree Pruning**
+- **508. Most Frequent Subtree Sum**
+- **113. Path Sum II**
+-
 
 <br>
 
@@ -106,13 +110,115 @@ Given the `root` of a binary search tree, and an integer k, return the `kth (1-i
 
 ### [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
+A valid BST is defined as follows:
+
+- The left subtree of a node contains only nodes with keys less than the node's key.
+- The right subtree of a node contains only nodes with keys greater than the node's key.
+- Both the left and right subtrees must also be binary search trees.
+
+Input: root = `[2,1,3]`  
+Output: `true`
+
+#### Approach:
+
+- For every node, the left has to be less than all of its upper nodes, and all right has to be greater than all of the upper nodes.
+
+  ```java
+  // Time: O(n)
+  // Space: O(n) for recursion stack
+  public boolean isValidBST(TreeNode root) {
+      return validate(root, null, null);
+  }
+
+  public boolean validate(TreeNode root, Integer low, Integer high) {
+      if (root == null)
+          return true;
+      if ( (low != null && low >= root.val) || (high != null && high <= root.val) )
+          return false;
+      return validate(root.left, low, root.val) && validate(root.right, root.val, high);
+  }
+  ```
+
 <br>
 
 ### [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
 
+Height-balanced binary tree is defined as:
+
+- a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+
+Input: root = `[3,9,20,null,null,15,7]`  
+Output: `true`
+
+#### Approach:
+
+- TO BE ADDED
+
+  ```java
+  public boolean isBalanced(TreeNode root) {
+      if (root == null) return true;
+      return Math.abs(height(root.left) - height(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right);
+  }
+
+  private int height(TreeNode root) {
+      if (root == null)
+          return 0;
+      return 1 + Math.max(height(root.left), height(root.right));
+  }
+  ```
+
 <br>
 
 ### [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+
+Given the `root` of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+
+#### Approach 1: (Iterative)
+
+- TO BE ADDED
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public boolean isSymmetric(TreeNode root) {
+      Queue<TreeNode> queue = new LinkedList<>();
+      queue.add(root);
+      queue.add(root);
+      while (!queue.isEmpty()) {
+          TreeNode left = queue.poll();
+          TreeNode right = queue.poll();
+
+          if (left == null && right == null) continue;
+          if (left == null || right == null) return false;
+          if (left.val != right.val) return false;
+
+          queue.add(left.left);
+          queue.add(right.right);
+          queue.add(left.right);
+          queue.add(right.left);
+      }
+      return true;
+  }
+  ```
+
+#### Approach 2: (Recursion)
+
+- TO BE ADDED
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public boolean isSymmetric(TreeNode root) {
+      return isMirror(root, root);
+  }
+  public boolean isMirror(TreeNode t1, TreeNode t2) {
+      if (t1 == null && t2 == null) return true;
+      if (t1 == null || t2 == null) return false;
+      return (t1.val == t2.val)
+          && isMirror(t1.right, t2.left)
+          && isMirror(t1.left, t2.right);
+  }
+  ```
 
 <br>
 
@@ -122,7 +228,7 @@ Given the root of a binary tree, return the level order traversal of its nodes' 
 
 <img src="img/4-Tree-199.png" alt="tree 199" width="300" >
 
-Input: root = `[3,9,20,null,null,15,7]`  
+Input: root = `[3,9,20,null,null,15,7]`
 Output: `[[3],[9,20],[15,7]]`
 
 #### Approach:
@@ -163,7 +269,7 @@ Output: `[[3],[9,20],[15,7]]`
 
 Given the `root` of a binary tree, return the **bottom-up** level order traversal of its nodes' values. (i.e., from left to right, level by level from leaf to root).
 
-Input: root = `[3,9,20,null,null,15,7]`  
+Input: root = `[3,9,20,null,null,15,7]`
 Output: `[[3],[9,20],[15,7]]`
 
 #### Approach 1: (BFS iterative)
@@ -201,21 +307,83 @@ Output: `[[3],[9,20],[15,7]]`
 
 <br>
 
-### [814. Binary Tree Pruning]()
+### [814. Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)
+
+#### Approach:
 
 <br>
 
-### [111. Minimum Depth of Binary Tree]()
+### [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+Given a binary tree, find its minimum depth.  
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.  
+Note: A leaf is a node with no children.
+
+#### Approach:
+
+- DFS with queue to do level order traversal
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public int minDepth(TreeNode root) {
+      int depth = 0;
+      if (root == null)  return depth;
+
+      Queue<TreeNode> queue = new LinkedList<>();
+      queue.add(root);
+
+      while (!queue.isEmpty()) {
+          depth++;
+          int n = queue.size();
+          while (n-- > 0) {
+              root = queue.poll();
+              if (root.left == null && root.right == null)
+                  return depth;
+              if (root.left != null) queue.add(root.left);
+              if (root.right != null) queue.add(root.right);
+          }
+      }
+
+      return depth;
+  }
+  ```
 
 <br>
 
-### [226. Invert Binary Tree]()
+### [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+
+Input: root = `[4,2,7,1,3,6,9]`  
+Output: `[4,7,2,9,6,3,1]`
+
+#### Approach:
+
+- Swap all left child with right child
+
+  ```java
+  // Time: O(n)
+  // Space:O(n)
+  public TreeNode invertTree(TreeNode root) {
+      invert(root);
+      return root;
+  }
+
+  private void invert(TreeNode root) {
+      if (root == null)
+          return;
+      TreeNode temp = root.left;
+      root.left = root.right;
+      root.right = temp;
+      invert(root.left);
+      invert(root.right);
+  }
+  ```
 
 <br>
 
 ### [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
 
-Input: root = `[1,2,3,null,5,null,4]`  
+Input: root = `[1,2,3,null,5,null,4]`
 Output: `[1,3,4]`
 
 #### Approach
@@ -224,7 +392,7 @@ Output: `[1,3,4]`
 
   ```java
   // Time: O(n)
-  // Space
+  // Space: O(n)
   public List<Integer> rightSideView(TreeNode root) {
       List<Integer> right = new ArrayList<>();
       if (root == null) return right;
@@ -252,53 +420,90 @@ Output: `[1,3,4]`
 
 ## Wednesday
 
-### [652. Find Duplicate Subtrees]()
+### [652. Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)
+
+#### Approach:
 
 <br>
 
-### [508. Most Frequent Subtree Sum]()
+### [508. Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
+
+#### Approach
+
+- TO BE ADDED
 
 <br>
 
-### [112. Path Sum]()
+### [112. Path Sum](https://leetcode.com/problems/path-sum/)
+
+Given the root of a binary tree and an integer targetSum, return true if the tree has a **root-to-leaf** path such that adding up all the values along the path equals targetSum.
+
+#### Approach:
+
+- Recursive calls to see if there's a path is targetSum from root to leaf.
+- A leaf node is defined as no left child nor right child, so when we meet a leaf node, check for the sum == 0
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public boolean hasPathSum(TreeNode root, int targetSum) {
+      if (root == null)
+          return false;
+      targetSum -= root.val;
+      if (root.left == null && root.right == null)
+          return targetSum == 0;
+      return hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum);
+  }
+  ```
 
 <br>
 
-### [113. Path Sum II]()
+### [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/)
+
+#### Approach:
 
 <br>
 
-### [1448. Count Good Nodes in Binary Tree]()
+### [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
 
 <br>
 <br>
 
 ## Thursday
 
-### [114. Flatten Binary Tree to Linked List]()
+### [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+
+#### Approach:
 
 <br>
 
-### [173. Binary Search Tree Iterator]()
+### [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+
+#### Approach:
 
 <br>
 
-### [515. Find Largest Value in Each Tree Row]()
+### [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
+
+#### Approach:
 
 <br>
 
-### [108. Convert Sorted Array to Binary Search Tree]()
+### [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+#### Approach:
 
 <br>
 
-### [938. Range Sum of BST]()
+### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
+
+#### Approach:
 
 <br>
 <br>
 
 ## Friday
 
-### [449. Serialize and Deserialize BST]()
+### [449. Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)
 
 Question
 
@@ -311,18 +516,27 @@ Question
 
 <br>
 
-### [297. Serialize and Deserialize Binary Tree]()
+### [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+
+#### Approach:
 
 <br>
 
-### [617. Merge Two Binary Trees]()
+### [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
+
+#### Approach:
 
 <br>
 
-### [572. Subtree of Another Tree]()
+### [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+
+#### Approach:
 
 <br>
 
-### [543. Diameter of Binary Tree]()
+### [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+
+#### Approach:
 
 <br>
+````
