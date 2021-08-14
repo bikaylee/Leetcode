@@ -23,7 +23,7 @@ August 9, 2021
 | 15  | [1448. Count Good Nodes in Binary Tree](#1448-Count-Good-Nodes-in-Binary-Tree)                     | 🟠   | Wed |          |          |
 |     |                                                                                                    |      |     |          |          |
 | 16  | [114. Flatten Binary Tree to Linked List](#114-Flatten-Binary-Tree-to-Linked-List)                 | 🟠   | Thu |          | &check;  |
-| 17  | [173. Binary Search Tree Iterator](#173-Binary-Search-Tree-Iterator)                               | 🟠   | Thu |          |          |
+| 17  | [173. Binary Search Tree Iterator](#173-Binary-Search-Tree-Iterator)                               | 🟠   | Thu |          | &check;  |
 | 18  | [515. Find Largest Value in Each Tree Row](#515-Find-Largest-Value-in-Each-Tree-Row)               | 🟠   | Thu | &check;  |          |
 | 19  | [108. Convert Sorted Array to Binary Search Tree](#108-Convert-Sorted-Array-to-Binary-Search-Tree) | 🟢   | Thu |          |          |
 | 20  | [938. Range Sum of BST](#938-Range-Sum-of-BST)                                                     | 🟢   | Thu | &check;  |          |
@@ -37,13 +37,14 @@ August 9, 2021
 **TODO:**
 
 - **98. Validate Binary Search Tree**
-- **110. Balanced Binary Tree** (TO BE ADDED)
+- **110. Balanced Binary Tree**
 - **101. Symmetric Tree**
 - 107. Binary Tree Level Order Traversal II (Recursion)
 - **814. Binary Tree Pruning**
 - **508. Most Frequent Subtree Sum**
 - **113. Path Sum II**
--
+- 114. Flatten Binary Tree to Linked List (Recursion)
+- 173. Binary Search Tree Iterator (Controlled Recursion)
 
 <br>
 
@@ -472,19 +473,119 @@ Given the root of a binary tree and an integer targetSum, return true if the tre
 
 ### [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 
-#### Approach:
+Input: root = `[1,2,5,3,4,null,6]`  
+Output: `[1,null,2,null,3,null,4,null,5,null,6]`
+
+#### Approach 1: (Iterative)
+
+- BFS and have all nodes on the right
+  ```java
+  public void flattenDFS(TreeNode root) {
+      if (root == null) return;
+      Deque<TreeNode> stack = new ArrayDeque<>();
+      stack.addLast(root);
+      while (!stack.isEmpty()) {
+          root = stack.pollLast();
+          if (root.right != null) stack.addLast(root.right);
+          if (root.left != null) stack.addLast(root.left);
+          if (!stack.isEmpty())
+              root.right = stack.peekLast();
+          root.left = null;
+      }
+  }
+  ```
+
+#### Approach 2: (Recursion)
 
 <br>
 
 ### [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
 
-#### Approach:
+Input:
+
+```
+["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"]
+[[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]
+```
+
+Output:
+`[null, 3, 7, true, 9, true, 15, true, 20, false]`
+
+#### Approach 1: (Flatten)
+
+- Return every current minimum value in the tree, flatten the tree in a sorted list
+
+  ```java
+  class BSTIterator {
+      int curr;
+      ArrayList<Integer> sortedList;
+
+      public BSTIterator(TreeNode root) {
+          sortedList = new ArrayList<>();
+          curr = -1;
+          inorder(root);
+          // System.out.println(sortedList.toString());
+      }
+
+      private void inorder(TreeNode root) {
+          if (root == null)
+              return;
+          inorder(root.left);
+          sortedList.add(root.val);
+          inorder(root.right);
+      }
+
+      public int next() {
+          return sortedList.get(++curr);
+      }
+
+      public boolean hasNext() {
+          return curr+1 < sortedList.size();
+      }
+  }
+  ```
+
+#### Approach 2: (Controlled Recursion)
 
 <br>
 
 ### [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
 
+Input: root = `[1,3,2,5,3,null,9]`  
+Output: `[1,3,9]`
+
 #### Approach:
+
+- BFS with queue to perform order level traversal
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public List<Integer> largestValues(TreeNode root) {
+      List<Integer> ans = new ArrayList<>();
+
+      if (root == null) return ans;
+
+      Queue<TreeNode> queue = new LinkedList<>();
+      queue.add(root);
+
+      while (!queue.isEmpty()) {
+          int n = queue.size();
+
+          int max = queue.peek().val;
+          while (n-- > 0) {
+              root = queue.poll();
+              max = Math.max(root.val, max);
+
+              if (root.left != null) queue.add(root.left);
+              if (root.right != null) queue.add(root.right);
+          }
+          ans.add(max);
+      }
+
+      return ans;
+  }
+  ```
 
 <br>
 
@@ -497,6 +598,24 @@ Given the root of a binary tree and an integer targetSum, return true if the tre
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
 #### Approach:
+
+- Add 
+    ```java
+    // Time: O(n)
+    // Space: O(n)
+    private int ans = 0; 
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        if (root == null) 
+            return 0;        
+        if (root.val >= low && root.val <= high) 
+            ans += root.val;
+        if (root.val > low)
+            rangeSumBST(root.left, low, high);
+        if (root.val < high)
+            rangeSumBST(root.right, low, high);
+        return ans;
+    }
+    ```
 
 <br>
 <br>

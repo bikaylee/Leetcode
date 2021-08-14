@@ -1,8 +1,8 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 65
+#### 🟢 Easy : 67
 
-#### 🟠 Medium : 58
+#### 🟠 Medium : 57
 
 #### 🔴 Hard : 3
 
@@ -21,7 +21,7 @@
 | 21. Merge Two Sorted Lists                        | 🟢   | Linked List                        | &check; | &check; |         |
 | 23. Merge k Sorted Lists                          | 🔴   | Linked List, Priority Queue        | &check; |         |         |
 | 24. Swap Nodes in Pairs                           | 🟠   | Linked List                        | &check; |         |         |
-| 26. Remove Duplicates from Sorted Array           | 🟢   | Array, Two Pointers                |         | &check; |         |
+| 26. Remove Duplicates from Sorted Array           | 🟢   | Array, Two Pointers                | &check; | &check; |         |
 | 27. Remove Element                                | 🟢   | Array, Two Pointers                |         | &check; |         |
 | 33. Search in Rotated Sorted Array                | 🟠   | Array, Binary Search               | &check; |         |         |
 | 34. Find 1st and Last Pos in Sorted Array         | 🟠   | Array, Binary Search               | &check; |         |         |
@@ -43,7 +43,8 @@
 | 141. Linked List Cycle                            | 🟢   | Linked List                        | &check; | &check; |         |
 | 142. Linked List Cycle II                         | 🟠   | Linked List                        | &check; | &check; |         |
 | 143. Reorder List                                 | 🟠   | Linked List                        | &check; |         |         |
-| 144. Binary Tree Preorder Traversal               | 🟠   | Tree                               |         | &check; |         |
+| 144. Binary Tree Preorder Traversal               | 🟢   | Tree, DFS, Stack                   | &check; | &check; |         |
+| 145. Binary Tree Postorder Traversal              | 🟢   | Tree, DFS, Stack                   | &check; |         |         |
 | 147. Insertion Sort List                          | 🟠   | Linked List, Sort                  | &check; |         |         |
 | 160. Intersection of Two Linked Lists             | 🟢   | Linked List                        | &check; | &check; |         |
 | 167. Two Sum II                                   | 🟢   | Binary Search                      | &check; |         |         |

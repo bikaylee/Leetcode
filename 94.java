@@ -8,6 +8,7 @@
  */
 class Solution {
 
+    // Iterative
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
@@ -23,6 +24,23 @@ class Solution {
             root = root.right;
         }
         return res;
+    }
+
+    // Recursive
+    private ArrayList<Integer> ans;
+
+    public List<Integer> inorderTraversal(TreeNode root) {
+        ans = new ArrayList();
+        inorder(root);
+        return ans;
+    }
+
+    private void inorder(TreeNode root) {
+        if (root == null)
+            return;
+        inorder(root.left);
+        ans.add(root.val);
+        inorder(root.right);
     }
 
 }
