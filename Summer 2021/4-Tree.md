@@ -26,7 +26,7 @@ August 9, 2021
 | 17  | [173. Binary Search Tree Iterator](#173-Binary-Search-Tree-Iterator)                               | 🟠   | Thu |          | &check;  |
 | 18  | [515. Find Largest Value in Each Tree Row](#515-Find-Largest-Value-in-Each-Tree-Row)               | 🟠   | Thu | &check;  |          |
 | 19  | [108. Convert Sorted Array to Binary Search Tree](#108-Convert-Sorted-Array-to-Binary-Search-Tree) | 🟢   | Thu |          |          |
-| 20  | [938. Range Sum of BST](#938-Range-Sum-of-BST)                                                     | 🟢   | Thu | &check;  |          |
+| 20  | [938. Range Sum of BST](#938-Range-Sum-of-BST)                                                     | 🟢   | Thu | &check;  | &check;  |
 |     |                                                                                                    |      |     |          |          |
 | 21  | [449. Serialize and Deserialize BST](#449-Serialize-and-Deserialize-BST)                           | 🟠   | Fri |          |          |
 | 22  | [297. Serialize and Deserialize Binary Tree](#297-Serialize-and-Deserialize-Binary-Tree)           | 🔴   | Fri |          |          |
@@ -45,6 +45,7 @@ August 9, 2021
 - **113. Path Sum II**
 - 114. Flatten Binary Tree to Linked List (Recursion)
 - 173. Binary Search Tree Iterator (Controlled Recursion)
+- 617. Merge Two Binary Trees
 
 <br>
 
@@ -597,25 +598,31 @@ Output: `[1,3,9]`
 
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
+Input: root = `[10,5,15,3,7,null,18]`, low = `7`, high = `15`  
+Output: 32
+
 #### Approach:
 
-- Add 
-    ```java
-    // Time: O(n)
-    // Space: O(n)
-    private int ans = 0; 
-    public int rangeSumBST(TreeNode root, int low, int high) {
-        if (root == null) 
-            return 0;        
-        if (root.val >= low && root.val <= high) 
-            ans += root.val;
-        if (root.val > low)
-            rangeSumBST(root.left, low, high);
-        if (root.val < high)
-            rangeSumBST(root.right, low, high);
-        return ans;
-    }
-    ```
+- Since it's a BST,
+  - if current node is greater than `low`, then the range sum must be found in its left subtree.
+  - if current node is less than `high`, then the range sum must be found in its right subtree.
+  - if current node falls in the range, add to `ans` and the range might be found in left or and right subtrees
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  private int ans = 0;
+  public int rangeSumBST(TreeNode root, int low, int high) {
+      if (root == null)
+          return 0;
+      if (root.val >= low && root.val <= high)
+          ans += root.val;
+      if (root.val > low)
+          rangeSumBST(root.left, low, high);
+      if (root.val < high)
+          rangeSumBST(root.right, low, high);
+      return ans;
+  }
+  ```
 
 <br>
 <br>
@@ -643,7 +650,28 @@ Question
 
 ### [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
 
+Input: root1 = `[1,3,2,5]`, root2 = `[2,1,3,null,4,null,7]`  
+Output: [3,4,5,5,4,null,7]
+
 #### Approach:
+
+- TO BE ADDED
+
+  ```java
+  // Time: O(n)
+  // Space: O(n)
+  public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+      if (root1 == null)
+          return root2;
+      if (root2 == null)
+          return root1;
+
+      root1.val += root2.val;
+      root1.left = mergeTrees(root1.left, root2.left);
+      root1.right = mergeTrees(root1.right, root2.right);
+      return root1;
+  }
+  ```
 
 <br>
 
