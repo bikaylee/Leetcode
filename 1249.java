@@ -38,36 +38,61 @@ s[i] is one of  '(' , ')' and lowercase English letters.
 */
 
 class Solution {
+
+    public String minRemoveToMakeValidStack(String s) {
+        Deque<Integer> stack = new ArrayDeque<>(); // store index of open paren
+        Set<Integer> remove = new HashSet<>();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(')
+                stack.addLast(i);
+            else if (c == ')') {
+                if (stack.isEmpty())
+                    remove.add(i);
+                else
+                    stack.removeLast();
+            }
+        }
+
+        // Any open paren in the front should be removed
+        while (!stack.isEmpty()) {
+            remove.add(stack.removeLast());
+        }
+
+        // skip all remove chars
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (!remove.contains(i))
+                sb.append(s.charAt(i));
+        }
+
+        return sb.toString();
+    }
+
     public String minRemoveToMakeValid(String s) {
         StringBuilder sb = remove(s, '(', ')');
         sb = remove(sb.reverse().toString(), ')', '(');
         return sb.reverse().toString();
     }
-    
-    private StringBuilder remove(String s, char paren1, char paren2)
-    {
+
+    private StringBuilder remove(String s, char paren1, char paren2) {
         StringBuilder sb = new StringBuilder();
         int paren1Count = 0;
         int paren2Count = 0;
-        for(char c : s.toCharArray())
-        {
-            if(c == paren1)
-            {
+        for (char c : s.toCharArray()) {
+            if (c == paren1) {
                 paren1Count++;
                 sb.append(c);
-            }
-            else if(c == paren2)
-            {
+            } else if (c == paren2) {
                 paren2Count++;
-                if(paren2Count > paren1Count)
+                if (paren2Count > paren1Count)
                     paren2Count--;
                 else
                     sb.append(c);
-            }
-            else
+            } else
                 sb.append(c);
         }
-        
+
         return sb;
     }
 }

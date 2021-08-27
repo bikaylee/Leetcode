@@ -1,8 +1,8 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 67
+#### 🟢 Easy : 68
 
-#### 🟠 Medium : 57
+#### 🟠 Medium : 59
 
 #### 🔴 Hard : 3
 
@@ -11,6 +11,7 @@
 | 1. Two Sum                                        | 🟢   | Array, Hash Table                  | &check; | &check; |         |
 | 2. Add Two Numbers                                | 🟠   | Linked List                        | &check; | &check; |         |
 | 3. Longest Substring Without Repeating Characters | 🟠   | String, Hash Table, Sliding Window | &check; |         |         |
+| 5. Longest Palindromic Substring                  | 🟠   | String, DP                         | &check; |         |         |
 | 7. Reverse Integer                                | 🟢   | Math                               | &check; | &check; |         |
 | 11. Container With Most Water                     | 🟠   | Two Pointers, Array, Greedy        | &check; |         |         |
 | 12. Integer to Roman                              | 🟠   | Math, String                       | &check; |         |         |
@@ -28,6 +29,8 @@
 | 35. Search Insert Position                        | 🟢   | Array, Binary Search               | &check; |         |         |
 | 42. Trapping Rain Water                           | 🔴   | Two Pointers, Array, DP, Stack     | &check; |         |         |
 | 49. Group Anagrams                                | 🟠   | Hash Table, String, Sort           | &check; |         |         |
+| 53. Maximum Subarray                              | 🟢   | Array, DP, Divide and Conquer      | &check; |         |         |
+| 56. Merge Intervals                               | 🟠   | Array, Sort                        | &check; |         |         |
 | 58. Length of Last Word                           | 🟢   | String                             | &check; |         |         |
 | 61. Rotate List                                   | 🟠   | Linked List                        | &check; |         |         |
 | 70. Climbing Stairs                               | 🟢   | Dynamic Programming                | &check; | &check; |         |
@@ -57,6 +60,7 @@
 | 205. Isomorphic Strings                           | 🟢   | String, Hash Table                 | &check; |         |         |
 | 206. Reverse Linked List                          | 🟢   | Linked List, Recursion             | &check; | &check; |         |
 | 209. Minimum Size Subarray Sum                    | 🟠   | Array                              |         | &check; |         |
+| 215. Kth Largest Element in an Array              | 🟠   | Array, Sort, Heap, QuickSelect     | &check; |         |         |
 | 224. Basic Calculator                             | 🔴   | String, Stack                      | &check; |         |         |
 | 231. Power of Two                                 | 🟢   | Math, Bit Manipulation, Recursion  | &check; |         |         |
 | 232. Implement Queue using Stacks                 | 🟢   | Design, Stack, Queue               | &check; |         |         |
@@ -97,6 +101,7 @@
 | 645. Set Mismatch                                 | 🟢   | Hash Table, Math                   | &check; |         |         |
 | 692. Top K Frequent Words                         | 🟠   | String, Hash Table, Heap, Sort     | &check; |         |         |
 | 703. Kth Largest Element in a Stream              | 🟢   | BST, Heap                          | &check; |         |         |
+| 704. Binary Search                                | 🟢   | Array, Binary Search               | &check; |         |         |
 | 706. Design HashMap                               | 🟢   | Hash Table, Design, Array          | &check; |         |         |
 | 707. Design Linked List                           | 🟠   | Linked List, Design                | &check; | &check; |         |
 | 717. 1-bit and 2-bit Characters                   | 🟢   | Array, Bit                         |         | &check; |         |
