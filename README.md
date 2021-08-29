@@ -18,6 +18,7 @@
 | 13. Roman to Integer                              | 🟢   | String                             | &check; |         |         |
 | 14. Longest Common Prefix                         | 🟢   | String, Math                       | &check; |         |         |
 | 17. Letter Combinations of a Phone Number         | 🟠   | String, HashTable, Backtrack       | &check; |         |         |
+| 19. Remove Nth Node From End of List              | 🟠   | LinkedList, Two Pointers           | &check; |         |         |
 | 20. Valid Parenthesis                             | 🟢   | String, Stack                      | &check; | &check; |         |
 | 21. Merge Two Sorted Lists                        | 🟢   | Linked List                        | &check; | &check; |         |
 | 23. Merge k Sorted Lists                          | 🔴   | Linked List, Priority Queue        | &check; |         |         |
@@ -73,7 +74,7 @@
 | 268. Missing Number                               | 🟢   | Array, Math, Bit Manipulation      | &check; |         |         |
 | 276. Paint Fence                                  | 🟠   | Dynamic Programming                | &check; |         |         |
 | 278. First Bad Version                            | 🟢   | Binary Search                      | &check; |         |         |
-| 283. Move Zeroes                                  | 🟢   | Array                              |         | &check; |         |
+| 283. Move Zeroes                                  | 🟢   | Array                              | &check; | &check; |         |
 | 284. Peeking Iterator                             | 🟠   | Design                             | &check; |         |         |
 | 287. Find Duplicate Number                        | 🟠   | Array, Two Pointers                | &check; |         |         |
 | 303. Range Sum Query - Immutable                  | 🟢   | Array, Dynamic Programming         | &check; |         |         |
@@ -94,8 +95,10 @@
 | 456. 132 Pattern                                  | 🟠   | Array, Monotonic Stack             | &check; |         |         |
 | 485. Max Consecutive Ones                         | 🟢   | Array                              | &check; | &check; |         |
 | 487. Max Consecutive Ones II                      | 🟠   | Two Pointers, Sliding Window       | &check; |         |         |
+| 509. Fibonacci Number                             | 🟢   | Math, DP, Recursion                | &check; |         |         |
 | 543. Diameter of Binary Tree                      | 🟢   | Tree, Recursion                    |         | &check; |         |
 | 554. Brick Wall                                   | 🟠   | Array, Hash Table                  | &check; |         |         |
+| 557. Reverse Words in a String III                | 🟢   | String, Two Pointers               | &check; |         |         |
 | 560. Subarray Sum Equals K                        | 🟠   | Array, Hash Table                  | &check; |         |         |
 | 575. Distribute Candies                           | 🟢   | Hash Table                         | &check; |         |         |
 | 622. Design Circular Queue                        | 🟠   | Array, Design, Queu                | &check; |         |         |
