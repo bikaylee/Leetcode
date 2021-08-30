@@ -1,6 +1,6 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 71
+#### 🟢 Easy : 73
 
 #### 🟠 Medium : 65
 
@@ -149,3 +149,4 @@
 | 1710. Maximum Units on a Truck                    | 🟢   | Greedy, Sort                            | &#10004; |     |     |
 | 1721. Swapping Nodes in a Linked List             | 🟢   | Linked List                             | &#10004; |     |     |
 | 1791. Find Center of Star Graph                   | 🟢   | Graph                                   | &#10004; |     |     |
+| 1971. Find if Path Exists in Graph                | 🟢   | Graph                                   | &#10004; |     |     |
