@@ -1,10 +1,12 @@
 # Leetcode-2021
 
-#### 🟢 Easy : 73
+#### 🟢 &nbsp; Easy : 73
 
-#### 🟠 Medium : 65
+#### 🟠 &nbsp; Medium : 66
 
-#### 🔴 Hard : 4
+#### 🔴 &nbsp; Hard : 4
+
+#### Total: 141
 
 | Problems                                          | Diff | Category                                | Java     | JS  | C++ |
 | ------------------------------------------------- | ---- | --------------------------------------- | -------- | --- | --- |
@@ -39,6 +41,7 @@
 | 71. Simplify Path                                 | 🟠   | Stack, String                           | &#10004; |     |     |
 | 82. Remove Duplicates from Sorted List II         | 🟠   | Linked List, Two Pointers               | &#10004; |     |     |
 | 88. Merge Sorted Array                            | 🟢   | Array                                   | &#10004; | ✔   |     |
+| 92. Reverse Linked List II                        | 🟠   | Linked List                             | &#10004; |     |     |
 | 94. Binary Tree Inorder Traversal                 | 🟢   | Tree, DFS, Stack                        | &#10004; |     |     |
 | 100. Same Tree                                    | 🟢   | Tree                                    | &#10004; |     |     |
 | 121. Best Time to Buy and Sell Stock              | 🟢   | Array, Dynamic Programming              | &#10004; |     |     |
@@ -56,7 +59,7 @@
 | 169. Majority                                     | 🟢   | Array                                   | &#10004; |     |     |
 | 189. Rotate Array                                 | 🟠   | Array, Two Pointers, Math               | &#10004; |     |     |
 | 198. House Robber                                 | 🟠   | Dynamic Programming                     | &#10004; | ✔   |     |
-| 200. Number of Islands                            | 🟠   | Array, DFS, BFS, Matrix, Graph          | &#10004; |     | ✓   |
+| 200. Number of Islands                            | 🟠   | Array, DFS, BFS, Matrix, Graph          | &#10004; |     | ✔   |
 | 202. Happy Number                                 | 🟢   | Hash Table, Two Pointers                | &#10004; |     |     |
 | 203. Remove Linked List Elements                  | 🟢   | Linked List, Recursion                  | &#10004; | ✔   |     |
 | 205. Isomorphic Strings                           | 🟢   | String, Hash Table                      | &#10004; |     |     |
