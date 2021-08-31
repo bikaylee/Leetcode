@@ -37,25 +37,42 @@ The number of nodes in the list is n.
 0 <= Node.val <= 100
 */
 
-
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
+ * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val,
+ * ListNode next) { this.val = val; this.next = next; } }
  */
 class Solution {
+
+    // First = reaches kth node with a loop
+    // Second = start with head, as first reaches the end
+    public ListNode swapNodes(ListNode head, int k) {
+
+        ListNode curr = head;
+        while (--k > 0)
+            curr = curr.next;
+
+        ListNode first = curr;
+        ListNode second = head;
+        while (curr.next != null) {
+            second = second.next;
+            curr = curr.next;
+        }
+
+        // Swap values
+        int x = first.val;
+        first.val = second.val;
+        second.val = x;
+
+        return head;
+    }
+
     public ListNode swapNodes(ListNode head, int k) {
         ListNode curr = head;
         int i = 1;
         ListNode first = null;
-        while(curr != null)
-        {
-            if(i++ == k)
+        while (curr != null) {
+            if (i++ == k)
                 first = curr;
             curr = curr.next;
         }
@@ -63,10 +80,8 @@ class Solution {
         k = n - k;
         i = 1;
         curr = head;
-        while(curr != null)
-        {
-            if(i++ == k)
-            {
+        while (curr != null) {
+            if (i++ == k) {
                 int temp = curr.val;
                 curr.val = first.val;
                 first.val = temp;
@@ -75,4 +90,5 @@ class Solution {
         }
         return head;
     }
+
 }

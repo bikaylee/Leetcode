@@ -2,11 +2,11 @@
 
 #### 🟢 &nbsp; Easy : 73
 
-#### 🟠 &nbsp; Medium : 66
+#### 🟠 &nbsp; Medium : 68
 
 #### 🔴 &nbsp; Hard : 4
 
-#### Total: 141
+#### Total: 143
 
 | Problems                                          | Diff | Category                                | Java     | JS  | C++ |
 | ------------------------------------------------- | ---- | --------------------------------------- | -------- | --- | --- |
@@ -40,6 +40,7 @@
 | 70. Climbing Stairs                               | 🟢   | Dynamic Programming                     | &#10004; | ✔   |     |
 | 71. Simplify Path                                 | 🟠   | Stack, String                           | &#10004; |     |     |
 | 82. Remove Duplicates from Sorted List II         | 🟠   | Linked List, Two Pointers               | &#10004; |     |     |
+| 86. Partition List                                | 🟠   | Linked List, Two Pointers               | &#10004; |     |     |
 | 88. Merge Sorted Array                            | 🟢   | Array                                   | &#10004; | ✔   |     |
 | 92. Reverse Linked List II                        | 🟠   | Linked List                             | &#10004; |     |     |
 | 94. Binary Tree Inorder Traversal                 | 🟢   | Tree, DFS, Stack                        | &#10004; |     |     |
@@ -140,6 +141,7 @@
 | 1089. Duplicate Zeroes                            | 🟢   | Array                                   | &#10004; | ✔   |     |
 | 1165. Single-Row Keyboard                         | 🟢   | String                                  | &#10004; |     |     |
 | 1207. Unique Number of Occurrences                | 🟢   | Hash Table                              | &#10004; |     |     |
+| 1290. Convert Binary Number in a LL to Integer    | 🟢   | Linked List, Bit Manipulation, Math     | &#10004; |     |     |
 | 1249. Minimum Remove to Make Valid Parentheses    | 🟠   | String, Stack                           | &#10004; |     |     |
 | 1295. Find Numbers with Even Number of Digits     | 🟢   | Array                                   | &#10004; | ✔   |     |
 | 1313. Decompress Run-Length Encoded List          | 🟢   | Array                                   |          | ✔   |     |
@@ -150,6 +152,6 @@
 | 1396. Design Underground System                   | 🟠   | String, Hash Table, Design              | &#10004; |     |     |
 | 1474. Delete N Nodes After M Nodes of LL          | 🟢   | Linked List                             | &#10004; |     |     |
 | 1710. Maximum Units on a Truck                    | 🟢   | Greedy, Sort                            | &#10004; |     |     |
-| 1721. Swapping Nodes in a Linked List             | 🟢   | Linked List                             | &#10004; |     |     |
+| 1721. Swapping Nodes in a Linked List             | 🟠   | Linked List                             | &#10004; |     |     |
 | 1791. Find Center of Star Graph                   | 🟢   | Graph                                   | &#10004; |     |     |
 | 1971. Find if Path Exists in Graph                | 🟢   | Graph                                   | &#10004; |     |     |
