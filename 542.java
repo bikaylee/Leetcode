@@ -1,6 +1,46 @@
 // 542. 01 Matrix
 
 class Solution {
+
+    // BFS, use all zeros to update their nearest and add its neighbors
+    // to find new neighbors that haven't been visited and not zero
+
+    // Start from 0, search all neighbors and update, put its neighbors in
+    // Start from 1, search all neighbors and update, put its neighbors in
+    // ex, particular 1 surrounded by all 1's 4-directionally, so its value should
+    // be updated to 2
+    public int[][] updateMatrixBFS(int[][] mat) {
+        int[][] ans = mat.clone();
+
+        LinkedList<Pair<Integer, Integer>> queue = new LinkedList<>();
+        for (int r = 0; r < mat.length; r++) {
+            for (int c = 0; c < mat[0].length; c++) {
+                if (mat[r][c] == 0)
+                    queue.add(new Pair(r, c));
+                else
+                    ans[r][c] = Integer.MAX_VALUE;
+            }
+        }
+        // System.out.println(queue.toString());
+
+        int[][] dir = new int[][] { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+        while (!queue.isEmpty()) {
+            Pair<Integer, Integer> curr = queue.poll();
+            int currR = curr.getKey();
+            int currC = curr.getValue();
+
+            for (int i = 0; i < 4; i++) {
+                int r = currR + dir[i][0];
+                int c = currC + dir[i][1];
+                if (r >= 0 && c >= 0 && r < ans.length && c < ans[0].length && ans[r][c] > ans[currR][currC]) {
+                    ans[r][c] = ans[currR][currC] + 1;
+                    queue.add(new Pair(r, c));
+                }
+            }
+        }
+        return ans;
+    }
+
     final int max = Integer.MAX_VALUE - 100000;
 
     // Two passes to update the distance

@@ -1,12 +1,12 @@
 # Leetcode-2021
 
-#### 🟢 &nbsp; Easy : 75
+#### 🟢 &nbsp; Easy : 76
 
-#### 🟠 &nbsp; Medium : 73
+#### 🟠 &nbsp; Medium : 74
 
-#### 🔴 &nbsp; Hard : 4
+#### 🔴 &nbsp; Hard : 5
 
-#### Total: 149
+#### Total: 152
 
 | Problems                                         | Diff | Category                                              | Java     | JS  | C++ |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | -------- | --- | --- |
@@ -57,6 +57,7 @@
 | 145. Binary Tree Postorder Traversal             | 🟢   | `Tree` `DFS` `Stack`                                  | &#10004; |     |     |
 | 147. Insertion Sort List                         | 🟠   | `Linked List` `Sort`                                  | &#10004; |     |     |
 | 153. Find Minimum in Rotated Sorted Array        | 🟠   | `Array` `Binary Search`                               | &#10004; |     |     |
+| 154. Find Minimum in Rotated Sorted Array II     | 🔴   | `Array` `Binary Search`                               | &#10004; |     |     |
 | 160. Intersection of Two Linked Lists            | 🟢   | `Linked List`                                         | &#10004; | ✔   |     |
 | 167. Two Sum II                                  | 🟢   | `Binary Search`                                       | &#10004; |     |     |
 | 169. Majority                                    | 🟢   | `Array`                                               | &#10004; |     |     |
@@ -140,6 +141,7 @@
 | 953. Verifying an Alien Dictionary               | 🟢   | `String` `Array` `Hash Table`                         | &#10004; |     |     |
 | 973. K Closest Points to Origin                  | 🟠   | `Array` `Heap` `Quick Select`                         | &#10004; |     |     |
 | 977. Squares of Sorted Array                     | 🟢   | `Array` `Two Pointers` `Sort`                         | &#10004; |     |     |
+| 994. Rotting Oranges                             | 🟠   | `Array` `Matrix` `BFS`                                | &#10004; |     |     |
 | 997. Find the Town Judge                         | 🟢   | `Graph`                                               | &#10004; |     |     |
 | 1004. Max Consectutive Ones III                  | 🟠   | `Array` `Sliding Window`                              | &#10004; | ✔   |     |
 | 1046. Last Stone Weight                          | 🟢   | `Array` `Heap`                                        | &#10004; |     |     |
@@ -156,6 +158,7 @@
 | 1342. No. of Steps to Reduce a No. to Zero       | 🟢   | `Bit Manipulation`                                    | &#10004; |     |     |
 | 1346. Check If N and its Double Exist            | 🟢   | `Array`                                               | &#10004; | ✔   |     |
 | 1347. Minimum Steps to Make Two Str Anagram      | 🟠   | `String` `Hash Table`                                 | &#10004; |     |     |
+| 1360. Number of Days Between Two Dates           | 🟢   | `String` `Math`                                       | &#10004; |     |     |
 | 1396. Design Underground System                  | 🟠   | `String` `Hash Table` `Design`                        | &#10004; |     |     |
 | 1474. Delete N Nodes After M Nodes of LL         | 🟢   | `Linked List`                                         | &#10004; |     |     |
 | 1710. Maximum Units on a Truck                   | 🟢   | `Greedy` `Sort`                                       | &#10004; |     |     |
