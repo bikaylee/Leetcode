@@ -2,11 +2,11 @@
 
 #### 🟢 &nbsp; Easy : 76
 
-#### 🟠 &nbsp; Medium : 74
+#### 🟠 &nbsp; Medium : 76
 
 #### 🔴 &nbsp; Hard : 5
 
-#### Total: 152
+### Total: 157
 
 | Problems                                         | Diff | Category                                              | Java     | JS  | C++ |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | -------- | --- | --- |
@@ -107,8 +107,9 @@
 | 485. Max Consecutive Ones                        | 🟢   | `Array`                                               | &#10004; | ✔   |     |
 | 487. Max Consecutive Ones II                     | 🟠   | `Two Pointers` `Sliding Window`                       | &#10004; |     |     |
 | 509. Fibonacci Number                            | 🟢   | `Math` `DP` `Recursion`                               | &#10004; |     |     |
+| 539. Minimum Time Difference                     | 🟠   | `Array` `Math` `String` `Sort`                        | &#10004; |     |     |
 | 542. 01 Matrix                                   | 🟠   | `Array` `DP` `BFS` `Matrix`                           | &#10004; |     |     |
-| 543. Diameter of BinaryTree                      | 🟢   | `Tree` `Recursion`                                    |          | ✔   |     |
+| 543. Diameter of Binary Tree                     | 🟢   | `Tree` `Recursion`                                    |          | ✔   |     |
 | 554. Brick Wall                                  | 🟠   | `Array` `Hash Table`                                  | &#10004; |     |     |
 | 557. Reverse Words in a String III               | 🟢   | `String` `Two Pointers`                               | &#10004; |     |     |
 | 560. Subarray Sum Equals K                       | 🟠   | `Array` `Hash Table`                                  | &#10004; |     |     |
@@ -116,6 +117,7 @@
 | 575. Distribute Candies                          | 🟢   | `Hash Table`                                          | &#10004; |     |     |
 | 622. Design Circular Queue                       | 🟠   | `Array` `Design` `Queue`                              | &#10004; |     |     |
 | 645. Set Mismatch                                | 🟢   | `Hash Table` `Math`                                   | &#10004; |     |     |
+| 674. Longest Continuous Increasing Subsequence   | 🟢   | `Array` `Sliding Window`                              | &#10004; |     |     |
 | 692. Top K Frequent Words                        | 🟠   | `String` `Hash Table` `Heap` `Sort`                   | &#10004; |     |     |
 | 695. Max Area of Island                          | 🟠   | `Array` `BFS` `DFS` `Union Find` `Matrix`             | &#10004; |     |     |
 | 703. Kth Largest Element in a Stream             | 🟢   | `BST` `Heap`                                          | &#10004; |     |     |
@@ -165,3 +167,4 @@
 | 1721. Swapping Nodes in a Linked List            | 🟠   | `Linked List`                                         | &#10004; |     |     |
 | 1791. Find Center of Star Graph                  | 🟢   | `Graph`                                               | &#10004; |     |     |
 | 1971. Find if Path Exists in Graph               | 🟢   | `Graph`                                               | &#10004; |     |     |
+| 1996. The Number of Weak Characters in the Game  | 🟠   | `Greedy`                                              | &#10004; |     |     |

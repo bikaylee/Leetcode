@@ -1,6 +1,40 @@
 // 438. Find All Anagrams in a String
 
 class Solution {
+
+    // 9-7-2021
+    public List<Integer> findAnagrams(String s, String p) {
+        if (s.length() < p.length())
+            return new ArrayList<>();
+
+        int[] sFreq = new int[26];
+        int[] pFreq = new int[26];
+
+        for (int i = 0; i < p.length(); i++) {
+            pFreq[p.charAt(i) - 'a']++;
+            sFreq[s.charAt(i) - 'a']++;
+        }
+
+        int start = 0;
+        List<Integer> ans = new LinkedList<>();
+        for (int i = p.length(); i < s.length(); i++) {
+            if (Arrays.equals(sFreq, pFreq))
+                ans.add(start);
+
+            // System.out.println();
+            // for (int x:sFreq)
+            // System.out.print(x + " ");
+            sFreq[s.charAt(start) - 'a']--;
+            sFreq[s.charAt(i) - 'a']++;
+            start++;
+        }
+
+        if (Arrays.equals(sFreq, pFreq))
+            ans.add(start);
+
+        return ans;
+    }
+
     public List<Integer> findAnagrams(String s, String p) {
 
         if (p.length() > s.length())
@@ -35,7 +69,6 @@ class Solution {
 
         return ans;
     }
-
 
     // Instead of hashtable, use constant array
     public List<Integer> findAnagramsSolution(String s, String p) {
