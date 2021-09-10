@@ -2,11 +2,11 @@
 
 #### 🟢 &nbsp; Easy : 76
 
-#### 🟠 &nbsp; Medium : 76
+#### 🟠 &nbsp; Medium : 78
 
-#### 🔴 &nbsp; Hard : 5
+#### 🔴 &nbsp; Hard : 6
 
-### Total: 157
+### Total: 158
 
 | Problems                                         | Diff | Category                                              | Java     | JS  | C++ |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | -------- | --- | --- |
@@ -15,8 +15,9 @@
 | 3. Longest Subring Without Repeating Characters  | 🟠   | `String` `Hash Table` `Sliding Window`                | &#10004; |     |     |
 | 5. Longest Palindromic Substring                 | 🟠   | `String` `DP`                                         | &#10004; |     |     |
 | 7. Reverse Integer                               | 🟢   | `Math`                                                | &#10004; | ✔   |     |
+| 8. String to Integer (atoi)                      | 🟠   | `String`                                              | &#10004; |     |     |
 | 11. Container With Most Water                    | 🟠   | `Two Pointers` `Array` `Greedy`                       | &#10004; |     |     |
-| 12. Integer to Roman                             | 🟠   | `Math` `String `                                      | &#10004; |     |     |
+| 12. Integer to Roman                             | 🟠   | `Math` `String`                                       | &#10004; |     |     |
 | 13. Roman to Integer                             | 🟢   | `String`                                              | &#10004; |     |     |
 | 14. Longest Common Prefix                        | 🟢   | `String` `Math`                                       | &#10004; |     |     |
 | 17. Letter Combinations of a Phone Number        | 🟠   | `String` `Hash Table` `Backtrack`                     | &#10004; |     |     |
@@ -76,6 +77,7 @@
 | 234. Palindrome Linked List                      | 🟢   | `Linked List` `Two Pointers`                          | &#10004; | ✔   |     |
 | 237. Delete Node in a Linked List                | 🟢   | `Linked List`                                         | &#10004; |     |     |
 | 238. Product of Array Except Self                | 🟠   | `Array` `Prefix Sum`                                  | &#10004; |     |     |
+| 239. Sliding Window Maximum                      | 🔴   | `Array` `Heap` `Sliding Window` `Monotonic Queue`     | &#10004; |     |     |
 | 240. Search a 2D Matrix II                       | 🟠   | `DP`                                                  | &#10004; |     |     |
 | 242. Valid Anagram                               | 🟢   | `Hash Table` `String` `Sort`                          | &#10004; |     |     |
 | 253. Meeting Rooms II                            | 🟠   | `Array` `Two Pointers` `Greedy` `Sort` `Heap`         | &#10004; |     |     |
@@ -162,6 +164,7 @@
 | 1347. Minimum Steps to Make Two Str Anagram      | 🟠   | `String` `Hash Table`                                 | &#10004; |     |     |
 | 1360. Number of Days Between Two Dates           | 🟢   | `String` `Math`                                       | &#10004; |     |     |
 | 1396. Design Underground System                  | 🟠   | `String` `Hash Table` `Design`                        | &#10004; |     |     |
+| 1465. Maximum Area of a Piece of Cake...         | 🟠   | `Array` `Sorting` `Greedy`                            | &#10004; |     |     |
 | 1474. Delete N Nodes After M Nodes of LL         | 🟢   | `Linked List`                                         | &#10004; |     |     |
 | 1710. Maximum Units on a Truck                   | 🟢   | `Greedy` `Sort`                                       | &#10004; |     |     |
 | 1721. Swapping Nodes in a Linked List            | 🟠   | `Linked List`                                         | &#10004; |     |     |
