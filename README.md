@@ -2,11 +2,11 @@
 
 #### 🟢 &nbsp; Easy : 76
 
-#### 🟠 &nbsp; Medium : 78
+#### 🟠 &nbsp; Medium : 80
 
 #### 🔴 &nbsp; Hard : 6
 
-### Total: 158
+### Total: 162
 
 | Problems                                         | Diff | Category                                              | Java     | JS  | C++ |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | -------- | --- | --- |
@@ -48,7 +48,7 @@
 | 100. Same Tree                                   | 🟢   | `Tree`                                                | &#10004; |     |     |
 | 116. Populating Next Right Pointers in Each Node | 🟠   | `Tree` `DFS` `BFS` `Binary Tree`                      | &#10004; |     |     |
 | 121. Best Time to Buy and Sell Stock             | 🟢   | `Array` `DP`                                          | &#10004; |     |     |
-| 125. Valid Palindrome                            | 🟠   | ` Two Pointers``String `                              | &#10004; |     |     |
+| 125. Valid Palindrome                            | 🟠   | ` Two Pointers``String`                               | &#10004; |     |     |
 | 133. Clone Graph                                 | 🟠   | `Linked List` `Hash Table` `Graph`                    | &#10004; |     |     |
 | 138. Copy List with Random Pointer               | 🟠   | `Linked List` `Hash Table` `Graph`                    | &#10004; | ✔   |     |
 | 141. Linked List Cycle                           | 🟢   | `Linked List`                                         | &#10004; | ✔   |     |
@@ -90,7 +90,8 @@
 | 287. Find Duplicate Number                       | 🟠   | `Array` `Two Pointers`                                | &#10004; |     |     |
 | 303. Range Sum Query - Immutable                 | 🟢   | `Array` `DP`                                          | &#10004; |     |     |
 | 328. Odd Even Linked List                        | 🟠   | `Linked List`                                         | &#10004; | ✔   |     |
-| 344. Reverse String                              | 🟢   | ` Two Pointers``String `                              | &#10004; |     |     |
+| 340. Longest Substr with At Most K Distinct Char | 🟠   | ` String` `Sliding Window` `Hash Table`               | &#10004; |     |     |
+| 344. Reverse String                              | 🟢   | ` Two Pointers``String`                               | &#10004; |     |     |
 | 347. Top K Frequent Elements                     | 🟠   | `Array` `Heap` `Hash Table`                           | &#10004; |     |     |
 | 373. Find K Pairs with Smallest Sums             | 🟠   | `Array` `Heap`                                        | &#10004; |     |     |
 | 378. Kth Smallest Element in a Sorted Matrix     | 🟠   | `Array` `Heap` `Sort` `Matrix`                        | &#10004; |     |     |
@@ -98,7 +99,7 @@
 | 414. Third Maximum Number                        | 🟢   | `Array`                                               | &#10004; |     |     |
 | 415. Add Strings                                 | 🟢   | `String` `Math` `Simulation`                          | &#10004; |     |     |
 | 423. Reconstruct Original Digits from English    | 🟠   | `String` `Hash Table` `Math`                          | &#10004; |     |     |
-| 424. Longest Repeating Character Replacement     | 🟠   | `String` `Sliding Window`                             |          | ✔   |     |
+| 424. Longest Repeating Character Replacement     | 🟠   | `String` `Sliding Window`                             | &#10004; | ✔   |     |
 | 430. Flatten a Multilevel Doubly Linked List     | 🟠   | `Linked List` `Stack` `Recursion`                     |          | ✔   |     |
 | 438. Find All Anagrams in a String               | 🟠   | `Hash Table` `String` `Sliding Window`                | &#10004; |     |     |
 | 445. Add Two Numbers II                          | 🟠   | `Linked List`                                         | &#10004; |     |     |
@@ -152,6 +153,7 @@
 | 1051. Height Checker                             | 🟢   | `Array` `Sort` `Counting Sort`                        | &#10004; | ✔   |     |
 | 1060. Missing Element in Sorted Array            | 🟠   | `Array` `Binary Search`                               | &#10004; |     |     |
 | 1089. Duplicate Zeroes                           | 🟢   | `Array`                                               | &#10004; | ✔   |     |
+| 1100. Find K-Length substr With No Repeated Char | 🟠   | `String` `Hash Table` `Sliding Window`                | &#10004; |     |     |
 | 1165. Single-Row Keyboard                        | 🟢   | `String`                                              | &#10004; |     |     |
 | 1207. Unique Number of Occurrences               | 🟢   | `Hash Table`                                          | &#10004; |     |     |
 | 1290. Convert Binary Number in a LL to Integer   | 🟢   | `Linked List` `Bit Manipulation` `Math`               | &#10004; |     |     |
