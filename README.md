@@ -2,11 +2,11 @@
 
 #### 🟢 &nbsp; Easy : 76
 
-#### 🟠 &nbsp; Medium : 80
+#### 🟠 &nbsp; Medium : 81
 
 #### 🔴 &nbsp; Hard : 6
 
-### Total: 162
+### Total: 163
 
 | Problems                                         | Diff | Category                                              | Java     | JS  | C++ |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | -------- | --- | --- |
@@ -59,6 +59,7 @@
 | 147. Insertion Sort List                         | 🟠   | `Linked List` `Sort`                                  | &#10004; |     |     |
 | 153. Find Minimum in Rotated Sorted Array        | 🟠   | `Array` `Binary Search`                               | &#10004; |     |     |
 | 154. Find Minimum in Rotated Sorted Array II     | 🔴   | `Array` `Binary Search`                               | &#10004; |     |     |
+| 159. Longest Substr with At Most 2 Distinct Char | 🟠   | `String` `Hash Table` `Sliding Window`                | &#10004; |     |     |
 | 160. Intersection of Two Linked Lists            | 🟢   | `Linked List`                                         | &#10004; | ✔   |     |
 | 167. Two Sum II                                  | 🟢   | `Binary Search`                                       | &#10004; |     |     |
 | 169. Majority                                    | 🟢   | `Array`                                               | &#10004; |     |     |
@@ -69,7 +70,7 @@
 | 203. Remove Linked List Elements                 | 🟢   | `Linked List` `Recursion`                             | &#10004; | ✔   |     |
 | 205. Isomorphic Strings                          | 🟢   | `String` `Hash Table`                                 | &#10004; |     |     |
 | 206. Reverse Linked List                         | 🟢   | `Linked List` `Recursion`                             | &#10004; | ✔   |     |
-| 209. Minimum Size Subarray Sum                   | 🟠   | `Array`                                               |          | ✔   |     |
+| 209. Minimum Size Subarray Sum                   | 🟠   | `Array` `Binary Search` `Sliding Window`              | &#10004; | ✔   |     |
 | 215. Kth Largest Element in anArray              | 🟠   | `Array` `Sort` `Heap` `QuickSelect`                   | &#10004; |     |     |
 | 224. Basic Calculator                            | 🔴   | `String` `Stack`                                      | &#10004; |     |     |
 | 231. Power of Two                                | 🟢   | `Math` `Bit Manipulation` `Recursion`                 | &#10004; |     |     |
