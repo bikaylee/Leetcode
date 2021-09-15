@@ -8,7 +8,7 @@
 
 ### Total: 167
 
-| Problems                                         | Diff | Category                                              | Similar | Java     | JS  | C++ |
+| Problems                                         | Diff | Category                                              | Similar | Java     | JS  | Cpp |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | ------- | -------- | --- | --- |
 | 1. Two Sum                                       | 🟢   | `Array` `Hash Table`                                  |         | &#10004; | ✔   |     |
 | 2. Add Two Numbers                               | 🟠   | `Linked List`                                         |         | &#10004; | ✔   |     |
