@@ -48,7 +48,7 @@
 | 100. Same Tree                                   | 🟢   | `Tree`                                                |         | &#10004; |     |     |
 | 116. Populating Next Right Pointers in Each Node | 🟠   | `Tree` `DFS` `BFS` `Binary Tree`                      |         | &#10004; |     |     |
 | 121. Best Time to Buy and Sell Stock             | 🟢   | `Array` `DP`                                          |         | &#10004; |     |     |
-| 125. Valid Palindrome                            | 🟠   | ` Two Pointers``String`                               |         | &#10004; |     |     |
+| 125. Valid Palindrome                            | 🟠   | ` Two Pointers` `String`                              |         | &#10004; |     |     |
 | 133. Clone Graph                                 | 🟠   | `Linked List` `Hash Table` `Graph`                    |         | &#10004; |     |     |
 | 138. Copy List with Random Pointer               | 🟠   | `Linked List` `Hash Table` `Graph`                    |         | &#10004; | ✔   |     |
 | 141. Linked List Cycle                           | 🟢   | `Linked List`                                         |         | &#10004; | ✔   |     |
@@ -94,7 +94,7 @@
 | 303. Range Sum Query - Immutable                 | 🟢   | `Array` `DP`                                          |         | &#10004; |     |     |
 | 328. Odd Even Linked List                        | 🟠   | `Linked List`                                         |         | &#10004; | ✔   |     |
 | 340. Longest Substr with At Most K Distinct Char | 🟠   | ` String` `Sliding Window` `Hash Table`               |         | &#10004; |     |     |
-| 344. Reverse String                              | 🟢   | ` Two Pointers``String`                               |         | &#10004; |     |     |
+| 344. Reverse String                              | 🟢   | ` Two Pointers` `String`                              |         | &#10004; |     |     |
 | 347. Top K Frequent Elements                     | 🟠   | `Array` `Heap` `Hash Table`                           |         | &#10004; |     |     |
 | 373. Find K Pairs with Smallest Sums             | 🟠   | `Array` `Heap`                                        |         | &#10004; |     |     |
 | 378. Kth Smallest Element in a Sorted Matrix     | 🟠   | `Array` `Heap` `Sort` `Matrix`                        |         | &#10004; |     |     |
@@ -128,7 +128,7 @@
 | 695. Max Area of Island                          | 🟠   | `Array` `BFS` `DFS` `Union Find` `Matrix`             |         | &#10004; |     |     |
 | 703. Kth Largest Element in a Stream             | 🟢   | `BST` `Heap`                                          |         | &#10004; |     |     |
 | 704. Binary Search                               | 🟢   | `Array` `Binary Search`                               |         | &#10004; |     |     |
-| 706. Design HashMap                              | 🟢   | `Hash Table` ` Design``Array `                        |         | &#10004; |     |     |
+| 706. Design HashMap                              | 🟢   | `Hash Table` ` Design` `Array `                       |         | &#10004; |     |     |
 | 707. Design Linked List                          | 🟠   | `Linked List` `Design`                                |         | &#10004; | ✔   |     |
 | 717. 1-bit and 2-bit Characters                  | 🟢   | `Array` `Bit Manipulation`                            |         | ✔        |     |
 | 733. Flood Fill                                  | 🟢   | `Array` `DFS` `BFS` `Matrix`                          |         | &#10004; |     |     |
