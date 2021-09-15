@@ -1,12 +1,12 @@
 # Leetcode-2021
 
-#### 🟢 &nbsp; Easy : 76
+#### 🟢 &nbsp; Easy : 77
 
-#### 🟠 &nbsp; Medium : 81
+#### 🟠 &nbsp; Medium : 84
 
 #### 🔴 &nbsp; Hard : 6
 
-### Total: 163
+### Total: 167
 
 | Problems                                         | Diff | Category                                              | Java     | JS  | C++ |
 | ------------------------------------------------ | ---- | ----------------------------------------------------- | -------- | --- | --- |
@@ -81,6 +81,7 @@
 | 239. Sliding Window Maximum                      | 🔴   | `Array` `Heap` `Sliding Window` `Monotonic Queue`     | &#10004; |     |     |
 | 240. Search a 2D Matrix II                       | 🟠   | `DP`                                                  | &#10004; |     |     |
 | 242. Valid Anagram                               | 🟢   | `Hash Table` `String` `Sort`                          | &#10004; |     |     |
+| 252. Meeting Rooms                               | 🟢   | `Array` `Sort`                                        | &#10004; |     |     |
 | 253. Meeting Rooms II                            | 🟠   | `Array` `Two Pointers` `Greedy` `Sort` `Heap`         | &#10004; |     |     |
 | 264. Ugly Number II                              | 🟠   | `Hash Table` `Heap` `DP`                              | &#10004; |     |     |
 | 268. Missing Number                              | 🟢   | `Array` `Math` `Bit Manipulation`                     | &#10004; |     |     |
@@ -89,6 +90,7 @@
 | 283. Move Zeroes                                 | 🟢   | `Array`                                               | &#10004; | ✔   |     |
 | 284. Peeking Iterator                            | 🟠   | `Design`                                              | &#10004; |     |     |
 | 287. Find Duplicate Number                       | 🟠   | `Array` `Two Pointers`                                | &#10004; |     |     |
+| 300. Longest Increasing Subsequence              | 🟠   | `Array` `DP` `Binary Search`                          | &#10004; |     |     |
 | 303. Range Sum Query - Immutable                 | 🟢   | `Array` `DP`                                          | &#10004; |     |     |
 | 328. Odd Even Linked List                        | 🟠   | `Linked List`                                         | &#10004; | ✔   |     |
 | 340. Longest Substr with At Most K Distinct Char | 🟠   | ` String` `Sliding Window` `Hash Table`               | &#10004; |     |     |
@@ -159,6 +161,7 @@
 | 1207. Unique Number of Occurrences               | 🟢   | `Hash Table`                                          | &#10004; |     |     |
 | 1290. Convert Binary Number in a LL to Integer   | 🟢   | `Linked List` `Bit Manipulation` `Math`               | &#10004; |     |     |
 | 1249. Minimum Remove to Make Valid Parentheses   | 🟠   | `String` `Stack`                                      | &#10004; |     |     |
+| 1277. Count Square Submatrices with All Ones     | 🟠   | `Array` `DP` `Matrix`                                 | &#10004; |     |     |
 | 1295. Find Numbers with Even Number of Digits    | 🟢   | `Array`                                               | &#10004; | ✔   |     |
 | 1313. Decompress Run-Length Encoded List         | 🟢   | `Array`                                               |          | ✔   |     |
 | 1338. Reduce Array Size to The Half              | 🟠   | `Array` `Hash Table` `Sort` `Heap`                    | &#10004; |     |     |
@@ -167,10 +170,11 @@
 | 1347. Minimum Steps to Make Two Str Anagram      | 🟠   | `String` `Hash Table`                                 | &#10004; |     |     |
 | 1360. Number of Days Between Two Dates           | 🟢   | `String` `Math`                                       | &#10004; |     |     |
 | 1396. Design Underground System                  | 🟠   | `String` `Hash Table` `Design`                        | &#10004; |     |     |
-| 1465. Maximum Area of a Piece of Cake...         | 🟠   | `Array` `Sorting` `Greedy`                            | &#10004; |     |     |
+| 1465. Maximum Area of a Piece of Cake...         | 🟠   | `Array` `Sort` `Greedy`                               | &#10004; |     |     |
 | 1474. Delete N Nodes After M Nodes of LL         | 🟢   | `Linked List`                                         | &#10004; |     |     |
 | 1710. Maximum Units on a Truck                   | 🟢   | `Greedy` `Sort`                                       | &#10004; |     |     |
 | 1721. Swapping Nodes in a Linked List            | 🟠   | `Linked List`                                         | &#10004; |     |     |
 | 1791. Find Center of Star Graph                  | 🟢   | `Graph`                                               | &#10004; |     |     |
+| 1877. Minimize Maximum Pair Sum in Array         | 🟠   | `Array` `Greedy` `Two Pointers` `Sort`                | &#10004; |     |     |
 | 1971. Find if Path Exists in Graph               | 🟢   | `Graph`                                               | &#10004; |     |     |
 | 1996. The Number of Weak Characters in the Game  | 🟠   | `Greedy`                                              | &#10004; |     |     |
