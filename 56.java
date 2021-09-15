@@ -2,6 +2,26 @@
 // 56. Merge Intervals
 
 class Solution {
+
+    // 9-15-2021
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+
+        int n = 0;
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[n][1] >= intervals[i][0])
+                intervals[n][1] = Math.max(intervals[n][1], intervals[i][1]);
+            else
+                intervals[++n] = intervals[i];
+        }
+
+        int[][] ans = new int[n + 1][2];
+        for (int i = 0; i <= n; i++)
+            ans[i] = intervals[i];
+
+        return ans;
+    }
+
     public int[][] merge(int[][] intervals) {
 
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
