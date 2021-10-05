@@ -1,12 +1,12 @@
 # Leetcode-2021
 
-#### 🟢 &nbsp; Easy : 77
+#### 🟢 &nbsp; Easy : 79
 
 #### 🟠 &nbsp; Medium : 85
 
 #### 🔴 &nbsp; Hard : 6
 
-### Total: 168
+### Total: 171
 
 | Problems                                          | Diff | Category                                                   | Similar | Java     | JS  | Cpp |
 | ------------------------------------------------- | ---- | ---------------------------------------------------------- | ------- | -------- | --- | --- |
@@ -146,6 +146,7 @@
 | 908. Smallest Range I                             | 🟢   | `Array` `Math`                                             |         | &#10004; |     |     |
 | 929. Unique Email Addresses                       | 🟢   | `String`                                                   |         | &#10004; |     |     |
 | 938. Range Sum of BST                             | 🟢   | `Tree` `BFS` `DFS`                                         |         |          | ✔   |     |
+| 941. Valid Mountain Array                         | 🟢   | `Array`                                                    |         | &#10004; |     |     |
 | 946. Validate Stack Sequences                     | 🟠   | `Array` `Stack`                                            |         | &#10004; |     |     |
 | 953. Verifying an Alien Dictionary                | 🟢   | `String` `Array` `Hash Table`                              |         | &#10004; |     |     |
 | 973. K Closest Points to Origin                   | 🟠   | `Array` `Heap` `Quick Select`                              |         | &#10004; |     |     |
@@ -159,12 +160,14 @@
 | 1060. Missing Element in Sorted Array             | 🟠   | `Array` `Binary Search`                                    |         | &#10004; |     |     |
 | 1089. Duplicate Zeroes                            | 🟢   | `Array`                                                    |         | &#10004; | ✔   |     |
 | 1100. Find K-Length substr With No Repeated Char  | 🟠   | `String` `Hash Table` `Sliding Window`                     |         | &#10004; |     |     |
+| 1137. N-th Tribonacci Number                      | 🟢   | `Math` `DP` `Memorization`                                 | 509     | &#10004; |     |     |
 | 1165. Single-Row Keyboard                         | 🟢   | `String`                                                   |         | &#10004; |     |     |
 | 1207. Unique Number of Occurrences                | 🟢   | `Hash Table`                                               |         | &#10004; |     |     |
 | 1290. Convert Binary Number in a LL to Integer    | 🟢   | `Linked List` `Bit Manipulation` `Math`                    |         | &#10004; |     |     |
 | 1249. Minimum Remove to Make Valid Parentheses    | 🟠   | `String` `Stack`                                           |         | &#10004; |     |     |
 | 1277. Count Square Submatrices with All Ones      | 🟠   | `Array` `DP` `Matrix`                                      |         | &#10004; |     |     |
 | 1295. Find Numbers with Even Number of Digits     | 🟢   | `Array`                                                    |         | &#10004; | ✔   |     |
+| 1299. Replace Elem with Greatest Elem on Right    | 🟢   | `Array`                                                    |         | &#10004; |     |     |
 | 1313. Decompress Run-Length Encoded List          | 🟢   | `Array`                                                    |         |          | ✔   |     |
 | 1338. Reduce Array Size to The Half               | 🟠   | `Array` `Hash Table` `Sort` `Heap`                         |         | &#10004; |     |     |
 | 1342. No. of Steps to Reduce a No. to Zero        | 🟢   | `Bit Manipulation`                                         |         | &#10004; |     |     |
