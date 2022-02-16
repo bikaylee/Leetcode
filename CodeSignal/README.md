@@ -54,7 +54,7 @@
 1. [Circle of Numbers](CircleofNumbers.java)
 1. [Deposit Profit](DepositProfit.java)
 1. [Absolute Values Sum Minimization](AbsoluteValuesSumMinimization.java)
-1. [](.java)
+1. [Strings Rearrangement](StringsRearrangement.java)
 
 ### Diving Deeper
 
