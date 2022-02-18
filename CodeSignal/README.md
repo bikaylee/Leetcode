@@ -1,5 +1,15 @@
 # Arcade Universe
 
+## Interview
+
+### Array
+
+1. [First Duplicate](FirstDuplicate.java) - Google
+1. [FirstNotRepeatingCharacter](FirstNotRepeatingCharacter.java) - Amazon
+1. [Rotate Image](RotateImage.java) - Amazon, Microsoft, Apple
+1. [Sudoku 2](Sudoku2.java) - Apple, Uber
+1. [Is CryptSolution](IsCryptSolution.java) - Palantir Tech
+
 ## Intro
 
 ### The Journey Begins
