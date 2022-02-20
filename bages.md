@@ -72,7 +72,7 @@
 
 <br>
 
-### Math45%
+### Math
 
 ![Matrix](https://img.shields.io/badge/-Matrix-9900e6)
 ![Math](https://img.shields.io/badge/-Math-8800cc)
