@@ -6,7 +6,6 @@
 | [76. Minimum Window Substring](0076.md)                               | ![Hard](https://img.shields.io/badge/-Hard-e60000)     | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6) |
 | [340. Longest Substring with At Most K Distinct Characters](0340.md)  | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6) |
 | [424. Longest Repeating Character Replacement](0424.md)               | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6) |
-|                                                                       |
 | [1100. Find K-Length Substrings With No Repeated Characters](1100.md) | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6) |
 
 <br>
