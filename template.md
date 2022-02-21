@@ -10,9 +10,11 @@ Level:
 
 Topic:
 
+<!---
 Similar Problem:
 
 - [](.md)
+--->
 
 <br>
 
@@ -29,6 +31,9 @@ Example
 Thought Process
 
 - one
+
+<br>
+
 - two
 
 <br>
