@@ -1,6 +1,6 @@
 # Table of contents
 
-- [Summary](index.med)
+- [Summary](README.md)
 - [Binary Tree](binary-tree/README.md)
 
   - [94. Binary Tree Inorder Traversal](binary-tree/0094.md)

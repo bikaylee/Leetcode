@@ -1,1 +1,0 @@
-# LeetCode 2022 Notes
