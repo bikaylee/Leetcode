@@ -1,4 +1,4 @@
-## [BinaryTree](/binary-tree)
+# Binary Tree
 
 | Both Iterative & Recursive                                  | Level                                                  | Topics                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | :---------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -71,22 +71,74 @@
 | [938. Range Sum of BST](0938.md)                                           | ![Easy](https://img.shields.io/badge/-Easy-00b300)     | ![Tree](https://img.shields.io/badge/-Tree-70db70) ![Binary Tree](https://img.shields.io/badge/-Binary_Tree-5cd65c) ![Depth First Search](https://img.shields.io/badge/-Depth_First_Search-47d147)                                                                                                                                                                                                                                                                                         |
 | [1382. Balance a Binary Search Tree](1382.md)                              | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Tree](https://img.shields.io/badge/-Tree-70db70) ![Binary Tree](https://img.shields.io/badge/-Binary_Tree-5cd65c) ![Depth First Search](https://img.shields.io/badge/-Depth_First_Search-47d147) ![Binary Search Tree](https://img.shields.io/badge/-Binary_Search_Tree-2eb82e) ![Greedy](https://img.shields.io/badge/-Greedy-ff1a75) ![Divide and Conquer](https://img.shields.io/badge/-Divide_and_Conquer-00b3b3)                                                                    |
 
-## [Sliding Window](/sliding-window)
+<!---
 
-| Problem                                                                                                     | Level                                                  | Topic                                                                                                                                                                                                                                                                                                                                                                                          |
-| :---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [3. Longest Substring Without Repeating Characters](/sliding-window/0003.md)                                | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                   |
-| [239. Sliding Window Maximum](/sliding-window/0239.md)                                                      | ![Hard](https://img.shields.io/badge/-Hard-e60000)     | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Queue](https://img.shields.io/badge/-Queue-1a8cff) ![Heap (Priority Queue)](https://img.shields.io/badge/-Heap-0080ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Monotonic Queue](https://img.shields.io/badge/-Monotonic_Queue-5500ff)                                                                  |
-| [76. Minimum Window Substring](/sliding-window/0076.md)                                                     | ![Hard](https://img.shields.io/badge/-Hard-e60000)     | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                   |
-| [1004. Max Consecutive Ones III](/sliding-window/1004.md)                                                   | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Prefix Sum](https://img.shields.io/badge/-Prefix_Sum-884dff) ![Binary Search](https://img.shields.io/badge/-Binary_Search-7733ff)                                                                                                                                |
-| [992. Subarrays with K Different Integers](/sliding-window/0992.md)                                         | ![Hard](https://img.shields.io/badge/-Hard-e60000)     | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6) ![Counting](https://img.shields.io/badge/-Counting-990000)                                                                                                                                          |
-| [1423. Maximum Points You Can Obtain from Cards](/sliding-window/1423.md)                                   | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Prefix Sum](https://img.shields.io/badge/-Prefix_Sum-884dff)                                                                                                                                                                                                     |
-| [219. Contains Duplicate II](/sliding-window/0219.md)                                                       | ![Easy](https://img.shields.io/badge/-Easy-00b300)     | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                     |
-| [1248. Count Number of Nice Subarrays](/sliding-window/1248.md)                                             | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6) ![Math](https://img.shields.io/badge/-Math-8800cc)                                                                                                                                                  |
-| [1151. Minimum Swaps to Group All 1's Together](/sliding-window/1151.md)                                    | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff)                                                                                                                                                                                                                                                                    |
-| [438. Find All Anagrams in a String](/sliding-window/0438.md)                                               | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                   |
-| [340. Longest Substring with At Most K Distinct Characters](/sliding-window/0340.md)                        | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                   |
-| [424. Longest Repeating Character Replacement](/sliding-window/0424.md)                                     | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                   |
-| [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](/sliding-window/1438.md) | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Queue](https://img.shields.io/badge/-Queue-1a8cff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Heap (Priority Queue)](https://img.shields.io/badge/-Heap-0080ff) ![Ordered Set](https://img.shields.io/badge/-Ordered_Set-00ace6) ![Monotonic Queue](https://img.shields.io/badge/-Monotonic_Queue-5500ff) |
-| [487. Max Consecutive Ones II](/sliding-window/0487.md)                                                     | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Dynamic Programming](https://img.shields.io/badge/-Dynamic_Programming-e6005c)                                                                                                                                                                                   |
-| [1100. Find K-Length Substrings With No Repeated Characters](/sliding-window/1100.md)                       | ![Medium](https://img.shields.io/badge/-Medium-ff8000) | ![String](https://img.shields.io/badge/-String-4da6ff) ![Sliding Window](https://img.shields.io/badge/-Sliding_Window-9966ff) ![Hash Table](https://img.shields.io/badge/-Hash_Table-0073e6)                                                                                                                                                                                                   |
+Both Iterative & Recursive
+
+[94. Binary Tree Inorder Traversal](0094.md)
+[144. Binary Tree Preorder Traversal](0144.md)
+[145. Binary Tree Postorder Traversal](0145.md)
+[104. Maximum Depth of Binary Tree](0104.md)
+[102. Binary Tree Level Order Traversal](0102.md)
+[101. Symmetric Tree](0101.md)
+[199. Binary Tree Right Side View](0199.md)
+[314. Binary Tree Vertical Order Traversal](0314.md)
+[938. Range Sum of BST](0938.md)
+[1469. Find All The Lonely Nodes](1469.md)
+[111. Minimum Depth of Binary Tree](0111.md)
+[100. Same Tree](0100.md)
+[116. Populating Next Right Pointers in Each Node](0116.md)
+[1161. Maximum Level Sum of a Binary Tree](1161.md)
+
+Only Recursive
+[110. Balanced Binary Tree](0110.md)
+[1367. Linked List in Binary Tree](1367.md)
+[112. Path Sum](0112.md)
+[543. Diameter of Binary Tree](0543.md)
+[129. Sum Root to Leaf Numbers](0129.md)
+[236. Lowest Common Ancestor of a Binary Tree](0236.md)
+[366. Find Leaves of Binary Tree](0366.md)
+[1650. Lowest Common Ancestor of a Binary Tree III](1650.md)
+[98. Validate Binary Search Tree](0098.md) (could have iterative approach)
+[965. Univalued Binary Tree](0965.md)
+[235. Lowest Common Ancestor of a Binary Search Tree](0235.md)
+[108. Convert Sorted Array to Binary Search Tree](0108.md)
+[1382. Balance a Binary Search Tree](1382.md)
+[1110. Delete Nodes And Return Forest](1110.md)
+[1644. Lowest Common Ancestor of a Binary Tree II](1644.md)
+[437. Path Sum III](0437.md)
+[572. Subtree of Another Tree](0572.md)
+[617. Merge Two Binary Trees](0617.md)
+**[450. Delete Node in a BST](0450.md)**
+
+Only Iterative
+[426. Convert Binary Search Tree to Sorted Doubly Linked List](0426.md)
+[545. Boundary of Binary Tree](0545.md)
+[257. Binary Tree Paths](0257.md) (backtrack)
+[230. Kth Smallest Element in a BST](0230.md)
+[1448. Count Good Nodes in Binary Tree](1448.md)
+[173. Binary Search Tree Iterator](0173.md)
+**[114. Flatten Binary Tree to Linked List](0114.md)**
+
+Bottom-Up Approach
+**[543. Diameter of Binary Tree](0543.md)**
+**[236. Lowest Common Ancestor of a Binary Tree](0236.md)**
+**[366. Find Leaves of Binary Tree](0366.md)**
+**[235. Lowest Common Ancestor of a Binary Search Tree](0235.md)**
+**[1110. Delete Nodes And Return Forest](1110.md)**
+**[1644. Lowest Common Ancestor of a Binary Tree II](1644.md)**
+**[437. Path Sum III](0437.md)**
+**[114. Flatten Binary Tree to Linked List](0114.md)**
+
+Binary Search Tree
+[98. Validate Binary Search Tree](0098.md) (could have iterative approach)
+[108. Convert Sorted Array to Binary Search Tree](0108.md)
+[173. Binary Search Tree Iterator](0173.md)
+**[235. Lowest Common Ancestor of a Binary Search Tree](0235.md)**
+[426. Convert Binary Search Tree to Sorted Doubly Linked List](0426.md)
+**[450. Delete Node in a BST](0450.md)**
+[938. Range Sum of BST](0938.md)
+[1382. Balance a Binary Search Tree](1382.md)
+
+
+--->
