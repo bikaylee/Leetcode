@@ -1,6 +1,6 @@
 # Table of contents
 
-- [Summary](README.md)
+- [Intro](index.md)
 - [Binary Tree](binary-tree/README.md)
 
   - [94. Binary Tree Inorder Traversal](binary-tree/0094.md)
@@ -62,3 +62,4 @@
   - [1248. Count Number of Nice Subarrays](sliding-window/1248.md)
   - [1423. Maximum Points You Can Obtain from Cards](sliding-window/1423.md)
   - [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](sliding-window/1438.md)
+- [Summary](README.md)
