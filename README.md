@@ -10,8 +10,7 @@
 
 | Problems                                                                           | Level                                              | Topics                                                                                                                                                                            |
 | :--------------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [228. Summary Ranges](/data-structure/array/0228.md)                               | ![Easy](https://img.shields.io/badge/-Easy-00b300) |
-| ![Array](https://img.shields.io/badge/-Array-66b3ff)                               |
+| [228. Summary Ranges](/data-structure/array/0228.md)                               | ![Easy](https://img.shields.io/badge/-Easy-00b300) | ![Array](https://img.shields.io/badge/-Array-66b3ff)                                                                                                                              |
 | [1464. Maximum Product of Two Elements in an Array](/data-structure/array/1464.md) | ![Easy](https://img.shields.io/badge/-Easy-00b300) | ![Array](https://img.shields.io/badge/-Array-66b3ff) ![Heap (Priority Queue)](https://img.shields.io/badge/-Heap-0080ff) ![Sorting](https://img.shields.io/badge/-Sorting-ff1a1a) |
 
 ## [String](/data-structure/string/)
