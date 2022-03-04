@@ -91,6 +91,13 @@
   - [1423. Maximum Points You Can Obtain from Cards](sliding-window/1423.md)
   - [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](sliding-window/1438.md)
 
+- [Binary Search](/binary-search/)
+
+  - [162. Find Peak Element](/binary-search/0162.md)
+  - [528. Random Pick with Weight](/binary-search/0528.md)
+  - [1064. Fixed Point](/binary-search/1064.md)
+  - [2187. Minimum Time to Complete Trips](/binary-search/2187.md)
+
 - [Uncategorized](/uncategorized/)
   - [339. Nested List Weight Sum](/uncategorized/0339.md)
 - [Summary](README.md)
