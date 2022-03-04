@@ -1,6 +1,33 @@
 # Table of contents
 
 - [Intro](index.md)
+- [Data Structure](/data-structure/README.md)
+
+  - [Array](/data-structure/array)
+    - [228. Summary Ranges](/data-structure/array/0228.md)
+    - [1464. Maximum Product of Two Elements in an Array](/data-structure/array/1464.md)
+  - [String](/data-structure/string)
+    - [392. Is Subsequence](/data-structure/string/0392.md)
+    - [408. Valid Word Abbreviation](/data-structure/string/0408.md)
+    - [680. Valid Palindrome II](/data-structure/string/0680.md)
+    - [2185. Counting Words With a Given Prefix](/data-structure/string/2185.md)
+  - [Hash Table](/data-structure/hash-table)
+    - [246. Strobogrammatic Number](/data-structure/hash-table/0246.md)
+    - [1347. Minimum Number of Steps to Make Two Strings Anagram](/data-structure/hash-table/1347.md)
+    - [1570. Dot Product of Two Sparse Vectors](/data-structure/hash-table/1570.md)
+    - [2186. Minimum Number of Steps to Make Two Strings Anagram II](/data-structure/hash-table/2186.md)
+  - [Queue](/data-structure/queue)
+    - [346. Moving Average from Data Stream](/data-structure/queue/0346.md)
+  - [Heap(Priority Queue)](/data-structure/heap)
+    - [215. Kth Largest Element in an Array](/data-structure/heap/0215.md)
+    - **[973. K Closest Points to Origin](/data-structure/heap/0973.md)**
+  - [Stack](/data-structure/stack)
+    - [71. Simplify Path](/data-structure/stack/0071.md)
+    - [921. Minimum Add to Make Parentheses Valid](/data-structure/stack/0921.md)
+    - [1047. Remove All Adjacent Duplicates In String](/data-structure/stack/1047.md)
+    - [1249. Minimum Remove to Make Valid Parentheses](/data-structure/stack/1249.md)
+    - [1762. Buildings With an Ocean View](/data-structure/stack/1762.md)
+
 - [Binary Tree](binary-tree/README.md)
 
   - [94. Binary Tree Inorder Traversal](binary-tree/0094.md)
@@ -45,6 +72,7 @@
   - [1650. Lowest Common Ancestor of a Binary Tree III](binary-tree/1650.md)
 
 - [Sliding Window](sliding-window/README.md)
+
   - [3. Longest Substring Without Repeating Characters](sliding-window/0003.md)
   - [76. Minimum Window Substring](sliding-window/0076.md)
   - [159. Longest Substring with At Most Two Distinct Characters](sliding-window/0159.md)
@@ -62,4 +90,7 @@
   - [1248. Count Number of Nice Subarrays](sliding-window/1248.md)
   - [1423. Maximum Points You Can Obtain from Cards](sliding-window/1423.md)
   - [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](sliding-window/1438.md)
+
+- [Uncategorized](/uncategorized/)
+  - [339. Nested List Weight Sum](/uncategorized/0339.md)
 - [Summary](README.md)
