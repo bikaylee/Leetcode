@@ -28,7 +28,11 @@
     - [1249. Minimum Remove to Make Valid Parentheses](/data-structure/stack/1249.md)
     - [1762. Buildings With an Ocean View](/data-structure/stack/1762.md)
 
-- [Binary Tree](binary-tree/README.md)
+- [Linked List](/linked-list/README.md)
+  - [21. Merge Two Sorted Lists](/linked-list/0021.md)
+  - [82. Remove Duplicates from Sorted List II](/linked-list//0082.md)
+  - [203. Remove Linked List Elements](/linked-list/0203.md)
+- [Binary Tree](/binary-tree/README.md)
 
   - [94. Binary Tree Inorder Traversal](binary-tree/0094.md)
   - [98. Validate Binary Search Tree](binary-tree/0098.md)
