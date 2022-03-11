@@ -29,9 +29,22 @@
     - [1762. Buildings With an Ocean View](/data-structure/stack/1762.md)
 
 - [Linked List](/linked-list/README.md)
+
+  - [2. Add Two Numbers](/linked-list/0002.md)
+  - [19. Remove Nth Node From End of List](/linked-list/0019.md)
   - [21. Merge Two Sorted Lists](/linked-list/0021.md)
+  - [**23. Merge k Sorted Lists**](/linked-list/0023.md)
+  - [**25. Reverse Nodes in k-Group**](/linked-list/0025.md) (Recursion)
+  - [61. Rotate List](/linked-list/0061.md)
   - [82. Remove Duplicates from Sorted List II](/linked-list//0082.md)
+  - [92. Reverse Linked List II](/linked-list/0092.md)
+  - [**138. Copy List with Random Pointer**](/linked-list/0138.md)
+  - [141. Linked List Cycle](/linked-list/0141.md)
+  - [**142. Linked List Cycle II**](/linked-list/0142.md)
+  - [**146. LRU Cache**](/linked-list/0146.md)
   - [203. Remove Linked List Elements](/linked-list/0203.md)
+  - [328. Odd Even Linked List](/linked-list/0328.md)
+
 - [Binary Tree](/binary-tree/README.md)
 
   - [94. Binary Tree Inorder Traversal](binary-tree/0094.md)
